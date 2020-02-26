@@ -53,5 +53,5 @@ const _DashboardPage: React.FC = () => {
   );
 };
 
-const DashboardPage = React.memo(_DashboardPage);
+const DashboardPage = _DashboardPage;
 export default DashboardPage;

@@ -51,4 +51,4 @@ interface Props {
   settingsUrl?: ToType;
 }
 
-export const DetailsSettingsButtons = React.memo(_DetailsSettingsButtons);
+export const DetailsSettingsButtons = _DetailsSettingsButtons;

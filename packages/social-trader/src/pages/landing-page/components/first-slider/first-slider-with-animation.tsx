@@ -103,5 +103,5 @@ const _FirstSliderWithAnimation: React.FC<Props> = ({
   );
 };
 
-const FirstSliderWithAnimation = React.memo(_FirstSliderWithAnimation);
+const FirstSliderWithAnimation = _FirstSliderWithAnimation;
 export default FirstSliderWithAnimation;

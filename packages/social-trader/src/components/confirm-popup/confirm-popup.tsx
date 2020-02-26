@@ -15,7 +15,7 @@ const _ConfirmPopup: React.FC<Props> = props => {
   );
 };
 
-const ConfirmPopup = React.memo(_ConfirmPopup);
+const ConfirmPopup = _ConfirmPopup;
 export default ConfirmPopup;
 
 export interface Props extends IDialogProps {

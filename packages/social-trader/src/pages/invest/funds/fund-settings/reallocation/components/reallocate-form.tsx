@@ -129,5 +129,5 @@ export interface Props {
   errorMessage?: string;
 }
 
-const ReallocateForm = withLoader(React.memo(_ReallocateForm));
+const ReallocateForm = withLoader(_ReallocateForm);
 export default ReallocateForm;

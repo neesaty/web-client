@@ -69,5 +69,5 @@ interface Props {
   currentWallet: WalletData;
 }
 
-const WalletAddFundsForm = withLoader(React.memo(_WalletAddFundsForm));
+const WalletAddFundsForm = withLoader(_WalletAddFundsForm);
 export default WalletAddFundsForm;

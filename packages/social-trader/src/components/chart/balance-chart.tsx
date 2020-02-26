@@ -76,5 +76,5 @@ interface Props {
   currency: CURRENCIES;
 }
 
-const BalanceChart = React.memo(_BalanceChart);
+const BalanceChart = _BalanceChart;
 export default BalanceChart;

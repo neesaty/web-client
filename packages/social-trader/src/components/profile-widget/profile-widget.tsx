@@ -37,7 +37,7 @@ const ProfileMenuItem: React.FC<{
   onClick: VoidFunction;
   label: any;
   Icon: React.ComponentType;
-}> = React.memo(({ Icon, to, onClick, label }) => {
+}> = ({ Icon, to, onClick, label }) => {
   const renderLabel = () => (
     <div className={classNames("profile-menu__item")}>
       <Icon />
@@ -57,7 +57,7 @@ const ProfileMenuItem: React.FC<{
   return (
     <PopoverContentCardBlockItem>{renderButton()}</PopoverContentCardBlockItem>
   );
-});
+};
 
 const _ProfileWidget: React.FC<Props> = ({ profileHeader, className }) => {
   const dispatch = useDispatch();
@@ -127,5 +127,5 @@ interface Props {
   className?: string;
 }
 
-const ProfileWidget = withLoader(React.memo(_ProfileWidget));
+const ProfileWidget = withLoader(_ProfileWidget);
 export default ProfileWidget;

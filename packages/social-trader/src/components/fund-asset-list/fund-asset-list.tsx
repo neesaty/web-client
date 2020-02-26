@@ -23,5 +23,5 @@ interface Props {
   values: FundAssetPartWithIcon[];
 }
 
-const FundAssetList = React.memo(_FundAssetList);
+const FundAssetList = _FundAssetList;
 export default FundAssetList;

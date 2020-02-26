@@ -114,5 +114,5 @@ interface Props {
   fund: FundDetailsListItem;
 }
 
-const FundsTableRow = React.memo(_FundsTableRow);
+const FundsTableRow = _FundsTableRow;
 export default FundsTableRow;

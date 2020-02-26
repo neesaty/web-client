@@ -37,7 +37,5 @@ interface Props {
   trade: OrderSignalModel;
 }
 
-const TradesHistoryFeesTooltipWithOwner = React.memo(
-  _TradesHistoryFeesTooltipWithOwner
-);
+const TradesHistoryFeesTooltipWithOwner = _TradesHistoryFeesTooltipWithOwner;
 export default TradesHistoryFeesTooltipWithOwner;

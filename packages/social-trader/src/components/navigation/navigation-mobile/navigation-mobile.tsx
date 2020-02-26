@@ -66,5 +66,5 @@ interface Props {
   logout: () => void;
 }
 
-const NavigationMobile = React.memo(_NavigationMobile);
+const NavigationMobile = _NavigationMobile;
 export default NavigationMobile;

@@ -21,4 +21,4 @@ const ItemsCounter: React.FC<IItemsCounterProps & WithTranslation> = ({
   );
 };
 
-export default withLoader(translate()(React.memo(ItemsCounter)));
+export default withLoader(translate()(ItemsCounter));

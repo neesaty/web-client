@@ -31,15 +31,15 @@ const _SliderImg: React.FC<ISliderImgProps> = ({ item }) => {
 interface ISliderImgProps {
   item: TSlide;
 }
-export const SliderImg = React.memo(_SliderImg);
+export const SliderImg = _SliderImg;
 
-export const SliderTitle: React.FC = React.memo(({ children }) => {
+export const SliderTitle: React.FC = ({ children }) => {
   return <h2>{children}</h2>;
-});
+};
 
-export const SliderText: React.FC = React.memo(({ children }) => {
+export const SliderText: React.FC = ({ children }) => {
   return <p className="slider__text">{children}</p>;
-});
+};
 
 export const SliderImgWrapper: React.FC = ({ children }) => {
   return <div className="slider__img-wrapper">{children}</div>;

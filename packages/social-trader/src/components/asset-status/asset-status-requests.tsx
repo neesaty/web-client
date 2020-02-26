@@ -24,5 +24,5 @@ interface Props {
   handleCancel: () => void;
 }
 
-const AssetStatusRequests = withBlurLoader(React.memo(_AssetStatusRequests));
+const AssetStatusRequests = withBlurLoader(_AssetStatusRequests);
 export default AssetStatusRequests;

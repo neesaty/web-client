@@ -47,5 +47,5 @@ interface Props {
   data: WalletData;
 }
 
-const WalletCurrency = withBlurLoader(React.memo(_WalletCurrency));
+const WalletCurrency = withBlurLoader(_WalletCurrency);
 export default WalletCurrency;

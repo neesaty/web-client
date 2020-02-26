@@ -161,5 +161,5 @@ export interface ISignUpFormFormValues extends RegisterViewModel {
   [SIGN_UP_FORM_FIELDS.acceptTerms]: boolean;
 }
 
-const SignUpForm = React.memo(_SignUpForm);
+const SignUpForm = _SignUpForm;
 export default SignUpForm;

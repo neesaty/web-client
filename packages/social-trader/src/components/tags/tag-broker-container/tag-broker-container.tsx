@@ -46,6 +46,6 @@ interface Props {
   className?: string;
 }
 
-const TagBrokerContainer = React.memo(withLoader(_TagBrokerContainer));
+const TagBrokerContainer = withLoader(_TagBrokerContainer);
 
 export default TagBrokerContainer;

@@ -60,5 +60,5 @@ interface Props {
   clearAnchor: VoidFunction;
 }
 
-const WalletWidgetPopoverContent = React.memo(_WalletWidgetPopoverContent);
+const WalletWidgetPopoverContent = _WalletWidgetPopoverContent;
 export default WalletWidgetPopoverContent;

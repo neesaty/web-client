@@ -61,5 +61,5 @@ const _FundsContainer: React.FC<Props> = ({ funds }) => {
   );
 };
 
-const FundsContainer = React.memo(_FundsContainer);
+const FundsContainer = _FundsContainer;
 export default FundsContainer;

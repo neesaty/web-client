@@ -109,5 +109,5 @@ interface OwnProps {
 
 interface Props extends OwnProps {}
 
-const ProfitChartElements = withBlurLoader(React.memo(_ProfitChartElements));
+const ProfitChartElements = withBlurLoader(_ProfitChartElements);
 export default ProfitChartElements;

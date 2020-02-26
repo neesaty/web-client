@@ -8,5 +8,5 @@ interface Props {
   backgroundColor: string;
 }
 
-const TagCircle = React.memo(_TagCircle);
+const TagCircle = _TagCircle;
 export default TagCircle;

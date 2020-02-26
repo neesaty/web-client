@@ -127,5 +127,5 @@ interface IProgramTableRowShortProps {
   follow: FollowDetailsListItem;
 }
 
-const FollowTableRowShort = React.memo(_FollowTableRowShort);
+const FollowTableRowShort = _FollowTableRowShort;
 export default FollowTableRowShort;

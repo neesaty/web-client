@@ -184,7 +184,7 @@ export interface IFundDetailsStatisticsElementsProps {
   data: IFundStatisticData;
 }
 
-const FundDetailsStatisticsElements = React.memo(
-  withBlurLoader(_FundDetailsStatisticsElements)
+const FundDetailsStatisticsElements = withBlurLoader(
+  _FundDetailsStatisticsElements
 );
 export default FundDetailsStatisticsElements;

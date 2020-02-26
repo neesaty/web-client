@@ -14,5 +14,5 @@ const _AmountConvert: React.FC<{
     />
   );
 };
-const AmountConvert = React.memo(Crashable(_AmountConvert));
+const AmountConvert = Crashable(_AmountConvert);
 export default AmountConvert;

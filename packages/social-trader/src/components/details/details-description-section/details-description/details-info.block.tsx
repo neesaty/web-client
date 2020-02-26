@@ -39,4 +39,4 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   description?: string;
 }
 
-export const DetailsInfo = React.memo(_DetailsInfo);
+export const DetailsInfo = _DetailsInfo;

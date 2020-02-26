@@ -184,5 +184,5 @@ const _TransferForm: React.FC<ITransferFormProps> = ({
   );
 };
 
-const TransferForm = withBlurLoader(React.memo(_TransferForm));
+const TransferForm = withBlurLoader(_TransferForm);
 export default TransferForm;

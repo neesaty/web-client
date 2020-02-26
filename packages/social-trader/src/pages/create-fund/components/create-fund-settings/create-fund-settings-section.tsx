@@ -26,5 +26,5 @@ const _CreateFundSettingsSection: React.FC = () => {
   );
 };
 
-const CreateFundSettingsSection = React.memo(_CreateFundSettingsSection);
+const CreateFundSettingsSection = _CreateFundSettingsSection;
 export default CreateFundSettingsSection;

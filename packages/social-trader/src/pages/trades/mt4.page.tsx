@@ -24,5 +24,5 @@ const _Mt4: React.FC = () => {
   );
 };
 
-const Mt4Page = React.memo(_Mt4);
+const Mt4Page = _Mt4;
 export default Mt4Page;

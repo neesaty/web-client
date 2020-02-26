@@ -45,5 +45,5 @@ interface Props {
   loaderData?: number;
 }
 
-const NotificationsWidget = React.memo(withBlurLoader(_NotificationsWidget));
+const NotificationsWidget = withBlurLoader(_NotificationsWidget);
 export default NotificationsWidget;

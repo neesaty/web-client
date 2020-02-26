@@ -51,19 +51,23 @@ const _FundAssetRatio: React.FC<Props> = ({
   );
 };
 
-const RatioField: React.FC<IRatioFieldProps> = React.memo(
-  ({ handleHover, item, handleLeave, newLevel, ZIndex }) => (
-    <div
-      className="fund-asset-ratio--item-line"
-      onMouseOver={handleHover && handleHover(item.asset)}
-      onMouseLeave={handleLeave && handleLeave}
-      style={{
-        width: `${newLevel}%`,
-        background: item.color,
-        zIndex: ZIndex
-      }}
-    />
-  )
+const RatioField: React.FC<IRatioFieldProps> = ({
+  handleHover,
+  item,
+  handleLeave,
+  newLevel,
+  ZIndex
+}) => (
+  <div
+    className="fund-asset-ratio--item-line"
+    onMouseOver={handleHover && handleHover(item.asset)}
+    onMouseLeave={handleLeave && handleLeave}
+    style={{
+      width: `${newLevel}%`,
+      background: item.color,
+      zIndex: ZIndex
+    }}
+  />
 );
 
 interface IRatioFieldProps {
@@ -85,5 +89,5 @@ interface Props {
   handleLeave?: () => void;
 }
 
-const FundAssetRatio = React.memo(_FundAssetRatio);
+const FundAssetRatio = _FundAssetRatio;
 export default FundAssetRatio;

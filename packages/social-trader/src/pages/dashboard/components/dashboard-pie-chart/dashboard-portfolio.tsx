@@ -22,5 +22,5 @@ interface Props {
   tablet?: boolean;
 }
 
-const DashboardPortfolio = React.memo(_DashboardPortfolio);
+const DashboardPortfolio = _DashboardPortfolio;
 export default DashboardPortfolio;

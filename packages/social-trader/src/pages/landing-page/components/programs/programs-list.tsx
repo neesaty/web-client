@@ -25,5 +25,5 @@ const _ProgramsList: React.FC<Props> = ({ className, programs }) => {
   );
 };
 
-const ProgramsList = React.memo(_ProgramsList);
+const ProgramsList = _ProgramsList;
 export default ProgramsList;

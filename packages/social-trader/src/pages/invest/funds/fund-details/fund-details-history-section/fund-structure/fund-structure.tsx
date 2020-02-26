@@ -75,5 +75,5 @@ const _FundStructure: React.FC = () => {
   );
 };
 
-const FundStructure = React.memo(_FundStructure);
+const FundStructure = _FundStructure;
 export default FundStructure;

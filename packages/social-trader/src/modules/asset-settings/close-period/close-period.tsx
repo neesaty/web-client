@@ -41,7 +41,6 @@ interface OwnProps extends WithLoaderProps {
 
 const CloseAssetPeriod = compose<React.ComponentType<OwnProps>>(
   withLoader,
-  translate(),
-  React.memo
+  translate()
 )(_CloseAssetPeriod);
 export default CloseAssetPeriod;

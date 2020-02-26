@@ -9,4 +9,4 @@ export const _DialogError: React.FC<IFormErrorProps> = ({ error }) => (
   </div>
 );
 
-export const DialogError = React.memo(_DialogError);
+export const DialogError = _DialogError;

@@ -83,5 +83,5 @@ interface OwnProps {
 
 interface Props extends OwnProps {}
 
-const ChartCurrencySelector = React.memo(_ChartCurrencySelector);
+const ChartCurrencySelector = _ChartCurrencySelector;
 export default ChartCurrencySelector;

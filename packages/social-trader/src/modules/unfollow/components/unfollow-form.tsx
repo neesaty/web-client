@@ -111,5 +111,5 @@ export interface IProgramUnfollowFormValues {
   [FIELDS.mode]: SignalDetachMode;
 }
 
-const UnfollowForm = React.memo(_UnfollowForm);
+const UnfollowForm = _UnfollowForm;
 export default UnfollowForm;

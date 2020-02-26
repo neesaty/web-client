@@ -48,5 +48,5 @@ interface Props {
   title: string;
 }
 
-const ManagerPrograms = React.memo(_ManagerPrograms);
+const ManagerPrograms = _ManagerPrograms;
 export default ManagerPrograms;

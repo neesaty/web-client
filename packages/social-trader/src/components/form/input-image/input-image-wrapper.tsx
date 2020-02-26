@@ -16,4 +16,4 @@ interface Props extends IInputImageProps {
   [key: string]: any;
 }
 
-export const InputImageWrapper = React.memo(_InputImageWrapper);
+export const InputImageWrapper = _InputImageWrapper;

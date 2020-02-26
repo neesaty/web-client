@@ -46,5 +46,5 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
 }
 
-const Layout = React.memo(_Layout);
+const Layout = _Layout;
 export default Layout;

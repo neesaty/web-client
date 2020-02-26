@@ -21,5 +21,5 @@ const GoogleAuthSteps: React.FC<Props> = props => {
 
 interface Props extends IGoogleAuthProps {}
 
-const GoogleAuthStepsContainer = React.memo(GoogleAuthSteps);
+const GoogleAuthStepsContainer = GoogleAuthSteps;
 export default GoogleAuthStepsContainer;

@@ -19,5 +19,5 @@ interface Props {
   description: string;
 }
 
-const AboutField = React.memo(_AboutField);
+const AboutField = _AboutField;
 export default AboutField;

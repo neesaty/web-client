@@ -61,5 +61,5 @@ interface Props {
   favoritesTabName: string;
 }
 
-const NavigationTabs = React.memo(isAuthenticated(_NavigationTabs));
+const NavigationTabs = isAuthenticated(_NavigationTabs);
 export default NavigationTabs;

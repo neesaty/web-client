@@ -72,5 +72,5 @@ interface Props {
   currency: CURRENCIES;
 }
 
-const FundBalanceChart = React.memo(Crashable(_FundBalanceChart));
+const FundBalanceChart = Crashable(_FundBalanceChart);
 export default FundBalanceChart;

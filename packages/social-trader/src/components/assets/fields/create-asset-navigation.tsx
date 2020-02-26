@@ -29,5 +29,5 @@ interface Props {
   isSubmitting?: boolean;
 }
 
-const CreateAssetNavigation = React.memo(_CreateAssetNavigation);
+const CreateAssetNavigation = _CreateAssetNavigation;
 export default CreateAssetNavigation;

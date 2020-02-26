@@ -155,5 +155,5 @@ interface IInvestmentProgramInfoProps {
   levelsParameters: LevelsParamsInfo;
 }
 
-const InvestmentProgramInfo = React.memo(Crashable(_InvestmentProgramInfo));
+const InvestmentProgramInfo = Crashable(_InvestmentProgramInfo);
 export default InvestmentProgramInfo;

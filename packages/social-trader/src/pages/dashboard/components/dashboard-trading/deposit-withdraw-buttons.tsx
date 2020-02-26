@@ -88,5 +88,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const DepositWithdrawButtons = React.memo(_DepositWithdrawButtons);
+const DepositWithdrawButtons = _DepositWithdrawButtons;
 export default DepositWithdrawButtons;

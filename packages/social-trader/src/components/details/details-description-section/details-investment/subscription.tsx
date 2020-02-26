@@ -128,5 +128,5 @@ interface Props {
   id: string;
 }
 
-const Subscription = withBlurLoader(React.memo(_Subscription));
+const Subscription = withBlurLoader(_Subscription);
 export default Subscription;

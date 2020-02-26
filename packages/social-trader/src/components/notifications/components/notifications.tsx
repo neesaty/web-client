@@ -119,7 +119,7 @@ const _Notifications: React.FC<Props> = ({
   );
 };
 
-const Notifications = React.memo(_Notifications);
+const Notifications = _Notifications;
 export default Notifications;
 
 interface Props {

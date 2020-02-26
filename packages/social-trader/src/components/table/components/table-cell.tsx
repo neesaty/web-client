@@ -8,7 +8,7 @@ const TableCell: React.FC<Props> = ({ className = "", children }) => {
 
 interface Props {
   className?: string;
-  children?: ReactNode; // TODO fix React.memo type
+  children?: ReactNode; // TODO fix  type
 }
 
-export default React.memo<React.FC<Props>>(TableCell);
+export default TableCell;

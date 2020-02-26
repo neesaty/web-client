@@ -109,6 +109,6 @@ interface OwnProps {
 interface Props extends OwnProps {}
 
 const AbsoluteProfitChartElements = withBlurLoader(
-  React.memo(_AbsoluteProfitChartElements)
+  _AbsoluteProfitChartElements
 );
 export default AbsoluteProfitChartElements;

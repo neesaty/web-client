@@ -63,5 +63,5 @@ export interface IDetailsStatisticsProps {
   renderDetailsStatisticsElements: TRenderDetailsStatisticsElements;
 }
 
-const DetailsStatistics = React.memo(_DetailsStatistics);
+const DetailsStatistics = _DetailsStatistics;
 export default DetailsStatistics;

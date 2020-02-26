@@ -79,5 +79,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const WalletBalanceElements = React.memo(_WalletBalanceElements);
+const WalletBalanceElements = _WalletBalanceElements;
 export default WalletBalanceElements;

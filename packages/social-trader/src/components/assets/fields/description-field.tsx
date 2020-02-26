@@ -21,5 +21,5 @@ interface Props {
   description: string;
 }
 
-const DescriptionField = React.memo(_DescriptionField);
+const DescriptionField = _DescriptionField;
 export default DescriptionField;

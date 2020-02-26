@@ -31,5 +31,5 @@ interface Props {
   chartCurrencies?: TChartCurrency[];
 }
 
-const FundProfitChart = React.memo(Crashable(_FundProfitChart));
+const FundProfitChart = Crashable(_FundProfitChart);
 export default FundProfitChart;

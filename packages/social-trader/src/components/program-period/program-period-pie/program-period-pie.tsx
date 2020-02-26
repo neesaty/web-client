@@ -33,5 +33,5 @@ interface Props {
   className?: string;
 }
 
-const ProgramPeriodPie = withLoader(React.memo(_ProgramPeriodPie));
+const ProgramPeriodPie = withLoader(_ProgramPeriodPie);
 export default ProgramPeriodPie;

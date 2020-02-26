@@ -19,5 +19,5 @@ interface Props {
   redirectFrom: string;
 }
 
-const TwoFactorPage = React.memo(_TwoFactorPage);
+const TwoFactorPage = _TwoFactorPage;
 export default TwoFactorPage;

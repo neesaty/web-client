@@ -28,7 +28,6 @@ const mapStateToProps = ({
 });
 
 const DialogLoaderGoogleAuthSteps = compose<React.ComponentType>(
-  connect(mapStateToProps),
-  React.memo
+  connect(mapStateToProps)
 )(_DialogLoaderGoogleAuthSteps);
 export default DialogLoaderGoogleAuthSteps;

@@ -89,5 +89,5 @@ export interface ILoginFormFormValues {
   [FIELDS.password]: string;
 }
 
-const LoginForm = React.memo(_LoginForm);
+const LoginForm = _LoginForm;
 export default LoginForm;

@@ -9,5 +9,5 @@ const _PasswordPage: React.FC<WithTranslation> = ({ t }) => (
   </Page>
 );
 
-const PasswordPage = translate()(React.memo(_PasswordPage));
+const PasswordPage = translate()(_PasswordPage);
 export default PasswordPage;

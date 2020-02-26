@@ -15,4 +15,4 @@ interface Props {
   onClick: VoidFunction;
 }
 
-export const CloseCircleButton = React.memo(_CloseCircleButton);
+export const CloseCircleButton = _CloseCircleButton;

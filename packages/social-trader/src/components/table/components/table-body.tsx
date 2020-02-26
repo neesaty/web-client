@@ -25,7 +25,7 @@ const _TableBody: React.FC<ITableBodyExternalProps & ITableBodyInnerProps> = ({
     updateItems={updateItems}
   />
 );
-const TableBody = withBlurLoader(React.memo(_TableBody));
+const TableBody = withBlurLoader(_TableBody);
 
 const _TableItems: React.FC<ITableItemsProps> = ({
   data,
@@ -41,7 +41,7 @@ const _TableItems: React.FC<ITableItemsProps> = ({
     ))}
   </>
 );
-const TableItems = React.memo(_TableItems);
+const TableItems = _TableItems;
 
 const _EmptyMessage: React.FC<{ view: LIST_VIEW } & WithTranslation> = ({
   view,
@@ -61,7 +61,7 @@ const _EmptyMessage: React.FC<{ view: LIST_VIEW } & WithTranslation> = ({
       );
   }
 };
-const EmptyMessage = translate()(React.memo(_EmptyMessage));
+const EmptyMessage = translate()(_EmptyMessage);
 
 interface ITableItemsProps {
   data: any[];
@@ -103,5 +103,5 @@ const _TableBodyContainer: React.FC<ITableBodyContainerExternalProps &
     )
   );
 };
-const TableBodyContainer = React.memo(_TableBodyContainer);
+const TableBodyContainer = _TableBodyContainer;
 export default TableBodyContainer;

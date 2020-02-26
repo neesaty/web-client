@@ -103,5 +103,5 @@ interface Props {
   currency?: Currency;
 }
 
-const WalletDepositsWithdrawals = React.memo(_WalletDepositsWithdrawals);
+const WalletDepositsWithdrawals = _WalletDepositsWithdrawals;
 export default WalletDepositsWithdrawals;

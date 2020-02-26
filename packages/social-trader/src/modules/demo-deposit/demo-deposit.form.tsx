@@ -64,5 +64,5 @@ interface Props {
   onSubmit: (values: IDemoDepositFormValues) => DemoDepositResponse;
 }
 
-const DemoDepositForm = React.memo(_DemoDepositForm);
+const DemoDepositForm = _DemoDepositForm;
 export default DemoDepositForm;

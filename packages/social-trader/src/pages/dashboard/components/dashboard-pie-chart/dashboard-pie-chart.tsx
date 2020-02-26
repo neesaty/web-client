@@ -42,5 +42,5 @@ interface Props {
   data: any[];
 }
 
-const DashboardPieChart = withBlurLoader(React.memo(_DashboardPieChart));
+const DashboardPieChart = withBlurLoader(_DashboardPieChart);
 export default DashboardPieChart;

@@ -16,5 +16,5 @@ const _TagItemList: React.FC<Props> = ({ tags }) => {
 interface Props {
   tags: Tag[];
 }
-const TagItemList = React.memo(_TagItemList);
+const TagItemList = _TagItemList;
 export default TagItemList;

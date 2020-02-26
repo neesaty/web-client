@@ -38,5 +38,5 @@ interface Props {
   wallet: WalletData;
 }
 
-const LineTransferButton = React.memo(_LineTransferButton);
+const LineTransferButton = _LineTransferButton;
 export default LineTransferButton;

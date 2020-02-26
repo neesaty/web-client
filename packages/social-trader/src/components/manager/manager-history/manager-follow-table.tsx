@@ -48,5 +48,5 @@ interface Props {
   title: string;
 }
 
-const ManagerFollow = React.memo(_ManagerFollow);
+const ManagerFollow = _ManagerFollow;
 export default ManagerFollow;

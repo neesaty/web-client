@@ -56,5 +56,5 @@ const _ManagerFunds: React.FC<Props> = ({ title, ownerId }) => {
   );
 };
 
-const ManagerFunds = React.memo(_ManagerFunds);
+const ManagerFunds = _ManagerFunds;
 export default ManagerFunds;

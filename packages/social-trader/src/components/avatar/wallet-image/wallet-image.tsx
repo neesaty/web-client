@@ -14,7 +14,7 @@ const _WalletImage: React.FC<Props> = ({ url, alt, imageClassName }) => {
   );
 };
 
-const WalletImage = React.memo(_WalletImage);
+const WalletImage = _WalletImage;
 export default WalletImage;
 
 interface Props extends IImageProps {

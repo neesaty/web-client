@@ -32,5 +32,5 @@ const _FundWithdrawPopupContainer: React.FC<IFundWithdrawPopupProps> = ({
   );
 };
 
-const FundWithdrawPopupContainer = React.memo(_FundWithdrawPopupContainer);
+const FundWithdrawPopupContainer = _FundWithdrawPopupContainer;
 export default FundWithdrawPopupContainer;

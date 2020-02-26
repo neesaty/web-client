@@ -47,7 +47,7 @@ interface Props {
   tablet?: boolean;
 }
 
-const DashboardInvestingEmpty: React.FC = React.memo(() => {
+const DashboardInvestingEmpty: React.FC = () => {
   const [t] = useTranslation();
   return (
     <DashboardNewUserBlock
@@ -84,7 +84,7 @@ const DashboardInvestingEmpty: React.FC = React.memo(() => {
       }}
     />
   );
-});
+};
 
-const DashboardInvestingStatistic = React.memo(_DashboardInvestingStatistic);
+const DashboardInvestingStatistic = _DashboardInvestingStatistic;
 export default DashboardInvestingStatistic;

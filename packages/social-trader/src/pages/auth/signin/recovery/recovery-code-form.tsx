@@ -65,5 +65,5 @@ export interface IRecoveryCodeFormValues {
   [FIELDS.email]: string;
 }
 
-const RecoveryCodeForm = React.memo(_RecoveryCodeForm);
+const RecoveryCodeForm = _RecoveryCodeForm;
 export default RecoveryCodeForm;

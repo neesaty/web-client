@@ -35,5 +35,5 @@ const _DashboardFollowThemContainer: React.FC<Props> = () => {
 
 interface Props {}
 
-const DashboardFollowThemContainer = React.memo(_DashboardFollowThemContainer);
+const DashboardFollowThemContainer = _DashboardFollowThemContainer;
 export default DashboardFollowThemContainer;

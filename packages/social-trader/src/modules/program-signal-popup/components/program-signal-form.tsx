@@ -39,5 +39,5 @@ interface Props {
   volumeFee?: number;
 }
 
-const ProgramSignalForm = React.memo(_ProgramSignalForm);
+const ProgramSignalForm = _ProgramSignalForm;
 export default ProgramSignalForm;

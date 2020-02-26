@@ -199,5 +199,5 @@ export type TProgramTablesData = {
   periodHistory?: TProgramTableReduxData;
 };
 
-const ProgramDetailsHistorySection = React.memo(_ProgramDetailsHistorySection);
+const ProgramDetailsHistorySection = _ProgramDetailsHistorySection;
 export default ProgramDetailsHistorySection;

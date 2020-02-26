@@ -78,4 +78,4 @@ interface ISimpleFieldOwnProps {
   valueCallback: (value: any) => any;
 }
 
-export const SimpleField = React.memo(_SimpleField);
+export const SimpleField = _SimpleField;

@@ -51,5 +51,5 @@ interface Props {
   signalVolumeFee?: number;
 }
 
-const SignalingEdit = React.memo(_SignalingEdit);
+const SignalingEdit = _SignalingEdit;
 export default SignalingEdit;

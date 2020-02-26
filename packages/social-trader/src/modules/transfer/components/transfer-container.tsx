@@ -124,5 +124,5 @@ interface Props {
   currentItemContainer: TRANSFER_CONTAINER;
 }
 
-const TransferContainer = React.memo(Crashable(_TransferContainer));
+const TransferContainer = Crashable(_TransferContainer);
 export default TransferContainer;

@@ -58,4 +58,4 @@ const _FundWithdrawResult: React.FC<IFundWithdrawResultProps> = ({
   );
 };
 
-export const FundWithdrawResult = React.memo(_FundWithdrawResult);
+export const FundWithdrawResult = _FundWithdrawResult;

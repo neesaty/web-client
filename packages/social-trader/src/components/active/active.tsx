@@ -57,5 +57,5 @@ interface Props {
   data: AssetInfo;
 }
 
-const Active = withBlurLoader(React.memo(_Active));
+const Active = withBlurLoader(_Active);
 export default Active;

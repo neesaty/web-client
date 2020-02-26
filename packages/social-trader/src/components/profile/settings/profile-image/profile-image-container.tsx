@@ -36,5 +36,5 @@ const _ProfileImageContainer: React.FC = () => {
   );
 };
 
-const ProfileImageContainer = React.memo(_ProfileImageContainer);
+const ProfileImageContainer = _ProfileImageContainer;
 export default ProfileImageContainer;

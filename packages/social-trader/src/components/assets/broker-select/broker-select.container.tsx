@@ -50,7 +50,5 @@ interface Props {
   selectedBroker: Broker;
 }
 
-const BrokerSelectContainer = React.memo(
-  Crashable(_BrokerSelectBrokerContainer)
-);
+const BrokerSelectContainer = Crashable(_BrokerSelectBrokerContainer);
 export default BrokerSelectContainer;

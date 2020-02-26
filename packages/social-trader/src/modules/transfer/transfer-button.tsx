@@ -86,53 +86,49 @@ const FullButton: React.FC<{
   label?: string;
   disabled?: boolean;
   onClick: () => void;
-}> = React.memo(
-  ({ disabled, onClick, label, color, variant, withIcon, size }) => {
-    const [t] = useTranslation();
-    const labelText = label || t("wallet-page.transfer");
-    return (
-      <GVButton
-        className={labelText}
-        size={size}
-        color={color || "secondary"}
-        variant={variant || "outlined"}
-        disabled={disabled}
-        onClick={onClick}
-      >
-        <>
-          {withIcon && (
-            <ImageBaseElement
-              className="transfer-button__full-button-icon"
-              src={ConvertIcon}
-              alt={labelText}
-            />
-          )}
-          {labelText}
-        </>
-      </GVButton>
-    );
-  }
-);
+}> = ({ disabled, onClick, label, color, variant, withIcon, size }) => {
+  const [t] = useTranslation();
+  const labelText = label || t("wallet-page.transfer");
+  return (
+    <GVButton
+      className={labelText}
+      size={size}
+      color={color || "secondary"}
+      variant={variant || "outlined"}
+      disabled={disabled}
+      onClick={onClick}
+    >
+      <>
+        {withIcon && (
+          <ImageBaseElement
+            className="transfer-button__full-button-icon"
+            src={ConvertIcon}
+            alt={labelText}
+          />
+        )}
+        {labelText}
+      </>
+    </GVButton>
+  );
+};
 
-const SmallButton: React.FC<{ onClick: () => void }> = React.memo(
-  ({ onClick }) => {
-    const [t] = useTranslation();
-    const label = t("wallet-page.transfer");
-    return (
-      <ChipButton
-        className={label}
-        onClick={onClick}
-        size={CHIP_SIZE.SMALL}
-        chipLabel={<ImageBaseElement src={ConvertIcon} alt={label} />}
-      />
-    );
-  }
-);
+const SmallButton: React.FC<{ onClick: () => void }> = ({ onClick }) => {
+  const [t] = useTranslation();
+  const label = t("wallet-page.transfer");
+  return (
+    <ChipButton
+      className={label}
+      onClick={onClick}
+      size={CHIP_SIZE.SMALL}
+      chipLabel={<ImageBaseElement src={ConvertIcon} alt={label} />}
+    />
+  );
+};
 
 export enum WALLET_BUTTON_TYPE {
   SMALL = "SMALL",
   FULL = "FULL"
 }
 
-const TransferButton = React.memo(_TransferButton);
+const TransferButton = _TransferButton;
 export default TransferButton;

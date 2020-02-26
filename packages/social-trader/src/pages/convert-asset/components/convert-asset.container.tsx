@@ -23,5 +23,5 @@ interface Props extends IConvertAssetSettingsFormOwnProps {
   title: string;
 }
 
-const ConvertAssetContainer = React.memo(_ConvertAssetContainer);
+const ConvertAssetContainer = _ConvertAssetContainer;
 export default ConvertAssetContainer;

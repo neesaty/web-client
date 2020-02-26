@@ -44,7 +44,7 @@ const _ProgramDeposit: React.FC<OwnProps & IDialogProps> = ({
   );
 };
 
-const ProgramDeposit = withLoader(React.memo(_ProgramDeposit));
+const ProgramDeposit = withLoader(_ProgramDeposit);
 export default ProgramDeposit;
 
 interface OwnProps {

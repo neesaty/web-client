@@ -18,4 +18,4 @@ export interface ISimpleTextFieldProps extends GVTextFieldProps {
   [key: string]: any;
 }
 
-export const SimpleTextField = React.memo(_SimpleTextField);
+export const SimpleTextField = _SimpleTextField;

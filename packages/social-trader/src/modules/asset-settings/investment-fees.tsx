@@ -1,5 +1,4 @@
 import FeesSettings from "components/assets/fields/fees-settings";
-import GVButton from "components/gv-button";
 import SettingsBlock from "components/settings-block/settings-block";
 import { SubmitButton } from "components/submit-button/submit-button";
 import { ASSET } from "constants/constants";
@@ -121,5 +120,5 @@ interface Props {
   onSubmit: (values: InvesmentLimitFormValues) => void;
 }
 
-const InvestmentFees = React.memo(_InvestmentFees);
+const InvestmentFees = _InvestmentFees;
 export default InvestmentFees;

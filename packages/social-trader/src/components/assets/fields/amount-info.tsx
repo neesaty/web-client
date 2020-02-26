@@ -45,5 +45,5 @@ interface Props {
   walletCurrency: CurrencyEnum;
 }
 
-const AmountInfo = React.memo(_AmountInfo);
+const AmountInfo = _AmountInfo;
 export default AmountInfo;

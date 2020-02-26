@@ -76,5 +76,5 @@ interface Props {
   disabled?: boolean;
 }
 
-const InputDepositAmount = React.memo(_InputDepositAmount);
+const InputDepositAmount = _InputDepositAmount;
 export default InputDepositAmount;

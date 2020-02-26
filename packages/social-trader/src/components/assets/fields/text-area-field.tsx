@@ -28,5 +28,5 @@ interface Props {
   name: string;
 }
 
-const TextAreaField = React.memo(_TextAreaField);
+const TextAreaField = _TextAreaField;
 export default TextAreaField;

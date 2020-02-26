@@ -152,5 +152,5 @@ export interface CreateAccountFormValues {
   [CREATE_ACCOUNT_FORM_FIELDS.depositAmount]: number | string;
 }
 
-const FollowCreateAccount = React.memo(_FollowCreateAccount);
+const FollowCreateAccount = _FollowCreateAccount;
 export default FollowCreateAccount;

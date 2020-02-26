@@ -69,5 +69,5 @@ _LPButton.defaultProps = {
   type: "button"
 };
 
-const LPButton = React.memo(_LPButton);
+const LPButton = _LPButton;
 export default LPButton;

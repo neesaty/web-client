@@ -41,7 +41,7 @@ const _TagFilterPopover: React.FC<Props> = ({ values, changeFilter }) => {
   );
 };
 
-const TagFilterPopover = React.memo(_TagFilterPopover);
+const TagFilterPopover = _TagFilterPopover;
 export default TagFilterPopover;
 
 interface Props {

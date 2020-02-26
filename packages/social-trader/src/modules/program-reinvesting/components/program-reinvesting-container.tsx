@@ -61,5 +61,5 @@ interface Props {
   id: string;
 }
 
-const ProgramReinvestingContainer = React.memo(_ProgramReinvestingContainer);
+const ProgramReinvestingContainer = _ProgramReinvestingContainer;
 export default ProgramReinvestingContainer;

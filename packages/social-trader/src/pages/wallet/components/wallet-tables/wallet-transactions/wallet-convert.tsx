@@ -29,5 +29,5 @@ const _WalletConvert: React.FC<{
     />
   );
 };
-const WalletConvert = React.memo(_WalletConvert);
+const WalletConvert = _WalletConvert;
 export default WalletConvert;

@@ -33,13 +33,11 @@ const _TransactionDetailsItemsBlock: React.FC<{
     </>
   );
 };
-const TransactionDetailsItemsBlock = React.memo(
-  Crashable(_TransactionDetailsItemsBlock)
-);
+const TransactionDetailsItemsBlock = Crashable(_TransactionDetailsItemsBlock);
 
 const TransactionDetailsListItem: React.FC<{
   item: TransactionDetailItem;
-}> = React.memo(({ item: { title, details, url, canCopy } }) => {
+}> = ({ item: { title, details, url, canCopy } }) => {
   const { linkCreator } = useToLink();
   return (
     <StatisticItem label={title}>
@@ -59,7 +57,7 @@ const TransactionDetailsListItem: React.FC<{
       </div>
     </StatisticItem>
   );
-});
+};
 
 const TransactionDetailsItem: React.FC<{
   label: string;
@@ -73,7 +71,7 @@ const TransactionDetailsItem: React.FC<{
 
 const TransactionStatusBlock: React.FC<{
   status: MultiWalletTransactionStatus;
-}> = React.memo(({ status }) => {
+}> = ({ status }) => {
   const [t] = useTranslation();
   return (
     <TransactionDetailsItem label={t(`transactions-details.status.title`)}>
@@ -82,7 +80,7 @@ const TransactionStatusBlock: React.FC<{
       </div>
     </TransactionDetailsItem>
   );
-});
+};
 
 const _TransactionAssetBlock: React.FC<{
   type: "investment" | "withdrawal";
@@ -94,7 +92,7 @@ const _TransactionAssetBlock: React.FC<{
     </TransactionDetailsItem>
   );
 };
-const TransactionAssetBlock = React.memo(Crashable(_TransactionAssetBlock));
+const TransactionAssetBlock = Crashable(_TransactionAssetBlock);
 
 const _TransactionWalletBlock: React.FC<{
   wallets: AmountRowCell;
@@ -116,7 +114,7 @@ const _TransactionWalletBlock: React.FC<{
     </TransactionDetailsItem>
   );
 };
-const TransactionWalletBlock = React.memo(Crashable(_TransactionWalletBlock));
+const TransactionWalletBlock = Crashable(_TransactionWalletBlock);
 
 const _CommonTransactionDetails: React.FC<Props> = ({
   data,
@@ -167,7 +165,5 @@ interface Props {
   handleResend: VoidFunction;
 }
 
-const CommonTransactionDetails = React.memo(
-  Crashable(_CommonTransactionDetails)
-);
+const CommonTransactionDetails = Crashable(_CommonTransactionDetails);
 export default CommonTransactionDetails;

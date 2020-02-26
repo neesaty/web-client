@@ -273,7 +273,7 @@ export interface IProgramDetailsStatisticsElementsProps {
   data: IProgramStatisticData;
 }
 
-const ProgramDetailsStatisticsElements = React.memo(
-  withBlurLoader(_ProgramDetailsStatisticsElements)
+const ProgramDetailsStatisticsElements = withBlurLoader(
+  _ProgramDetailsStatisticsElements
 );
 export default ProgramDetailsStatisticsElements;

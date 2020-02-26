@@ -43,5 +43,5 @@ interface Prop {
   onToggle: (asset: string) => void;
 }
 
-const ChartAsset = React.memo(_ChartAsset);
+const ChartAsset = _ChartAsset;
 export default ChartAsset;

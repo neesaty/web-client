@@ -63,5 +63,5 @@ interface Props {
   currency?: CurrencyEnum;
 }
 
-const FollowButton = React.memo(_FollowButton);
+const FollowButton = _FollowButton;
 export default FollowButton;

@@ -51,5 +51,5 @@ interface Props {
   id: string;
 }
 
-const UnFollowButton = React.memo(_UnFollowButton);
+const UnFollowButton = _UnFollowButton;
 export default UnFollowButton;

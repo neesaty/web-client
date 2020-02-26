@@ -23,7 +23,7 @@ const HeaderSearchInput = dynamic(() =>
 const HeaderLeft: React.FC<{
   backPath: string;
   profileHeader?: ProfileHeaderViewModel;
-}> = React.memo(({ backPath, profileHeader }) => {
+}> = ({ backPath, profileHeader }) => {
   const isAuthenticated = useSelector(isAuthenticatedSelector);
   const [openSearch, setSearchIsOpen, setSearchIsClose] = useIsOpen();
   return (
@@ -62,7 +62,7 @@ const HeaderLeft: React.FC<{
       </div>
     </div>
   );
-});
+};
 
 const _Header: React.FC<Props> = ({ profileHeader }) => {
   const isAuthenticated = useSelector(isAuthenticatedSelector);
@@ -87,5 +87,5 @@ export interface Props {
   backPath: string;
 }
 
-const Header = React.memo(_Header);
+const Header = _Header;
 export default Header;

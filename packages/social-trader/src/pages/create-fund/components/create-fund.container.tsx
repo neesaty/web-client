@@ -11,5 +11,5 @@ const _CreateFundContainer: React.FC = () => {
   );
 };
 
-const CreateFundContainer = React.memo(_CreateFundContainer);
+const CreateFundContainer = _CreateFundContainer;
 export default CreateFundContainer;

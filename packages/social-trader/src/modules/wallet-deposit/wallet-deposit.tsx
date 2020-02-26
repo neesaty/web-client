@@ -32,7 +32,7 @@ const _WalletDeposit: React.FC<Props> = ({
 const FullButton: React.FC<{
   disabled?: boolean;
   onClick: () => void;
-}> = React.memo(({ disabled, onClick }) => {
+}> = ({ disabled, onClick }) => {
   const [t] = useTranslation();
   const label = t("wallet-page.deposit");
   return (
@@ -48,23 +48,21 @@ const FullButton: React.FC<{
       </>
     </GVButton>
   );
-});
+};
 
-const SmallButton: React.FC<{ onClick: () => void }> = React.memo(
-  ({ onClick }) => {
-    const [t] = useTranslation();
-    const label = t("wallet-page.deposit");
-    return (
-      <ChipButton
-        className={label}
-        onClick={onClick}
-        size={CHIP_SIZE.SMALL}
-        chipLabel={"+"}
-        type={CHIP_TYPE.POSITIVE}
-      />
-    );
-  }
-);
+const SmallButton: React.FC<{ onClick: () => void }> = ({ onClick }) => {
+  const [t] = useTranslation();
+  const label = t("wallet-page.deposit");
+  return (
+    <ChipButton
+      className={label}
+      onClick={onClick}
+      size={CHIP_SIZE.SMALL}
+      chipLabel={"+"}
+      type={CHIP_TYPE.POSITIVE}
+    />
+  );
+};
 
 interface Props {
   currency?: CurrencyEnum;
@@ -77,5 +75,5 @@ export enum WALLET_DEPOSIT_BUTTON_TYPE {
   FULL = "FULL"
 }
 
-const WalletDeposit = React.memo(_WalletDeposit);
+const WalletDeposit = _WalletDeposit;
 export default WalletDeposit;

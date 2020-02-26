@@ -42,5 +42,5 @@ interface Props {
   onApply: VoidFunction;
 }
 
-const InvestmentAccountControls = React.memo(_InvestmentAccountControls);
+const InvestmentAccountControls = _InvestmentAccountControls;
 export default InvestmentAccountControls;

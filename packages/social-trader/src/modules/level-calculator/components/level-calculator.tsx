@@ -44,5 +44,5 @@ const _LevelCalculator: React.FC<ILevelCalculatorProps> = ({
   );
 };
 
-const LevelCalculator = React.memo(Crashable(_LevelCalculator));
+const LevelCalculator = Crashable(_LevelCalculator);
 export default LevelCalculator;

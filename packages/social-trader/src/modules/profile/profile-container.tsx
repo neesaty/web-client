@@ -24,5 +24,5 @@ const _ProfileContainer: React.FC = () => {
   );
 };
 
-const ProfileContainer = React.memo(_ProfileContainer);
+const ProfileContainer = _ProfileContainer;
 export default ProfileContainer;

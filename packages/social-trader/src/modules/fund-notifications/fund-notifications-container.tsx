@@ -59,7 +59,6 @@ interface OwnProps {
 
 const FundNotificationsContainer = compose<React.ComponentType<OwnProps>>(
   translate(),
-  connect<StateProps, null, OwnProps, AuthRootState>(mapStateToProps),
-  React.memo
+  connect<StateProps, null, OwnProps, AuthRootState>(mapStateToProps)
 )(_FundNotificationsContainer);
 export default FundNotificationsContainer;

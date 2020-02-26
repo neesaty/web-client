@@ -42,5 +42,5 @@ interface Props {
   url?: string;
 }
 
-const TransactionAsset = React.memo(_TransactionAsset);
+const TransactionAsset = _TransactionAsset;
 export default TransactionAsset;

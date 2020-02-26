@@ -62,5 +62,5 @@ interface Props {
   onSubmit: (values: StopOutLevelFormValues) => void;
 }
 
-const StopOutLevel = React.memo(_StopOutLevel);
+const StopOutLevel = _StopOutLevel;
 export default StopOutLevel;

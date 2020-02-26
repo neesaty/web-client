@@ -52,6 +52,4 @@ interface Props {
   onApply?: VoidFunction;
 }
 
-export const SignalingEditFormContainer = React.memo(
-  _SignalingEditFormContainer
-);
+export const SignalingEditFormContainer = _SignalingEditFormContainer;

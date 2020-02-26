@@ -28,5 +28,5 @@ interface Props {
   disabled?: boolean;
 }
 
-const LineWithdrawButton = React.memo(_LineWithdrawButton);
+const LineWithdrawButton = _LineWithdrawButton;
 export default LineWithdrawButton;

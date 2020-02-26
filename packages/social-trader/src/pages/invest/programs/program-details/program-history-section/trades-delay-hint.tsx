@@ -33,4 +33,4 @@ const _TradesDelayHint: React.FC<{ delay: TradesDelay }> = ({ delay }) => {
     </>
   );
 };
-export const TradesDelayHint = React.memo(_TradesDelayHint);
+export const TradesDelayHint = _TradesDelayHint;

@@ -29,4 +29,4 @@ interface Props {
   children: ReactNode;
 }
 
-export default React.memo(TableRow);
+export default TableRow;

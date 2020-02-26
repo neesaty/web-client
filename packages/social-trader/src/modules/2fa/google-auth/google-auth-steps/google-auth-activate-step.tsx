@@ -88,5 +88,5 @@ export interface IGoogleActivateStepFormValues {
   [FIELDS.password]: string;
 }
 
-const GoogleActivateStep = React.memo(GoogleStep3);
+const GoogleActivateStep = GoogleStep3;
 export default GoogleActivateStep;

@@ -76,5 +76,5 @@ export interface GVProgramAvatarProps {
   onClickLevel?: (e: any) => void;
 }
 
-const GVProgramAvatar = React.memo(_GVProgramAvatar);
+const GVProgramAvatar = _GVProgramAvatar;
 export default GVProgramAvatar;

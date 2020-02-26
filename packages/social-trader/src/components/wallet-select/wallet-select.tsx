@@ -30,4 +30,4 @@ const _HookFormWalletSelect: React.FC<Props> = ({
     onChange={onChange}
   />
 );
-export const HookFormWalletSelect = React.memo(_HookFormWalletSelect);
+export const HookFormWalletSelect = _HookFormWalletSelect;

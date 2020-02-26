@@ -40,6 +40,4 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-export const ReferralRewardsBlock = withBlurLoader(
-  React.memo(_ReferralRewardsBlock)
-);
+export const ReferralRewardsBlock = withBlurLoader(_ReferralRewardsBlock);

@@ -62,5 +62,5 @@ export type TUpdateProgramFunc = (
   resetForm?: () => void
 ) => void;
 
-const ProgramSettingsPage = React.memo(_ProgramsEditPage);
+const ProgramSettingsPage = _ProgramsEditPage;
 export default ProgramSettingsPage;

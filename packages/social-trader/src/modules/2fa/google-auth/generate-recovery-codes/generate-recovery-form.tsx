@@ -63,5 +63,5 @@ interface Props {
 }
 interface IFormValues extends PasswordModel {}
 
-const GenerateRecoveryForm = React.memo(_GenerateRecoveryForm);
+const GenerateRecoveryForm = _GenerateRecoveryForm;
 export default GenerateRecoveryForm;

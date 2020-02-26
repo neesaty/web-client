@@ -26,5 +26,5 @@ interface Props {
   to: ToType;
 }
 
-const DetailsNotification = React.memo(_DetailsNotification);
+const DetailsNotification = _DetailsNotification;
 export default DetailsNotification;

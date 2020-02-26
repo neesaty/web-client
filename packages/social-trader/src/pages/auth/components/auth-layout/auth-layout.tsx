@@ -68,5 +68,5 @@ interface OwnProps {
   quoteNo: number;
 }
 
-const AuthLayout = React.memo(_AuthLayout);
+const AuthLayout = _AuthLayout;
 export default AuthLayout;

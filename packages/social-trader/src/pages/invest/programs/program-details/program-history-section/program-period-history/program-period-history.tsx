@@ -65,5 +65,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const ProgramPeriodHistory = React.memo(_ProgramPeriodHistory);
+const ProgramPeriodHistory = _ProgramPeriodHistory;
 export default ProgramPeriodHistory;

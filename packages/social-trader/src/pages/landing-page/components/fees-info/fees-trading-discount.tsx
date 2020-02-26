@@ -106,5 +106,5 @@ const _FeesTradingDiscount: React.FC<{
   );
 };
 
-const FeesTradingDiscount = React.memo(_FeesTradingDiscount);
+const FeesTradingDiscount = _FeesTradingDiscount;
 export default FeesTradingDiscount;

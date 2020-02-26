@@ -39,4 +39,4 @@ interface Props {
   accountType?: PrivateTradingAccountType | AssetTypeExt;
 }
 
-export const DepositTransferButton = React.memo(_DepositTransferButton);
+export const DepositTransferButton = _DepositTransferButton;

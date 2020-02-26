@@ -41,7 +41,7 @@ const _WalletWithdrawButton: React.FC<Props> = ({
 const FullButton: React.FC<{
   disabled?: boolean;
   onClick: () => void;
-}> = React.memo(({ disabled, onClick }) => {
+}> = ({ disabled, onClick }) => {
   const [t] = useTranslation();
   const label = t("wallet-page.withdraw");
   return (
@@ -63,22 +63,20 @@ const FullButton: React.FC<{
       </>
     </GVButton>
   );
-});
+};
 
-const SmallButton: React.FC<{ onClick: () => void }> = React.memo(
-  ({ onClick }) => {
-    const [t] = useTranslation();
-    const label = t("wallet-page.withdraw");
-    return (
-      <ChipButton
-        className={label}
-        onClick={onClick}
-        size={CHIP_SIZE.SMALL}
-        chipLabel={<ImageBaseElement src={ArrowIcon} alt={label} />}
-      />
-    );
-  }
-);
+const SmallButton: React.FC<{ onClick: () => void }> = ({ onClick }) => {
+  const [t] = useTranslation();
+  const label = t("wallet-page.withdraw");
+  return (
+    <ChipButton
+      className={label}
+      onClick={onClick}
+      size={CHIP_SIZE.SMALL}
+      chipLabel={<ImageBaseElement src={ArrowIcon} alt={label} />}
+    />
+  );
+};
 
 interface Props {
   currency: CurrencyEnum;
@@ -91,5 +89,5 @@ export enum WALLET_DEPOSIT_BUTTON_TYPE {
   FULL = "FULL"
 }
 
-const WalletWithdrawButton = React.memo(_WalletWithdrawButton);
+const WalletWithdrawButton = _WalletWithdrawButton;
 export default WalletWithdrawButton;

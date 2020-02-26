@@ -84,7 +84,5 @@ interface Props {
   toggleNotification: TToggleNotification;
 }
 
-const AssetNotificationsCustom = withLoader(
-  React.memo(_AssetNotificationsCustom)
-);
+const AssetNotificationsCustom = withLoader(_AssetNotificationsCustom);
 export default AssetNotificationsCustom;

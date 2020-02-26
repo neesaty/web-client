@@ -44,5 +44,5 @@ interface Props {
   disabled: boolean;
 }
 
-const GenerateRecoveryCode = React.memo(_GenerateRecoveryCode);
+const GenerateRecoveryCode = _GenerateRecoveryCode;
 export default GenerateRecoveryCode;

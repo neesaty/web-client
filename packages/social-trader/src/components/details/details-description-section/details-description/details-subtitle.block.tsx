@@ -13,4 +13,4 @@ const _DetailsSubtitle: React.FC<{
   );
 };
 
-export const DetailsSubtitle = React.memo(_DetailsSubtitle);
+export const DetailsSubtitle = _DetailsSubtitle;

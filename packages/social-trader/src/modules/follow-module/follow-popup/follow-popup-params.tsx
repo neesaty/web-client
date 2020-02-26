@@ -190,5 +190,5 @@ export interface IFollowParamsProps {
   onPrevStep?: () => void;
 }
 
-const FollowParams = React.memo(_FollowParams);
+const FollowParams = _FollowParams;
 export default FollowParams;

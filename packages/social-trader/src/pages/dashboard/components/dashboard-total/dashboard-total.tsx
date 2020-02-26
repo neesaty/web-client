@@ -81,5 +81,5 @@ interface Props {
   data: TDashboardTotal;
 }
 
-const DashboardTotal = withBlurLoader(React.memo(_DashboardTotal));
+const DashboardTotal = withBlurLoader(_DashboardTotal);
 export default DashboardTotal;

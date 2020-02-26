@@ -98,5 +98,5 @@ interface Props {
   title: string;
 }
 
-const FollowsTableSsr = React.memo(_FollowsTableSSR);
+const FollowsTableSsr = _FollowsTableSSR;
 export default FollowsTableSsr;

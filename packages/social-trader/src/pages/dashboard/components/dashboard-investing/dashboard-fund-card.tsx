@@ -86,7 +86,7 @@ const _DashboardFundCard: React.FC<Props> = ({
   );
 };
 
-const DashboardFundCard = React.memo(_DashboardFundCard);
+const DashboardFundCard = _DashboardFundCard;
 export default DashboardFundCard;
 
 interface Props {

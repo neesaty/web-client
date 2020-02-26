@@ -40,5 +40,5 @@ const _NavSubItem: React.FC<INavSubItemProps> = ({
     </li>
   );
 };
-const NavSubItem = React.memo(_NavSubItem);
+const NavSubItem = _NavSubItem;
 export default NavSubItem;

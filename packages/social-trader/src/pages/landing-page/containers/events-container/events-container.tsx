@@ -21,5 +21,5 @@ const _FollowsContainer: React.FC<Props> = ({ events }) => {
     </section>
   );
 };
-const EventsContainer = React.memo(_FollowsContainer);
+const EventsContainer = _FollowsContainer;
 export default EventsContainer;

@@ -53,5 +53,5 @@ interface Props extends IDialogProps {
   onApply: () => void;
 }
 
-const UnfollowContainer = React.memo(_UnfollowContainer);
+const UnfollowContainer = _UnfollowContainer;
 export default UnfollowContainer;

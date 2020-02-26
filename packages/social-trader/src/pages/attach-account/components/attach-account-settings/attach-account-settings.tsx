@@ -172,5 +172,5 @@ interface Props {
   onSubmit: (values: IAttachAccountSettingsFormValues) => void;
 }
 
-const AttachAccountSettings = withLoader(React.memo(_AttachAccountSettings));
+const AttachAccountSettings = withLoader(_AttachAccountSettings);
 export default AttachAccountSettings;

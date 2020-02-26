@@ -98,5 +98,5 @@ interface Props {
   onSubmit: (values: InvesmentLimitFormValues) => void;
 }
 
-const InvestmentLimit = React.memo(_InvestmentLimit);
+const InvestmentLimit = _InvestmentLimit;
 export default InvestmentLimit;

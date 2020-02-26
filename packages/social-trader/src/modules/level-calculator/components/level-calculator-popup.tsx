@@ -270,9 +270,7 @@ const _LevelCalculatorPopup: React.FC<Props> = ({
   );
 };
 
-const LevelCalculatorPopup = withLoader(
-  React.memo(Crashable(_LevelCalculatorPopup))
-);
+const LevelCalculatorPopup = withLoader(Crashable(_LevelCalculatorPopup));
 export default LevelCalculatorPopup;
 
 interface Props extends ILevelCalculatorProps {

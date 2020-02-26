@@ -38,7 +38,7 @@ const _Sidebar: NextComponentType<{}, {}, Props> = ({
   );
 };
 
-const Sidebar = React.memo(_Sidebar);
+const Sidebar = _Sidebar;
 export default Sidebar;
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {

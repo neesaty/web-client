@@ -81,5 +81,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const ProgramFinancialStatistic = React.memo(_ProgramFinancialStatistic);
+const ProgramFinancialStatistic = _ProgramFinancialStatistic;
 export default ProgramFinancialStatistic;

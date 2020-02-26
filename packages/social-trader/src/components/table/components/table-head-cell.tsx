@@ -39,5 +39,5 @@ const _TableHeadCell: React.FC<ITableHeadCellProps> = ({
   );
 };
 
-const TableHeadCell = React.memo(_TableHeadCell);
+const TableHeadCell = _TableHeadCell;
 export default TableHeadCell;

@@ -10,5 +10,5 @@ const _HookFormAmountField: React.FC<Props> = props => {
 
 interface Props extends ISimpleInputAmountFieldProps {}
 
-const HookFormAmountField = React.memo(_HookFormAmountField);
+const HookFormAmountField = _HookFormAmountField;
 export default HookFormAmountField;

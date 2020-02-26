@@ -29,5 +29,5 @@ interface Props extends WithTranslation {
   className?: string;
 }
 
-const AssetStatusLabel = translate()(React.memo(_AssetStatusLabel));
+const AssetStatusLabel = translate()(_AssetStatusLabel);
 export default AssetStatusLabel;

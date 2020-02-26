@@ -78,4 +78,4 @@ interface Props {
   walletCurrency: CurrencyEnum;
 }
 
-export const InvestorFees = React.memo(Crashable(_InvestorFees));
+export const InvestorFees = Crashable(_InvestorFees);

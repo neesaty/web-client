@@ -80,7 +80,7 @@ const _ShareBlock: React.FC<{
     </div>
   );
 };
-const ShareBlock = React.memo(_ShareBlock);
+const ShareBlock = _ShareBlock;
 
 export const inviteBlockLoaderData = {
   userName: "",
@@ -89,4 +89,4 @@ export const inviteBlockLoaderData = {
   refUrl: ""
 } as ProfileFullViewModel;
 
-export const InviteBlock = withBlurLoader(React.memo(_InviteBlock));
+export const InviteBlock = withBlurLoader(_InviteBlock);

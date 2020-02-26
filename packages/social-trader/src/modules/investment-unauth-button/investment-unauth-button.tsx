@@ -36,4 +36,4 @@ interface Props extends DepositTopOwnProps {
   label: string;
 }
 
-export const InvestmentUnauthButton = React.memo(_InvestmentUnauthButton);
+export const InvestmentUnauthButton = _InvestmentUnauthButton;

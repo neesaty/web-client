@@ -28,5 +28,5 @@ interface Props {
   assetCurrency: CurrencyEnum;
 }
 
-const AccountDetailsSubscriptions = React.memo(_AccountDetailsSubscriptions);
+const AccountDetailsSubscriptions = _AccountDetailsSubscriptions;
 export default AccountDetailsSubscriptions;

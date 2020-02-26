@@ -27,4 +27,4 @@ const _AssetsField: React.FC<{ name: string }> = ({ name }) => {
     </AssetField>
   );
 };
-export const AssetsField = React.memo(_AssetsField);
+export const AssetsField = _AssetsField;

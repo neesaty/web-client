@@ -51,5 +51,5 @@ const _BrokerInfo: React.FC<Props> = ({
   );
 };
 
-const BrokerInfo = React.memo(_BrokerInfo);
+const BrokerInfo = _BrokerInfo;
 export default BrokerInfo;

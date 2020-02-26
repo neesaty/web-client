@@ -29,5 +29,5 @@ export interface IProgramUnfollowProps {
   onCancel?: () => void;
 }
 
-const Unfollow = React.memo(_Unfollow);
+const Unfollow = _Unfollow;
 export default Unfollow;

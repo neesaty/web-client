@@ -115,5 +115,5 @@ export interface ITableToolbarExternalProps {
   hide?: boolean;
 }
 
-const TableToolbar = React.memo(_TableToolbar);
+const TableToolbar = _TableToolbar;
 export default TableToolbar;

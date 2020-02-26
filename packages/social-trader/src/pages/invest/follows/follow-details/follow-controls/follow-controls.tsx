@@ -70,5 +70,5 @@ interface Props {
   brokerDetails: BrokerDetails;
 }
 
-const FollowControls = React.memo(Crashable(_FollowControls));
+const FollowControls = Crashable(_FollowControls);
 export default FollowControls;

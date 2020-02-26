@@ -29,5 +29,5 @@ interface Props {
   className?: string;
 }
 
-const WalletWidgetContainer = React.memo(_WalletWidgetContainer);
+const WalletWidgetContainer = _WalletWidgetContainer;
 export default WalletWidgetContainer;

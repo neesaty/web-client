@@ -23,5 +23,5 @@ interface Props {
   onClose: VoidFunction;
 }
 
-const WalletAddFundsPopup = React.memo(_WalletAddFundsPopup);
+const WalletAddFundsPopup = _WalletAddFundsPopup;
 export default WalletAddFundsPopup;

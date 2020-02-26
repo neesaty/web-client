@@ -25,5 +25,5 @@ const _DashboardInRequestsContainer: React.FC = () => {
   );
 };
 
-const DashboardInRequestsContainer = React.memo(_DashboardInRequestsContainer);
+const DashboardInRequestsContainer = _DashboardInRequestsContainer;
 export default DashboardInRequestsContainer;

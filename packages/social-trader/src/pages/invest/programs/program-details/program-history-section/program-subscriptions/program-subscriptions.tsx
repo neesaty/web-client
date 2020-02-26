@@ -67,5 +67,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const ProgramSubscriptions = React.memo(_ProgramSubscriptions);
+const ProgramSubscriptions = _ProgramSubscriptions;
 export default ProgramSubscriptions;

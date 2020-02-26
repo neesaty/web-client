@@ -71,5 +71,5 @@ interface OwnProps {
   id: string;
 }
 
-const FundDetailsHistorySection = React.memo(_FundDetailsHistorySection);
+const FundDetailsHistorySection = _FundDetailsHistorySection;
 export default FundDetailsHistorySection;

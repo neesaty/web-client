@@ -16,5 +16,5 @@ const _BrokerAdvantage: React.FC<TBrokerItem> = ({ text, number, imageBg }) => {
     </li>
   );
 };
-const BrokerAdvantage = React.memo(_BrokerAdvantage);
+const BrokerAdvantage = _BrokerAdvantage;
 export default BrokerAdvantage;

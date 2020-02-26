@@ -80,5 +80,5 @@ const _BrokersContainer: React.FC<Props> = ({
   );
 };
 
-const BrokersContainer = React.memo(_BrokersContainer);
+const BrokersContainer = _BrokersContainer;
 export default BrokersContainer;

@@ -13,5 +13,5 @@ const _ProgramTableSortingValue: React.FC<{ column: SortingColumn }> = ({
   return t(`programs-page.programs-header.${column.name}`);
 };
 
-const ProgramTableSortingValue = React.memo(_ProgramTableSortingValue);
+const ProgramTableSortingValue = _ProgramTableSortingValue;
 export default ProgramTableSortingValue;

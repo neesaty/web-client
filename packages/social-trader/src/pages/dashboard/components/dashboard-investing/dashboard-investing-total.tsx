@@ -40,7 +40,5 @@ interface Props {
   data: TDashboardInvestingStatistic;
 }
 
-const DashboardInvestingTotal = withBlurLoader(
-  React.memo(_DashboardInvestingTotal)
-);
+const DashboardInvestingTotal = withBlurLoader(_DashboardInvestingTotal);
 export default DashboardInvestingTotal;

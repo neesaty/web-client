@@ -21,7 +21,7 @@ export const _PagerLinkButton: React.FC<Props> = ({
     </Link>
   );
 };
-export const PagerLinkButton = React.memo(_PagerLinkButton);
+export const PagerLinkButton = _PagerLinkButton;
 export default PagerLinkButton;
 
 interface Props {

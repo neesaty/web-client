@@ -129,5 +129,5 @@ const _FeesGeneral: React.FC = () => (
   </div>
 );
 
-const FeesGeneral = React.memo(_FeesGeneral);
+const FeesGeneral = _FeesGeneral;
 export default FeesGeneral;

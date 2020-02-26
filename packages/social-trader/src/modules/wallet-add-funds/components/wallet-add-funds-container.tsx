@@ -27,5 +27,5 @@ interface Props {
   currentCurrency: CurrencyEnum;
 }
 
-const WalletAddFundsContainer = React.memo(_WalletAddFundsContainer);
+const WalletAddFundsContainer = _WalletAddFundsContainer;
 export default WalletAddFundsContainer;

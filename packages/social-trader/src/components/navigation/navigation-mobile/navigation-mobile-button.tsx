@@ -42,5 +42,5 @@ interface Props {
   profileHeader?: ProfileHeaderViewModel;
 }
 
-const NavigationMobileButton = React.memo(_NavigationMobileButton);
+const NavigationMobileButton = _NavigationMobileButton;
 export default NavigationMobileButton;

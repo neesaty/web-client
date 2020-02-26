@@ -155,5 +155,5 @@ interface Props {
   onSubmit: (values: ICreateAccountSettingsFormValues) => void;
 }
 
-const CreateAccountSettings = React.memo(_CreateAccountSettings);
+const CreateAccountSettings = _CreateAccountSettings;
 export default CreateAccountSettings;

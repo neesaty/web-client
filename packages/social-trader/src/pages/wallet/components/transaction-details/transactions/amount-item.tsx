@@ -45,5 +45,5 @@ interface Props {
   amount: AmountItemType;
 }
 
-const AmountItem = React.memo(Crashable(_AmountItem));
+const AmountItem = Crashable(_AmountItem);
 export default AmountItem;

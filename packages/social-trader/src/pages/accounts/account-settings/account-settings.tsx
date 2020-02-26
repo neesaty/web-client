@@ -34,5 +34,5 @@ interface Props {
   closeProgram: () => void;
 }
 
-const AccountSettings = withLoader(React.memo(_AccountSettings));
+const AccountSettings = withLoader(_AccountSettings);
 export default AccountSettings;

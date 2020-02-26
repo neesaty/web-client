@@ -42,5 +42,5 @@ interface Props {
   assets: PlatformAssetFull[];
 }
 
-const ConfirmReallocate = React.memo(_ConfirmReallocate);
+const ConfirmReallocate = _ConfirmReallocate;
 export default ConfirmReallocate;

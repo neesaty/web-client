@@ -86,5 +86,5 @@ interface Props extends IDialogProps {
   ownAsset?: boolean;
 }
 
-const DepositContainer = React.memo(_DepositContainer);
+const DepositContainer = _DepositContainer;
 export default DepositContainer;

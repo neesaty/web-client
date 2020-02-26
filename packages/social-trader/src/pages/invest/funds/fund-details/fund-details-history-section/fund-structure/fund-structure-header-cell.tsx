@@ -18,7 +18,5 @@ export const _FundStructureHeaderCell: React.FC<WithTranslation & {
   </span>
 );
 
-const FundStructureHeaderCell = React.memo(
-  translate()(_FundStructureHeaderCell)
-);
+const FundStructureHeaderCell = translate()(_FundStructureHeaderCell);
 export default FundStructureHeaderCell;

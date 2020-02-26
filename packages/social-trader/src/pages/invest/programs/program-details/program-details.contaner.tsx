@@ -245,5 +245,5 @@ interface Props {
   data: ProgramDescriptionDataType;
 }
 
-const ProgramDetailsContainer = React.memo(Crashable(_ProgramDetailsContainer));
+const ProgramDetailsContainer = Crashable(_ProgramDetailsContainer);
 export default ProgramDetailsContainer;

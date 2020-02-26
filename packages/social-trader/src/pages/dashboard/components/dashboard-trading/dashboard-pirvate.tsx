@@ -59,5 +59,5 @@ const _DashboardPrivate: React.FC = () => {
   );
 };
 
-const DashboardPrivate = React.memo(_DashboardPrivate);
+const DashboardPrivate = _DashboardPrivate;
 export default DashboardPrivate;

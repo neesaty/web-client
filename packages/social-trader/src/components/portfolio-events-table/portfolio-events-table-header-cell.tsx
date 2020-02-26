@@ -13,7 +13,5 @@ const _PortfolioEventsTableHeaderCell: React.FC<{ column: SortingColumn }> = ({
   );
 };
 
-const PortfolioEventsTableHeaderCell = React.memo(
-  _PortfolioEventsTableHeaderCell
-);
+const PortfolioEventsTableHeaderCell = _PortfolioEventsTableHeaderCell;
 export default PortfolioEventsTableHeaderCell;

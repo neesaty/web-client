@@ -5,4 +5,4 @@ const _DetailsInvestmentFooter: React.FC<React.HTMLAttributes<
 >> = ({ children }) => {
   return <div className="details-investment-footer">{children}</div>;
 };
-export const DetailsInvestmentFooter = React.memo(_DetailsInvestmentFooter);
+export const DetailsInvestmentFooter = _DetailsInvestmentFooter;

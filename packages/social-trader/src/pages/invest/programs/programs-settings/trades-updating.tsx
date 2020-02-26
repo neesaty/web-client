@@ -49,5 +49,5 @@ interface Props {
   onSubmit: (values: TradesUpdatingFormValues) => void;
 }
 
-const TradesUpdating = withLoader(React.memo(_TradesUpdating));
+const TradesUpdating = withLoader(_TradesUpdating);
 export default TradesUpdating;

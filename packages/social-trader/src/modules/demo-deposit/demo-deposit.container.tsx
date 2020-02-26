@@ -54,5 +54,5 @@ export interface IDemoDepositContainerProps {
   id: string;
 }
 
-const DemoDepositContainer = React.memo(_DemoDepositContainer);
+const DemoDepositContainer = _DemoDepositContainer;
 export default DemoDepositContainer;

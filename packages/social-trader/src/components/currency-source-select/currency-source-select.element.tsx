@@ -16,4 +16,4 @@ interface Props extends GVTextFieldProps {
   items: CurrencySourceSelectItemsType;
 }
 
-export const CurrencySourceSelectElement = React.memo(_CurrencySourceSelect);
+export const CurrencySourceSelectElement = _CurrencySourceSelect;

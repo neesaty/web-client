@@ -90,7 +90,5 @@ interface Props {
   levelsParameters: LevelsParamsInfo;
 }
 
-const InvestmentProgramControls = React.memo(
-  Crashable(_InvestmentProgramControls)
-);
+const InvestmentProgramControls = Crashable(_InvestmentProgramControls);
 export default InvestmentProgramControls;

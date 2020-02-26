@@ -38,5 +38,5 @@ interface Props {
   periodType: TChartPeriod;
 }
 
-const DetailsStatisticsElements = React.memo(_DetailsStatisticsElements);
+const DetailsStatisticsElements = _DetailsStatisticsElements;
 export default DetailsStatisticsElements;

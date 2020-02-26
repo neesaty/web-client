@@ -23,5 +23,5 @@ interface Props {
   colors?: TChartCurrency[];
 }
 
-const MultiProfitChart = React.memo(_MultiProfitChart);
+const MultiProfitChart = _MultiProfitChart;
 export default MultiProfitChart;

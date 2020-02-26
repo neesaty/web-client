@@ -129,7 +129,5 @@ export interface CancelChangeBrokerFormOwnProps {
   migration: MigrationRequest;
 }
 
-const CancelChangeBrokerForm = withBlurLoader(
-  React.memo(_CancelChangeBrokerForm)
-);
+const CancelChangeBrokerForm = withBlurLoader(_CancelChangeBrokerForm);
 export default CancelChangeBrokerForm;

@@ -19,5 +19,5 @@ const _FundsTableHeaderCell: React.FC<Props> = ({ column }) => {
   );
 };
 
-const FundsTableHeaderCell = React.memo(_FundsTableHeaderCell);
+const FundsTableHeaderCell = _FundsTableHeaderCell;
 export default FundsTableHeaderCell;

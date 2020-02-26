@@ -56,5 +56,5 @@ const _DateRangeFilter: React.FC<IDateRangeFilterProps & WithTranslation> = ({
   );
 };
 
-const DateRangeFilter = translate()(React.memo(_DateRangeFilter));
+const DateRangeFilter = translate()(_DateRangeFilter);
 export default DateRangeFilter;

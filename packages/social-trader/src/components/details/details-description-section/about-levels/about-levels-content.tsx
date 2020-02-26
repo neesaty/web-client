@@ -37,7 +37,7 @@ const _Limits: React.FC<ILimitsProps> = ({ investmentsLimits, currency }) => {
     </>
   );
 };
-const Limits = React.memo<ILimitsProps>(_Limits);
+const Limits = _Limits;
 
 const _AboutLevelsContent: React.FC<Props> = ({
   investmentsLimits,
@@ -138,5 +138,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const AboutLevelsContent = React.memo(_AboutLevelsContent);
+const AboutLevelsContent = _AboutLevelsContent;
 export default AboutLevelsContent;

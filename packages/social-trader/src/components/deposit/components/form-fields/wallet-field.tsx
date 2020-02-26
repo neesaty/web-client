@@ -42,4 +42,4 @@ const _HookFormWalletField: React.FC<Props> = ({
     />
   );
 };
-export const HookFormWalletField = React.memo(_HookFormWalletField);
+export const HookFormWalletField = _HookFormWalletField;

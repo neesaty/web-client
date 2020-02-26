@@ -27,5 +27,5 @@ interface Props {
   logout: () => void;
 }
 
-const NavigationMobileContainer = React.memo(_NavigationMobileContainer);
+const NavigationMobileContainer = _NavigationMobileContainer;
 export default NavigationMobileContainer;

@@ -78,5 +78,5 @@ export interface IDisableAuthFormFormValues {
   [FIELDS.password]: string;
 }
 
-const DisableAuthForm = React.memo(_DisableAuthForm);
+const DisableAuthForm = _DisableAuthForm;
 export default DisableAuthForm;

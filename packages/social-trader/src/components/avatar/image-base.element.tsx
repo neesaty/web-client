@@ -57,7 +57,7 @@ const _ImageBaseElement: React.FC<IImageBaseElementProps> = ({
   );
 };
 
-const ImageBaseElement = React.memo(_ImageBaseElement);
+const ImageBaseElement = _ImageBaseElement;
 export default ImageBaseElement;
 
 export interface IImageBaseElementProps {

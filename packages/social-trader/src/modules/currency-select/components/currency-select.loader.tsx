@@ -2,7 +2,7 @@ import SvgLoader from "components/svg-loader/svg-loader";
 import FilterArrowIcon from "components/table/components/filtering/filter-arrow-icon";
 import * as React from "react";
 
-export const CurrencySelectLoader: React.FC = React.memo(() => (
+export const CurrencySelectLoader: React.FC = () => (
   <div className="select header__currency currency-select">
     <button className="select__value">
       <span className="select__text">
@@ -17,4 +17,4 @@ export const CurrencySelectLoader: React.FC = React.memo(() => (
       </span>
     </button>
   </div>
-));
+);

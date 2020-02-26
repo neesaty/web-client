@@ -44,8 +44,5 @@ interface Props {
 
 const WalletTotal = compose<
   React.ComponentType<Props & WithBlurLoaderProps<WalletSummary>>
->(
-  withBlurLoader,
-  React.memo
-)(_WalletTotal);
+>(withBlurLoader)(_WalletTotal);
 export default WalletTotal;

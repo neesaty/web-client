@@ -19,5 +19,5 @@ const _ProgramTableHeaderCell: React.FC<{ column: SortingColumn }> = ({
   );
 };
 
-const ProgramTableHeaderCell = React.memo(_ProgramTableHeaderCell);
+const ProgramTableHeaderCell = _ProgramTableHeaderCell;
 export default ProgramTableHeaderCell;

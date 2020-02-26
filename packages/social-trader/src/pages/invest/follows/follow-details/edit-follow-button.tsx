@@ -47,5 +47,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const EditFollowButton = React.memo(_EditFollowButton);
+const EditFollowButton = _EditFollowButton;
 export default EditFollowButton;

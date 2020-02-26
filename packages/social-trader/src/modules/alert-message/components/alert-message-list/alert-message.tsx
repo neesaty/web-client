@@ -40,5 +40,5 @@ interface Props {
   message: IMessage;
 }
 
-const AlertMessage = React.memo(_AlertMessage);
+const AlertMessage = _AlertMessage;
 export default AlertMessage;

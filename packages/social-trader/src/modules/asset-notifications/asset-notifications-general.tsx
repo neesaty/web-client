@@ -82,5 +82,5 @@ export interface INotification {
   label: string;
 }
 
-const AssetNotificationsGeneral = React.memo(_AssetNotificationsGeneral);
+const AssetNotificationsGeneral = _AssetNotificationsGeneral;
 export default AssetNotificationsGeneral;

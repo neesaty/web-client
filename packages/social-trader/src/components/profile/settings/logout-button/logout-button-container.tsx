@@ -24,5 +24,5 @@ const _LogoutButtonContainer: React.FC = () => {
   );
 };
 
-const LogoutButtonContainer = React.memo(_LogoutButtonContainer);
+const LogoutButtonContainer = _LogoutButtonContainer;
 export default LogoutButtonContainer;

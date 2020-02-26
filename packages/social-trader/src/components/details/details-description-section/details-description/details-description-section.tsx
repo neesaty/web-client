@@ -88,5 +88,5 @@ interface Props {
   Controls?: React.ComponentType<any>;
 }
 
-const DetailsDescriptionSection = React.memo(_DetailsDescriptionSection);
+const DetailsDescriptionSection = _DetailsDescriptionSection;
 export default DetailsDescriptionSection;

@@ -47,5 +47,5 @@ interface ISignalProgramInfoProps {
   volumeFee: number;
 }
 
-const SignalInfo = React.memo(_SignalInfo);
+const SignalInfo = _SignalInfo;
 export default SignalInfo; // TODO refactor

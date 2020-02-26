@@ -96,5 +96,5 @@ interface Props {
   description?: string;
 }
 
-const DetailsDescription = React.memo(_DetailsDescription);
+const DetailsDescription = _DetailsDescription;
 export default DetailsDescription;

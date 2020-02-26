@@ -57,7 +57,6 @@ interface StateProps {
 
 const FollowNotificationsContainer = compose<React.ComponentType<OwnProps>>(
   translate(),
-  connect<StateProps, null, OwnProps, AuthRootState>(mapStateToProps),
-  React.memo
+  connect<StateProps, null, OwnProps, AuthRootState>(mapStateToProps)
 )(_FollowNotificationsContainer);
 export default FollowNotificationsContainer;

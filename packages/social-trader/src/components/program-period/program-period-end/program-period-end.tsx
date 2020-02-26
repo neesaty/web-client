@@ -18,7 +18,7 @@ interface OwnProps {
   periodEnds: Date;
 }
 
-const ProgramPeriodEnd = compose<React.ComponentType<OwnProps>>(React.memo)(
+const ProgramPeriodEnd = compose<React.ComponentType<OwnProps>>()(
   _ProgramPeriodEnd
 );
 export default ProgramPeriodEnd;

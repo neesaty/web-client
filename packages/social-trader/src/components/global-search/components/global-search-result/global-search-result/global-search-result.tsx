@@ -61,7 +61,7 @@ interface ITabProps {
   tab: SEARCH_TABS;
 }
 
-const Tab: React.FC<ITabProps> = React.memo(({ data, tab }) => {
+const Tab: React.FC<ITabProps> = ({ data, tab }) => {
   switch (tab) {
     case SEARCH_TABS.MANAGERS:
       return (
@@ -90,7 +90,7 @@ const Tab: React.FC<ITabProps> = React.memo(({ data, tab }) => {
     default:
       return null;
   }
-});
+};
 
 export interface SearchTableProps<T> {
   data: T;
@@ -100,5 +100,5 @@ interface Props {
   data: CommonPublicAssetsViewModel;
 }
 
-const GlobalSearchResult = withBlurLoader(React.memo(_GlobalSearchResult));
+const GlobalSearchResult = withBlurLoader(_GlobalSearchResult);
 export default GlobalSearchResult;

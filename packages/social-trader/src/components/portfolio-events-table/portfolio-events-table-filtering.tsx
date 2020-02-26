@@ -89,7 +89,5 @@ interface Props {
   filtering: FilteringType;
 }
 
-const PortfolioEventsTableFiltering = React.memo(
-  _PortfolioEventsTableFiltering
-);
+const PortfolioEventsTableFiltering = _PortfolioEventsTableFiltering;
 export default PortfolioEventsTableFiltering;

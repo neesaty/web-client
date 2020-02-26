@@ -34,5 +34,5 @@ interface Props {
   value: string;
 }
 
-const CopyButton = React.memo(_CopyButton);
+const CopyButton = _CopyButton;
 export default CopyButton;

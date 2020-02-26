@@ -9,7 +9,7 @@ export const DashboardInvestingCounts: React.FC<{
   currency: CurrencyEnum;
   programs: number;
   funds: number;
-}> = React.memo(({ balance, currency, programs, funds }) => {
+}> = ({ balance, currency, programs, funds }) => {
   const [t] = useTranslation();
   return (
     <StatisticItemList>
@@ -28,4 +28,4 @@ export const DashboardInvestingCounts: React.FC<{
       />
     </StatisticItemList>
   );
-});
+};

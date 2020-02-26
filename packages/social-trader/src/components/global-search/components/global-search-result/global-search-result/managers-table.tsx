@@ -23,4 +23,4 @@ const ManagersTable: React.FC<SearchTableProps<ManagersList>> = ({ data }) => {
   );
 };
 
-export default React.memo(ManagersTable);
+export default ManagersTable;

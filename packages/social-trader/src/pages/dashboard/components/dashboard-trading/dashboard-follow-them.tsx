@@ -24,5 +24,5 @@ interface Props {
   data: FollowDetailsListItem[];
 }
 
-const DashboardFollowThem = withBlurLoader(React.memo(_DashboardFollowThem));
+const DashboardFollowThem = withBlurLoader(_DashboardFollowThem);
 export default DashboardFollowThem;

@@ -26,5 +26,5 @@ const _Navigation: React.FC<INavigationProps> = ({ menuItems, className }) => {
   );
 };
 
-const Navigation = React.memo(_Navigation);
+const Navigation = _Navigation;
 export default Navigation;

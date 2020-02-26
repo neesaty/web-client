@@ -72,5 +72,5 @@ export interface IRestorePasswordFormValues {
   confirmPassword: string;
 }
 
-const RestorePassword = React.memo(_RestorePassword);
+const RestorePassword = _RestorePassword;
 export default RestorePassword;

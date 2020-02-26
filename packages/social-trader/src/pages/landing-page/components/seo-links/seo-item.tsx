@@ -27,5 +27,5 @@ const _SeoItem: React.FC<ISeoItemProps> = ({ href, name, state, onClick }) => (
     )}
   </li>
 );
-const SeoItem = React.memo(_SeoItem);
+const SeoItem = _SeoItem;
 export default SeoItem;

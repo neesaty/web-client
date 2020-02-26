@@ -47,5 +47,5 @@ interface Props {
   onApply: () => any;
 }
 
-const InvestmentFundControls = React.memo(_InvestmentFundControls);
+const InvestmentFundControls = _InvestmentFundControls;
 export default InvestmentFundControls;

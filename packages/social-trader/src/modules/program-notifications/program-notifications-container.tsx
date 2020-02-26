@@ -61,6 +61,5 @@ interface StateProps {
 
 export default compose<React.ComponentType<OwnProps>>(
   translate(),
-  connect<StateProps, null, OwnProps, AuthRootState>(mapStateToProps),
-  React.memo
+  connect<StateProps, null, OwnProps, AuthRootState>(mapStateToProps)
 )(ProgramNotificationsContainer);

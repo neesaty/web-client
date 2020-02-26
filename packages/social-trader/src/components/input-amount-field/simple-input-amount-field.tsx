@@ -83,5 +83,5 @@ export interface ISimpleInputAmountFieldProps extends ISimpleNumberFieldProps {
   disabled?: boolean;
 }
 
-const SimpleInputAmountField = React.memo(_SimpleInputAmountField);
+const SimpleInputAmountField = _SimpleInputAmountField;
 export default SimpleInputAmountField;

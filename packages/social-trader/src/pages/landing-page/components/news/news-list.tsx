@@ -18,5 +18,5 @@ const _NewsList: React.FC<Props> = ({ className, newsItems }) => (
   </ul>
 );
 
-const NewsList = React.memo(_NewsList);
+const NewsList = _NewsList;
 export default NewsList;

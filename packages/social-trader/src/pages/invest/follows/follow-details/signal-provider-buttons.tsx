@@ -74,5 +74,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const SignalProviderButtons = React.memo(_SignalProviderButtons);
+const SignalProviderButtons = _SignalProviderButtons;
 export default SignalProviderButtons;

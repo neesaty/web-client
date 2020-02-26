@@ -65,5 +65,5 @@ interface Props extends WithTranslation {
   changeFilter?: (value: number[]) => void;
 }
 
-const LevelFilterPopover = translate()(React.memo(_LevelFilterPopover));
+const LevelFilterPopover = translate()(_LevelFilterPopover);
 export default LevelFilterPopover;

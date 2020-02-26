@@ -18,5 +18,5 @@ const _NewsItem: React.FC<PlatformNews> = ({ title, body, isHot, url }) => (
     </a>
   </li>
 );
-const NewsItem = React.memo(_NewsItem);
+const NewsItem = _NewsItem;
 export default NewsItem;

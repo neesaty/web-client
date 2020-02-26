@@ -47,5 +47,5 @@ interface Props {
   handleCloseDropdown: () => void;
 }
 
-const AssetStatusRequestsContainer = React.memo(_AssetStatusRequestsContainer);
+const AssetStatusRequestsContainer = _AssetStatusRequestsContainer;
 export default AssetStatusRequestsContainer;

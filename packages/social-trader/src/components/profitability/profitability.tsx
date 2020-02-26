@@ -35,7 +35,7 @@ export const _Profitability: React.FC<Props> = ({
   </BaseProfitability>
 );
 
-const Profitability = React.memo(withLoader(_Profitability));
+const Profitability = withLoader(_Profitability);
 
 export default Profitability;
 

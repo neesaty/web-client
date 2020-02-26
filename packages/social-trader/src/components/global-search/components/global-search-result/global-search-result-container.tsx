@@ -35,5 +35,5 @@ interface Props {
   query?: string;
 }
 
-const GlobalSearchResultContainer = React.memo(_GlobalSearchResultContainer);
+const GlobalSearchResultContainer = _GlobalSearchResultContainer;
 export default GlobalSearchResultContainer;

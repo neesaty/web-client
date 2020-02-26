@@ -50,5 +50,5 @@ interface Props {
   currentItemContainer: TRANSFER_CONTAINER;
 }
 
-const TransferPopup = React.memo(_TransferPopup);
+const TransferPopup = _TransferPopup;
 export default TransferPopup;

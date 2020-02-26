@@ -28,5 +28,5 @@ interface Props {
   description: FollowDetailsDataType;
 }
 
-const PerformanceData = React.memo(_PerformanceData);
+const PerformanceData = _PerformanceData;
 export default PerformanceData;

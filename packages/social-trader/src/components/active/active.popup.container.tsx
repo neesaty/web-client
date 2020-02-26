@@ -20,5 +20,5 @@ interface Props {
   active: string;
 }
 
-const ActivePopupContainer = React.memo(_ActivePopupContainer);
+const ActivePopupContainer = _ActivePopupContainer;
 export default ActivePopupContainer;

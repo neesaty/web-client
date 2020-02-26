@@ -23,7 +23,6 @@ const EmailConfirmFailure = compose<
   React.ComponentType<OwnProps & WithLoaderProps>
 >(
   withLoader,
-  translate(),
-  React.memo
+  translate()
 )(_EmailConfirmFailure);
 export default EmailConfirmFailure;

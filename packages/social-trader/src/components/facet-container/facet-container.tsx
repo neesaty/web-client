@@ -86,5 +86,5 @@ export enum FACET_ASSET {
   FOLLOWS = "followInfo"
 }
 
-const FacetContainer = React.memo(_FacetContainer);
+const FacetContainer = _FacetContainer;
 export default FacetContainer;

@@ -57,5 +57,5 @@ interface Props {
   onSubmit: () => void;
 }
 
-const GoogleAuthContainer = React.memo(_GoogleAuthContainer);
+const GoogleAuthContainer = _GoogleAuthContainer;
 export default GoogleAuthContainer;

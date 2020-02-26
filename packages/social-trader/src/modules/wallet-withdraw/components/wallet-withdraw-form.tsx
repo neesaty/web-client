@@ -186,5 +186,5 @@ interface Props {
   errorMessage?: string;
 }
 
-const WalletWithdrawForm = React.memo(_WalletWithdrawForm);
+const WalletWithdrawForm = _WalletWithdrawForm;
 export default WalletWithdrawForm;

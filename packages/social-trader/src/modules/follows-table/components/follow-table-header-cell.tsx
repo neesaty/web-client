@@ -19,5 +19,5 @@ const _FollowTableHeaderCell: React.FC<{ column: SortingColumn }> = ({
   );
 };
 
-const FollowTableHeaderCell = React.memo(_FollowTableHeaderCell);
+const FollowTableHeaderCell = _FollowTableHeaderCell;
 export default FollowTableHeaderCell;

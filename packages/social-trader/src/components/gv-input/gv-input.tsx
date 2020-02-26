@@ -92,4 +92,4 @@ export interface IPropsGvInput {
   touched?: boolean;
 }
 
-export const GvInput = React.memo(_GvInput);
+export const GvInput = _GvInput;

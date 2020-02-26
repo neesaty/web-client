@@ -92,5 +92,5 @@ interface Props {
   assetCurrency: CurrencyEnum;
 }
 
-const DepositDetailsBlock = React.memo(_DepositDetailsBlock);
+const DepositDetailsBlock = _DepositDetailsBlock;
 export default DepositDetailsBlock;

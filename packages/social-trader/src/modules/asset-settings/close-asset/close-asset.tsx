@@ -53,5 +53,5 @@ export type CloseableAssetType =
   | PrivateTradingAccountType
   | AssetTypeExt;
 
-const CloseAsset = React.memo(_CloseAsset);
+const CloseAsset = _CloseAsset;
 export default CloseAsset;

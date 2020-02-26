@@ -25,5 +25,5 @@ interface Props {
   redirectFrom: string;
 }
 
-const RecoveryPage = React.memo(_RecoveryPage);
+const RecoveryPage = _RecoveryPage;
 export default RecoveryPage;

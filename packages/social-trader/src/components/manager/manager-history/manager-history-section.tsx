@@ -72,5 +72,5 @@ interface Props {
   title: string;
 }
 
-const ManagerHistorySection = React.memo(_ManagerHistorySection);
+const ManagerHistorySection = _ManagerHistorySection;
 export default ManagerHistorySection;

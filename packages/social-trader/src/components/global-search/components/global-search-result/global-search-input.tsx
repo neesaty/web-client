@@ -40,7 +40,7 @@ export const SearchInputField: React.FC<{
   );
 };
 
-const GlobalSearchInput: React.FC<Props> = React.memo(({ query, onChange }) => {
+const GlobalSearchInput: React.FC<Props> = ({ query, onChange }) => {
   const handleOnChange = useCallback(
     (event: React.ChangeEvent<any>) => onChange(event.target.value),
     [onChange]
@@ -53,7 +53,7 @@ const GlobalSearchInput: React.FC<Props> = React.memo(({ query, onChange }) => {
       <SearchInputField value={query} onChange={handleOnChange} />
     </div>
   );
-});
+};
 
 interface Props {
   onChange(value: string): void;

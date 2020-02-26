@@ -159,7 +159,7 @@ const _DepositForm: React.FC<Props> = ({
   );
 };
 
-const DepositForm = React.memo(_DepositForm);
+const DepositForm = _DepositForm;
 export default DepositForm;
 
 export interface Props {

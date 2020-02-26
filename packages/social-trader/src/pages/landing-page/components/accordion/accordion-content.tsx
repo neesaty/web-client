@@ -77,5 +77,5 @@ _AccordionContent.defaultProps = {
   forceSlideIn: false
 };
 
-const AccordionContent = React.memo(_AccordionContent);
+const AccordionContent = _AccordionContent;
 export default AccordionContent;

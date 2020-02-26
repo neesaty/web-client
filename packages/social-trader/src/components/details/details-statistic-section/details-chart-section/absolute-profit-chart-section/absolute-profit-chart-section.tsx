@@ -62,5 +62,5 @@ export interface IAbsoluteProfitChartSectionProps {
   renderProfitValue: TRenderProfitValue;
 }
 
-const AbsoluteProfitChartSection = React.memo(_AbsoluteProfitChartSection);
+const AbsoluteProfitChartSection = _AbsoluteProfitChartSection;
 export default AbsoluteProfitChartSection;

@@ -62,5 +62,5 @@ export interface IProfitChartSectionProps {
   renderProfitValue: TRenderProfitValue;
 }
 
-const ProfitChartSection = React.memo(_ProfitChartSection);
+const ProfitChartSection = _ProfitChartSection;
 export default ProfitChartSection;

@@ -56,5 +56,5 @@ const _SignalsFeeFormPartial: React.FC<ISignalsFeeFormPartialProps> = ({
   );
 };
 
-const SignalsFeeFormPartial = React.memo(_SignalsFeeFormPartial);
+const SignalsFeeFormPartial = _SignalsFeeFormPartial;
 export default SignalsFeeFormPartial;

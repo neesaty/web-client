@@ -63,5 +63,5 @@ interface Props {
   withAsset?: boolean;
 }
 
-const PortfolioEventLogo = React.memo(Crashable(_PortfolioEventLogo));
+const PortfolioEventLogo = Crashable(_PortfolioEventLogo);
 export default PortfolioEventLogo;

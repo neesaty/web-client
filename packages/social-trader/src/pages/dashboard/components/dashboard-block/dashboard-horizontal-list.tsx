@@ -32,5 +32,5 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   darkShadow?: boolean;
 }
 
-const DashboardHorizontalList = React.memo(_DashboardHorizontalList);
+const DashboardHorizontalList = _DashboardHorizontalList;
 export default DashboardHorizontalList;

@@ -111,109 +111,115 @@ export const TableCardSubTitle: React.FC<{
   );
 };
 
-export const TableCardAvatar: React.FC<ITableCardAvatarProps> = React.memo(
-  ({ logo, hasAvatar, url, levelProgress, level, alt, color }) => {
-    const Avatar = hasAvatar ? (
-      <AssetAvatar
-        url={logo}
-        levelProgress={levelProgress}
-        level={level}
-        alt={alt || ""}
-        color={color}
-        size="medium"
-        tooltip={
-          level ? <LevelTooltip level={level} canLevelUp={false} /> : undefined
-        }
-      />
-    ) : (
-      <ImageBase className="table-card__broker-avatar" src={logo} alt={alt} />
-    );
-    return (
-      <div className="table-card__avatar">
-        {url ? (
-          <Link title={`Open ${alt} details`} to={url}>
-            {Avatar}
-          </Link>
-        ) : (
-          Avatar
-        )}
-      </div>
-    );
-  }
-);
+export const TableCardAvatar: React.FC<ITableCardAvatarProps> = ({
+  logo,
+  hasAvatar,
+  url,
+  levelProgress,
+  level,
+  alt,
+  color
+}) => {
+  const Avatar = hasAvatar ? (
+    <AssetAvatar
+      url={logo}
+      levelProgress={levelProgress}
+      level={level}
+      alt={alt || ""}
+      color={color}
+      size="medium"
+      tooltip={
+        level ? <LevelTooltip level={level} canLevelUp={false} /> : undefined
+      }
+    />
+  ) : (
+    <ImageBase className="table-card__broker-avatar" src={logo} alt={alt} />
+  );
+  return (
+    <div className="table-card__avatar">
+      {url ? (
+        <Link title={`Open ${alt} details`} to={url}>
+          {Avatar}
+        </Link>
+      ) : (
+        Avatar
+      )}
+    </div>
+  );
+};
 
-export const TableCardTopBlock: React.FC<ITableCardTopBlockProps> = React.memo(
-  ({
-    level,
-    levelProgress,
-    hasAvatar,
-    logo,
-    managerUrl,
-    detailsUrl,
-    renderActions,
-    extraBlock,
-    title,
-    subTitle,
-    color
-  }) => {
-    const { anchor, setAnchor, clearAnchor } = useAnchor();
-    return (
-      <TableCardRow>
-        <TableCardAvatar
-          logo={logo}
-          hasAvatar={hasAvatar}
-          alt={title}
-          color={color}
-          level={level}
-          levelProgress={levelProgress}
-          url={detailsUrl}
-        />
-        <div className="table-card__main-info">
-          <div className="table-card__title-wrapper">
-            <TableCardTitle url={detailsUrl}>{title}</TableCardTitle>
-            {subTitle && (
-              <TableCardSubTitle url={managerUrl}>{subTitle}</TableCardSubTitle>
-            )}
-          </div>
-          {renderActions && (
-            <div className="table-card__actions">
-              <ActionsCircleIcon primary={!!anchor} onClick={setAnchor} />
-              {renderActions({ clearAnchor, anchor })}
-            </div>
-          )}
-          {extraBlock}
-        </div>
-      </TableCardRow>
-    );
-  }
-);
-
-export const TableCardChartBlock: React.FC<ITableCardChartBlockProps> = React.memo(
-  ({ chart, assetId, profit }) => (
+export const TableCardTopBlock: React.FC<ITableCardTopBlockProps> = ({
+  level,
+  levelProgress,
+  hasAvatar,
+  logo,
+  managerUrl,
+  detailsUrl,
+  renderActions,
+  extraBlock,
+  title,
+  subTitle,
+  color
+}) => {
+  const { anchor, setAnchor, clearAnchor } = useAnchor();
+  return (
     <TableCardRow>
-      <div className="table-card__chart">
-        <ProgramSimpleChart data={chart} />
-      </div>
-      <div className="table-card__chart-info">
-        <div className="table-card__profit">
-          {profit !== undefined && (
-            <Profitability
-              value={formatValue(profit, 2)}
-              variant={PROFITABILITY_VARIANT.CHIPS}
-              prefix={PROFITABILITY_PREFIX.ARROW}
-            >
-              <NumberFormat
-                value={formatValue(profit, 2)}
-                suffix="%"
-                allowNegative={false}
-                displayType="text"
-              />
-            </Profitability>
+      <TableCardAvatar
+        logo={logo}
+        hasAvatar={hasAvatar}
+        alt={title}
+        color={color}
+        level={level}
+        levelProgress={levelProgress}
+        url={detailsUrl}
+      />
+      <div className="table-card__main-info">
+        <div className="table-card__title-wrapper">
+          <TableCardTitle url={detailsUrl}>{title}</TableCardTitle>
+          {subTitle && (
+            <TableCardSubTitle url={managerUrl}>{subTitle}</TableCardSubTitle>
           )}
         </div>
+        {renderActions && (
+          <div className="table-card__actions">
+            <ActionsCircleIcon primary={!!anchor} onClick={setAnchor} />
+            {renderActions({ clearAnchor, anchor })}
+          </div>
+        )}
+        {extraBlock}
       </div>
     </TableCardRow>
-  )
+  );
+};
+
+export const TableCardChartBlock: React.FC<ITableCardChartBlockProps> = ({
+  chart,
+  assetId,
+  profit
+}) => (
+  <TableCardRow>
+    <div className="table-card__chart">
+      <ProgramSimpleChart data={chart} />
+    </div>
+    <div className="table-card__chart-info">
+      <div className="table-card__profit">
+        {profit !== undefined && (
+          <Profitability
+            value={formatValue(profit, 2)}
+            variant={PROFITABILITY_VARIANT.CHIPS}
+            prefix={PROFITABILITY_PREFIX.ARROW}
+          >
+            <NumberFormat
+              value={formatValue(profit, 2)}
+              suffix="%"
+              allowNegative={false}
+              displayType="text"
+            />
+          </Profitability>
+        )}
+      </div>
+    </div>
+  </TableCardRow>
 );
 
 interface ITableCardAvatarProps {

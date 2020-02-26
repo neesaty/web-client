@@ -93,7 +93,7 @@ const _ProgramWithdrawPopup: React.FC<Props> = ({
   );
 };
 
-const ProgramWithdrawPopup = withBlurLoader(React.memo(_ProgramWithdrawPopup));
+const ProgramWithdrawPopup = withBlurLoader(_ProgramWithdrawPopup);
 export default ProgramWithdrawPopup;
 
 interface Props extends OwnProps, IProgramWithdrawPopupProps {}

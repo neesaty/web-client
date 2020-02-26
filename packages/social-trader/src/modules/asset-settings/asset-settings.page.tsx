@@ -79,5 +79,5 @@ interface Props {
   ) => JSX.Element;
 }
 
-const AssetSettingsPage = React.memo(Crashable(_AssetsEditPage));
+const AssetSettingsPage = Crashable(_AssetsEditPage);
 export default AssetSettingsPage;

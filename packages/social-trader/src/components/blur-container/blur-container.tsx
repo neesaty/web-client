@@ -28,6 +28,4 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   blur: boolean;
 }
 
-export const BlurContainer = React.memo<React.FunctionComponent<Props>>(
-  _BlurContainer
-);
+export const BlurContainer = _BlurContainer;

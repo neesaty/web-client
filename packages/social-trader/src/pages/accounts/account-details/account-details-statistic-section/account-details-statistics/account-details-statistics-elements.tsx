@@ -206,7 +206,7 @@ export interface IAccountDetailsStatisticsElementsProps {
   data: IAccountStatisticData;
 }
 
-const AccountDetailsStatisticsElements = React.memo(
-  withBlurLoader(_AccountDetailsStatisticsElements)
+const AccountDetailsStatisticsElements = withBlurLoader(
+  _AccountDetailsStatisticsElements
 );
 export default AccountDetailsStatisticsElements;

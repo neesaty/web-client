@@ -55,5 +55,5 @@ interface Props {
   asset: ASSET;
 }
 
-const NotificationAssets = React.memo(withLoader(_NotificationAssets));
+const NotificationAssets = withLoader(_NotificationAssets);
 export default NotificationAssets;

@@ -67,5 +67,5 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   fixed?: boolean;
 }
 
-const Modal = React.memo(_Modal);
+const Modal = _Modal;
 export default Modal;

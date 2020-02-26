@@ -42,7 +42,7 @@ const _FundAssetPopover: React.FC<Props> = ({ values, changeFilter }) => {
   );
 };
 
-const FundAssetPopover = React.memo(_FundAssetPopover);
+const FundAssetPopover = _FundAssetPopover;
 export default FundAssetPopover;
 
 interface Props {

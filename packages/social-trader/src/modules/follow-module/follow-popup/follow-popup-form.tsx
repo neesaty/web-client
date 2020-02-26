@@ -149,5 +149,5 @@ interface Props {
   currency?: CurrencyEnum;
 }
 
-const FollowForm = withBlurLoader(React.memo(_FollowForm));
+const FollowForm = withBlurLoader(_FollowForm);
 export default FollowForm;

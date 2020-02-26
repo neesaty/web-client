@@ -11,4 +11,4 @@ const _TooltipContent: React.FC<{ fixed?: boolean } & React.HTMLAttributes<
   );
 };
 
-export const TooltipContent = React.memo(_TooltipContent);
+export const TooltipContent = _TooltipContent;

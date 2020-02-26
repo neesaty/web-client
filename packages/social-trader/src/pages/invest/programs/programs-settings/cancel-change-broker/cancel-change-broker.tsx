@@ -15,5 +15,5 @@ const _ChangeChangeBroker: React.FC<ICancelChangeBrokerFormContainerProps> = pro
   );
 };
 
-const ChangeChangeBroker = withLoader(React.memo(_ChangeChangeBroker));
+const ChangeChangeBroker = withLoader(_ChangeChangeBroker);
 export default ChangeChangeBroker;

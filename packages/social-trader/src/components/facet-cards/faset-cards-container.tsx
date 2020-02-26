@@ -30,7 +30,7 @@ export const _FacetCardsContainer: React.FC<Props> = ({
   );
 };
 
-const FacetCardsContainer = React.memo(_FacetCardsContainer);
+const FacetCardsContainer = _FacetCardsContainer;
 export default FacetCardsContainer;
 
 interface Props {

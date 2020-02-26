@@ -38,5 +38,5 @@ interface Props {
   request: (...args: any) => any;
 }
 
-const DashboardPieChartBlock = React.memo(_DashboardPieChartBlock);
+const DashboardPieChartBlock = _DashboardPieChartBlock;
 export default DashboardPieChartBlock;

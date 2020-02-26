@@ -63,5 +63,5 @@ interface Props {
   y?: number;
 }
 
-const SimpleChart = React.memo(_SimpleChart);
+const SimpleChart = _SimpleChart;
 export default SimpleChart;

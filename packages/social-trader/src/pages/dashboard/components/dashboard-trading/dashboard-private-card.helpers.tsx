@@ -19,7 +19,7 @@ export const MakeProgramButton: React.FC<{
   isEnoughMoney: boolean;
   id: string;
   clearAnchor: (event: TEvent) => void;
-}> = React.memo(({ isEnoughMoney, id, clearAnchor, necessaryMoney }) => {
+}> = ({ isEnoughMoney, id, clearAnchor, necessaryMoney }) => {
   const { linkCreator } = useToLink();
   const [t] = useTranslation();
   const makeProgramLinkMethod = makeProgramLinkCreator({
@@ -46,12 +46,12 @@ export const MakeProgramButton: React.FC<{
       </MutedText>
     </GVButton>
   );
-});
+};
 
 export const ConfirmTFAButton: React.FC<{
   onApply: VoidFunction;
   id: string;
-}> = React.memo(({ onApply, id }) => {
+}> = ({ onApply, id }) => {
   const { t } = useTranslation();
   const [isOpen, setOpen, setClose] = useIsOpen();
   return (
@@ -67,7 +67,7 @@ export const ConfirmTFAButton: React.FC<{
       />
     </>
   );
-});
+};
 
 export const getMinDepositCreateProgram = (
   programMinDepositAmounts: ProgramMinInvestAmount[],

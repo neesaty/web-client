@@ -20,5 +20,5 @@ interface Props {
   data: TDashboardInRequests;
 }
 
-const DashboardInRequests = withBlurLoader(React.memo(_DashboardInRequests));
+const DashboardInRequests = withBlurLoader(_DashboardInRequests);
 export default DashboardInRequests;

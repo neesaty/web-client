@@ -118,5 +118,5 @@ interface Props {
   provider: AccountSubscriptionsDataType;
 }
 
-const SubscriptionsTableRow = React.memo(_SubscriptionsTableRow);
+const SubscriptionsTableRow = _SubscriptionsTableRow;
 export default SubscriptionsTableRow;

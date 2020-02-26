@@ -50,5 +50,5 @@ interface Props {
   redirectFrom: string;
 }
 
-const SignInContainer = React.memo(_SignInContainer);
+const SignInContainer = _SignInContainer;
 export default SignInContainer;

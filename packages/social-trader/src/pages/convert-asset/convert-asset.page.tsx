@@ -30,5 +30,5 @@ const _ConvertAssetPage: React.FC<Props> = ({
 
 interface Props extends IConvertAssetSettingsFormOwnProps {}
 
-const ConvertAssetPage = React.memo(_ConvertAssetPage);
+const ConvertAssetPage = _ConvertAssetPage;
 export default ConvertAssetPage;

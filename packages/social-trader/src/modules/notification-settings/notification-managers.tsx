@@ -30,7 +30,5 @@ interface Props extends WithTranslation {
   settings: ManagerNotificationSettingList[];
 }
 
-const NotificationManagers = React.memo(
-  withLoader(translate()(_NotificationManagers))
-);
+const NotificationManagers = withLoader(translate()(_NotificationManagers));
 export default NotificationManagers;

@@ -28,5 +28,5 @@ const _AccountSettingsPage: React.FC = () => {
   );
 };
 
-const AccountSettingsPage = React.memo(_AccountSettingsPage);
+const AccountSettingsPage = _AccountSettingsPage;
 export default AccountSettingsPage;

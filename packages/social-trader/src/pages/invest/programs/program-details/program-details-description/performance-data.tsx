@@ -124,5 +124,5 @@ interface Props {
   programDetails?: ProgramDetailsFull;
 }
 
-const PerformanceData = withBlurLoader(React.memo(_PerformanceData));
+const PerformanceData = withBlurLoader(_PerformanceData);
 export default PerformanceData;

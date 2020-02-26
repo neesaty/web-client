@@ -50,5 +50,5 @@ interface Props {
   onSelect: (values: string) => void;
 }
 
-const FollowSelectAccount = React.memo(_FollowSelectAccount);
+const FollowSelectAccount = _FollowSelectAccount;
 export default FollowSelectAccount;

@@ -25,5 +25,5 @@ interface Props {
   route: ASSET;
 }
 
-const ProgramDetailsPage = React.memo(_ProgramDetailsPage);
+const ProgramDetailsPage = _ProgramDetailsPage;
 export default ProgramDetailsPage;

@@ -20,4 +20,4 @@ interface Props {
   heading?: string;
 }
 
-export default React.memo(ChartTooltip);
+export default ChartTooltip;

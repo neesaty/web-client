@@ -102,5 +102,5 @@ interface Props {
   title: string;
 }
 
-const FundsTableSSR = React.memo(_FundsTableSSR);
+const FundsTableSSR = _FundsTableSSR;
 export default FundsTableSSR;

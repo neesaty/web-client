@@ -21,6 +21,6 @@ const _FilterArrowIcon: React.FC<{ isOpen?: boolean }> = ({ isOpen }) => (
   </svg>
 );
 
-const FilterArrowIcon = React.memo(_FilterArrowIcon);
+const FilterArrowIcon = _FilterArrowIcon;
 
 export default FilterArrowIcon;

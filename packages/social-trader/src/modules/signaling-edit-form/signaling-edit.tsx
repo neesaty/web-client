@@ -71,5 +71,5 @@ interface Props {
   onSubmit: (values: IProgramSignalFormValues) => void;
 }
 
-const SignalingEdit = React.memo(_SignalingEdit);
+const SignalingEdit = _SignalingEdit;
 export default SignalingEdit;

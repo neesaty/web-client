@@ -45,5 +45,5 @@ const _FirstScreen: React.FC<Props> = ({ news }) => {
   );
 };
 
-const FirstScreen = React.memo(_FirstScreen);
+const FirstScreen = _FirstScreen;
 export default FirstScreen;

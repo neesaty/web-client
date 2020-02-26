@@ -42,5 +42,5 @@ interface Props {
   data: any[];
 }
 
-const MultiPieContainer = React.memo(_MultiPieContainer);
+const MultiPieContainer = _MultiPieContainer;
 export default MultiPieContainer;

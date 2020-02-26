@@ -97,6 +97,4 @@ interface IDashboardPublicCardActionsProps {
   showTerminal: boolean;
   showClosePeriod: boolean;
 }
-export const DashboardPublicCardActions = React.memo(
-  _DashboardPublicCardActions
-);
+export const DashboardPublicCardActions = _DashboardPublicCardActions;

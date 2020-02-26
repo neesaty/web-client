@@ -53,5 +53,5 @@ interface Props {
   value?: ComposedRequestSelectValue;
 }
 
-const SelectFilterPopover = React.memo(_SelectFilterPopover);
+const SelectFilterPopover = _SelectFilterPopover;
 export default SelectFilterPopover;

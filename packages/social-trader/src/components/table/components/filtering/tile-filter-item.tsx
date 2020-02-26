@@ -25,7 +25,7 @@ const _TileFilterItem: React.FC<ITileFilterItemProps> = ({
   );
 };
 
-const TileFilterItem = React.memo(_TileFilterItem);
+const TileFilterItem = _TileFilterItem;
 export default TileFilterItem;
 
 export interface ITileFilterItemProps

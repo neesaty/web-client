@@ -59,5 +59,5 @@ interface Props {
   settings: NotificationSettingList;
 }
 
-const NotificationSettings = React.memo(withLoader(_NotificationSettings));
+const NotificationSettings = withLoader(_NotificationSettings);
 export default NotificationSettings;

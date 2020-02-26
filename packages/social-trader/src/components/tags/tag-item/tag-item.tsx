@@ -7,5 +7,5 @@ const _TagItem: React.FC<Tag> = ({ color, name }) => (
   <TagBubble color={color} content={name} />
 );
 
-const TagItem = React.memo(_TagItem);
+const TagItem = _TagItem;
 export default TagItem;

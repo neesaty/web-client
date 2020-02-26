@@ -27,5 +27,5 @@ interface Props {
   title: string;
 }
 
-const DownloadButtonToolbarAuth = React.memo(_DownloadButtonToolbarAuth);
+const DownloadButtonToolbarAuth = _DownloadButtonToolbarAuth;
 export default DownloadButtonToolbarAuth;

@@ -92,5 +92,5 @@ export type ValuesType = any; // TODO declare type
 
 interface Props extends OwnProps {}
 
-const CaptchaContainer = React.memo(_CaptchaContainer);
+const CaptchaContainer = _CaptchaContainer;
 export default CaptchaContainer;

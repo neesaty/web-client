@@ -48,5 +48,5 @@ interface Props {
   currentItem: WalletData;
 }
 
-const WalletBalanceButtons = React.memo(Crashable(_WalletBalanceButtons));
+const WalletBalanceButtons = Crashable(_WalletBalanceButtons);
 export default WalletBalanceButtons;

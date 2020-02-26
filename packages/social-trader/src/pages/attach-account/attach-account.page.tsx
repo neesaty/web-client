@@ -17,6 +17,6 @@ interface Props {
   requestBrokerName?: string;
 }
 
-const AttachAccountPage = React.memo(_AttachAccountPage);
+const AttachAccountPage = _AttachAccountPage;
 
 export default AttachAccountPage;

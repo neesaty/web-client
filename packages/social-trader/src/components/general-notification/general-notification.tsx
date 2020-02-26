@@ -64,5 +64,5 @@ interface Props {
   removeNotification: (opts: IRemoveNotificationSettingProps) => any;
 }
 
-const GeneralNotification = React.memo(_GeneralNotification);
+const GeneralNotification = _GeneralNotification;
 export default GeneralNotification;

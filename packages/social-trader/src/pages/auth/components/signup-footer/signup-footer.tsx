@@ -23,5 +23,5 @@ interface Props {
   ROUTE: string;
 }
 
-const SignUpFooter = React.memo(_SignUpFooter);
+const SignUpFooter = _SignUpFooter;
 export default SignUpFooter;

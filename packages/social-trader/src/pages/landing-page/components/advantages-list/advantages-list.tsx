@@ -34,5 +34,5 @@ const _AdvantagesList: React.FC<Props> = ({
   </ul>
 );
 
-const AdvantagesList = React.memo(_AdvantagesList);
+const AdvantagesList = _AdvantagesList;
 export default AdvantagesList;

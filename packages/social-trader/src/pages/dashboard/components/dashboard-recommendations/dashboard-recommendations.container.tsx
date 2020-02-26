@@ -33,7 +33,5 @@ const _DashboardRecommendationsContainer: React.FC = () => {
   );
 };
 
-const DashboardRecommendationsContainer = React.memo(
-  _DashboardRecommendationsContainer
-);
+const DashboardRecommendationsContainer = _DashboardRecommendationsContainer;
 export default DashboardRecommendationsContainer;

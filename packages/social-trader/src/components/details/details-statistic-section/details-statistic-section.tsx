@@ -47,5 +47,5 @@ const _DetailsStatisticSection: React.FC<Props> = ({
 
 interface Props extends IDetailsStatisticsProps, IDetailsChartProps {}
 
-const DetailsStatisticSection = React.memo(_DetailsStatisticSection);
+const DetailsStatisticSection = _DetailsStatisticSection;
 export default DetailsStatisticSection;

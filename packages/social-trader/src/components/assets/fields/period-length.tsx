@@ -35,5 +35,5 @@ interface Props {
   name: string;
 }
 
-const PeriodLength = React.memo(_PeriodLength);
+const PeriodLength = _PeriodLength;
 export default PeriodLength;

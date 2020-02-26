@@ -27,5 +27,5 @@ const _SecurityPage: React.FC = () => {
   );
 };
 
-const SecurityPage = React.memo(_SecurityPage);
+const SecurityPage = _SecurityPage;
 export default SecurityPage;

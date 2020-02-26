@@ -29,5 +29,5 @@ const _Paging: React.FC<IPagingProps> = ({ paging, updatePaging, asLink }) => {
   );
 };
 
-const Paging = withLoader(React.memo(_Paging));
+const Paging = withLoader(_Paging);
 export default Paging;

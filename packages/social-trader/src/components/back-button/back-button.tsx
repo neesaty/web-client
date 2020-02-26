@@ -14,5 +14,5 @@ export const _BackButton: React.FC = () => {
   );
 };
 
-const BackButton = React.memo(_BackButton);
+const BackButton = _BackButton;
 export default BackButton;

@@ -71,5 +71,5 @@ interface Props {
   brokers: Broker[];
 }
 
-const CreateAccountContainer = React.memo(_CreateAccountContainer);
+const CreateAccountContainer = _CreateAccountContainer;
 export default CreateAccountContainer;

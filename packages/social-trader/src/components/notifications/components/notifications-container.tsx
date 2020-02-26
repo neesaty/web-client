@@ -55,5 +55,5 @@ const _NotificationsContainer: React.FC = () => {
   );
 };
 
-const NotificationsContainer = React.memo(_NotificationsContainer);
+const NotificationsContainer = _NotificationsContainer;
 export default NotificationsContainer;

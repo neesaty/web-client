@@ -14,7 +14,7 @@ const _DashboardNewUserBlock: React.FC<Props> = ({ leftField, rightField }) => {
 
 const DashboardNewUserBlockField: React.FC<{
   field: NewUserFieldType;
-}> = React.memo(({ field: { linkLabel, link, text } }) => {
+}> = ({ field: { linkLabel, link, text } }) => {
   const { linkCreator } = useToLink();
   return (
     <div className="dashboard-new-user-block__field">
@@ -28,7 +28,7 @@ const DashboardNewUserBlockField: React.FC<{
       </div>
     </div>
   );
-});
+};
 
 interface Props {
   leftField: NewUserFieldType;
@@ -41,4 +41,4 @@ export type NewUserFieldType = {
   text: string | JSX.Element;
 };
 
-export const DashboardNewUserBlock = React.memo(_DashboardNewUserBlock);
+export const DashboardNewUserBlock = _DashboardNewUserBlock;

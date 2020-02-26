@@ -37,4 +37,4 @@ interface Props {
   accountType?: PrivateTradingAccountType | AssetTypeExt;
 }
 
-export const WithdrawTransferButton = React.memo(_WithdrawTransferButton);
+export const WithdrawTransferButton = _WithdrawTransferButton;

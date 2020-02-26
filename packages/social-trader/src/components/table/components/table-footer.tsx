@@ -38,5 +38,5 @@ const _TableFooter: React.FC<ITableFooterProps> = ({
   );
 };
 
-const TableFooter = withLoader(React.memo(_TableFooter));
+const TableFooter = withLoader(_TableFooter);
 export default TableFooter;

@@ -33,5 +33,5 @@ const _ManagersTableRow: React.FC<IManagersTableRowProps> = ({ manager }) => {
   );
 };
 
-const ManagersTableRow = React.memo(_ManagersTableRow);
+const ManagersTableRow = _ManagersTableRow;
 export default ManagersTableRow;

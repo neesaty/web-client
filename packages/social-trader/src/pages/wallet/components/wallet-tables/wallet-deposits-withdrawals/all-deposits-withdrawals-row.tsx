@@ -45,5 +45,5 @@ interface Props {
   update?: UpdateItemsFuncType;
 }
 
-const AllDepositsWithdrawalsRow = React.memo(_AllDepositsWithdrawalsRow);
+const AllDepositsWithdrawalsRow = _AllDepositsWithdrawalsRow;
 export default AllDepositsWithdrawalsRow;

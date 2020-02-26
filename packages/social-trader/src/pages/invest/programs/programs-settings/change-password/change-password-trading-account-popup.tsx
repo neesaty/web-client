@@ -52,7 +52,5 @@ interface Props extends IDialogProps {
   programName: string;
 }
 
-const ChangePasswordTradingAccountPopup = React.memo(
-  _ChangePasswordTradingAccountPopup
-);
+const ChangePasswordTradingAccountPopup = _ChangePasswordTradingAccountPopup;
 export default ChangePasswordTradingAccountPopup;

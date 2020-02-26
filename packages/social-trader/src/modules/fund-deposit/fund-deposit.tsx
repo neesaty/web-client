@@ -37,7 +37,7 @@ const _FundDeposit: React.FC<OwnProps & IDialogProps> = ({
   );
 };
 
-const FundDeposit = withLoader(React.memo(_FundDeposit));
+const FundDeposit = withLoader(_FundDeposit);
 export default FundDeposit;
 
 interface OwnProps {

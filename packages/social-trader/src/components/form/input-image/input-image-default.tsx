@@ -11,7 +11,7 @@ const InputImageDefault: React.FC<Props> = ({ src = "", defaultImage }) => {
   );
 };
 
-export default React.memo(InputImageDefault);
+export default InputImageDefault;
 
 interface Props {
   src?: string;

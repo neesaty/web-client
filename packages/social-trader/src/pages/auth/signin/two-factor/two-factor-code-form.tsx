@@ -117,5 +117,5 @@ interface Props {
   error: string;
   isChecking?: boolean;
 }
-const TwoFactorCodeForm = React.memo(_TwoFactorCodeForm);
+const TwoFactorCodeForm = _TwoFactorCodeForm;
 export default TwoFactorCodeForm;

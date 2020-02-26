@@ -19,4 +19,4 @@ const _ConvertCurrency: React.FC<{
     />
   </div>
 );
-export const ConvertCurrency = withLoader(React.memo(_ConvertCurrency));
+export const ConvertCurrency = withLoader(_ConvertCurrency);

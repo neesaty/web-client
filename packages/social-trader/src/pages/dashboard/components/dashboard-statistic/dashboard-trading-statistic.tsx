@@ -46,7 +46,7 @@ const _DashboardTradingStatistic: React.FC<Props> = ({
   );
 };
 
-const DashboardTradingEmpty: React.FC = React.memo(() => {
+const DashboardTradingEmpty: React.FC = () => {
   const [t] = useTranslation();
   return (
     <DashboardNewUserBlock
@@ -79,12 +79,12 @@ const DashboardTradingEmpty: React.FC = React.memo(() => {
       }}
     />
   );
-});
+};
 
 interface Props {
   landscapeTablet?: boolean;
   tablet?: boolean;
 }
 
-const DashboardTradingStatistic = React.memo(_DashboardTradingStatistic);
+const DashboardTradingStatistic = _DashboardTradingStatistic;
 export default DashboardTradingStatistic;

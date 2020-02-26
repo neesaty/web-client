@@ -69,5 +69,5 @@ export interface IForgotPasswordFormValues {
   [FORGOT_PASSWORD_FORM_FIELDS.email]: string;
 }
 
-const ForgotPasswordForm = React.memo(_ForgotPasswordForm);
+const ForgotPasswordForm = _ForgotPasswordForm;
 export default ForgotPasswordForm;

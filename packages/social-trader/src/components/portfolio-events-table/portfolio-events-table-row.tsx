@@ -75,7 +75,7 @@ const _PortfolioEventsTableRow: React.FC<Props> = ({
   </TableRow>
 );
 
-const PortfolioEventsTableRow = React.memo(_PortfolioEventsTableRow);
+const PortfolioEventsTableRow = _PortfolioEventsTableRow;
 export default PortfolioEventsTableRow;
 
 interface Props {

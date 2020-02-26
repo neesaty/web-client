@@ -17,5 +17,5 @@ interface Props {
   second?: JSX.Element | string;
 }
 
-const ConvertField = React.memo(_ConvertField);
+const ConvertField = _ConvertField;
 export default ConvertField;

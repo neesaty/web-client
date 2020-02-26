@@ -38,5 +38,5 @@ interface Props {
   programName: string;
   onApply?: VoidFunction;
 }
-const MakeSignalButton = React.memo(_MakeSignalButton);
+const MakeSignalButton = _MakeSignalButton;
 export default MakeSignalButton;

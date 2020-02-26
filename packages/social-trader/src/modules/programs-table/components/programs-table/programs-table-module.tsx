@@ -56,5 +56,5 @@ interface Props extends ITableModuleProps {
   title?: string;
 }
 
-const ProgramTableModule = React.memo(_ProgramTableModule);
+const ProgramTableModule = _ProgramTableModule;
 export default ProgramTableModule;

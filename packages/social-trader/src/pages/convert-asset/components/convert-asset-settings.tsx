@@ -182,5 +182,5 @@ export interface IConvertAssetSettingsFormValues {
   [CONVERT_ASSET_FIELDS.investmentLimit]?: number;
 }
 
-const ConvertAssetSettings = withLoader(React.memo(_ConvertAssetSettings));
+const ConvertAssetSettings = withLoader(_ConvertAssetSettings);
 export default ConvertAssetSettings;

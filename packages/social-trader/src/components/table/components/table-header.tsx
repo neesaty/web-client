@@ -81,7 +81,7 @@ const _TableColumns: React.FC<IColumnsProps> = ({
     </>
   );
 };
-const TableColumns = React.memo(withLoader(_TableColumns));
+const TableColumns = withLoader(_TableColumns);
 
 interface IColumnsProps {
   sorting?: string;
@@ -94,5 +94,5 @@ type HandleSortingType = (
   sortingName?: string
 ) => () => ((dispatch: Dispatch, getState: TGetState) => void) | void;
 
-const TableHeader = React.memo(_TableHeader);
+const TableHeader = _TableHeader;
 export default TableHeader;

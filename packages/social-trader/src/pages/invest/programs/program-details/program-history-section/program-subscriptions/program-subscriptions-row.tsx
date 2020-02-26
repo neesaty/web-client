@@ -64,5 +64,5 @@ interface Props {
   subscription: SignalSubscriber;
 }
 
-const ProgramSubscriptionsRow = React.memo(_ProgramSubscriptionsRow);
+const ProgramSubscriptionsRow = _ProgramSubscriptionsRow;
 export default ProgramSubscriptionsRow;

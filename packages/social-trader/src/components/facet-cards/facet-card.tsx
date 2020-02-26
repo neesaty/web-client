@@ -55,5 +55,5 @@ interface Props {
 
 export type composeFacetUrlFunc = (url: string) => string;
 
-const FacetCard = React.memo(_FacetCard);
+const FacetCard = _FacetCard;
 export default FacetCard;

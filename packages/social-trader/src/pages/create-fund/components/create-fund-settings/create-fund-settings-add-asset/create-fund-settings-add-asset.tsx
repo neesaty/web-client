@@ -88,47 +88,51 @@ const _CreateFundSettingsAddAsset: React.FC<Props> = ({
   );
 };
 
-const CreateFundSettingsAddAsset = React.memo(_CreateFundSettingsAddAsset);
+const CreateFundSettingsAddAsset = _CreateFundSettingsAddAsset;
 export default CreateFundSettingsAddAsset;
 
-const AssetLine: React.FC<AssetLineProps> = React.memo(
-  ({ remainder, asset, handleDown, handleUp, handlePercentChange }) => (
-    <tr className="add-fund-asset-popover__asset">
-      <td>
-        <CurrencyItem
-          url={asset.url}
-          logo={asset.icon}
-          small
-          name={asset.name}
-          symbol={asset.name}
-        />
-      </td>
-      <td className="add-fund-asset-popover__asset-currency-short">
-        {asset.asset}
-      </td>
-      <td>
-        <Regulator
-          remainder={remainder}
-          minValue={asset.mandatoryFundPercent}
-          value={asset.percent}
-          handleDown={handleDown(asset)}
-          handleUp={handleUp(asset)}
-        >
-          <div className="add-fund-asset-popover__regulator-indicator">
-            <input
-              value={asset.percent}
-              onChange={handlePercentChange(asset)}
-              className={classNames("add-fund-asset-popover__regulator-input", {
-                "add-fund-asset-popover__regulator-input--mute":
-                  asset.percent === 0
-              })}
-            />
-            %
-          </div>
-        </Regulator>
-      </td>
-    </tr>
-  )
+const AssetLine: React.FC<AssetLineProps> = ({
+  remainder,
+  asset,
+  handleDown,
+  handleUp,
+  handlePercentChange
+}) => (
+  <tr className="add-fund-asset-popover__asset">
+    <td>
+      <CurrencyItem
+        url={asset.url}
+        logo={asset.icon}
+        small
+        name={asset.name}
+        symbol={asset.name}
+      />
+    </td>
+    <td className="add-fund-asset-popover__asset-currency-short">
+      {asset.asset}
+    </td>
+    <td>
+      <Regulator
+        remainder={remainder}
+        minValue={asset.mandatoryFundPercent}
+        value={asset.percent}
+        handleDown={handleDown(asset)}
+        handleUp={handleUp(asset)}
+      >
+        <div className="add-fund-asset-popover__regulator-indicator">
+          <input
+            value={asset.percent}
+            onChange={handlePercentChange(asset)}
+            className={classNames("add-fund-asset-popover__regulator-input", {
+              "add-fund-asset-popover__regulator-input--mute":
+                asset.percent === 0
+            })}
+          />
+          %
+        </div>
+      </Regulator>
+    </td>
+  </tr>
 );
 
 interface AssetLineProps {

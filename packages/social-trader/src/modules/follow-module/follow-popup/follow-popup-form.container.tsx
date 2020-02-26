@@ -119,5 +119,5 @@ interface Props {
   id: string;
 }
 
-const FollowPopupFormContainer = React.memo(_FollowPopupFormContainer);
+const FollowPopupFormContainer = _FollowPopupFormContainer;
 export default FollowPopupFormContainer;

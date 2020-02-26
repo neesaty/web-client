@@ -26,7 +26,7 @@ const _SocialLinksBlock: React.FC<Props> = ({ socialLinks }) => {
   );
 };
 
-const SocialLinksBlock = React.memo(_SocialLinksBlock);
+const SocialLinksBlock = _SocialLinksBlock;
 export default SocialLinksBlock;
 
 interface Props {

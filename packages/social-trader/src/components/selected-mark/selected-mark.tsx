@@ -20,5 +20,5 @@ interface Props {
   className?: string;
 }
 
-const SelectedMark = React.memo(_SelectedMark);
+const SelectedMark = _SelectedMark;
 export default SelectedMark;

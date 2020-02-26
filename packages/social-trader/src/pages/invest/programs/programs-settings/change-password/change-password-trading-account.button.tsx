@@ -30,5 +30,5 @@ const _ChangeAccountPasswordButton: React.FC<{ title: string; id: string }> = ({
   );
 };
 
-const ChangeAccountPasswordButton = React.memo(_ChangeAccountPasswordButton);
+const ChangeAccountPasswordButton = _ChangeAccountPasswordButton;
 export default ChangeAccountPasswordButton;

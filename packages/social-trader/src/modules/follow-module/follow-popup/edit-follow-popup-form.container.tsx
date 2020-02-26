@@ -72,7 +72,5 @@ interface Props {
   signalSubscription: SignalSubscription;
 }
 
-const EditFollowModuleFormContainer = React.memo(
-  _EditFollowModuleFormContainer
-);
+const EditFollowModuleFormContainer = _EditFollowModuleFormContainer;
 export default EditFollowModuleFormContainer;

@@ -60,5 +60,5 @@ interface Props {
   about: string;
   errorMessage?: string;
 }
-const PublicInfoForm = React.memo(_PublicInfoForm);
+const PublicInfoForm = _PublicInfoForm;
 export default PublicInfoForm;

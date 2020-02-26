@@ -45,5 +45,5 @@ interface Props {
   brokerTo?: string;
 }
 
-const ConfirmCancelChangeBroker = React.memo(_ConfirmCancelChangeBroker);
+const ConfirmCancelChangeBroker = _ConfirmCancelChangeBroker;
 export default ConfirmCancelChangeBroker;

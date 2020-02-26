@@ -22,5 +22,5 @@ interface Props {
   colors?: TChartCurrency[];
 }
 
-const ProgramProfitChart = React.memo(_ProgramProfitChart);
+const ProgramProfitChart = _ProgramProfitChart;
 export default ProgramProfitChart;

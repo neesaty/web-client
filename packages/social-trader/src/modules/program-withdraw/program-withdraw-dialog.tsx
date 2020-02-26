@@ -44,5 +44,5 @@ interface Props extends IDialogProps, IProgramWithdrawPopupProps {
   id: string;
 }
 
-const ProgramWithdrawDialog = React.memo(_ProgramWithdrawDialog);
+const ProgramWithdrawDialog = _ProgramWithdrawDialog;
 export default ProgramWithdrawDialog;

@@ -38,4 +38,4 @@ const _KycRequiredBlock: React.FC = () => {
   );
 };
 
-export const KycRequiredBlock = React.memo(_KycRequiredBlock);
+export const KycRequiredBlock = _KycRequiredBlock;

@@ -48,7 +48,7 @@ const _ConfirmPopupContent: React.ComponentType<IConfirmPopupContentProps> = ({
   );
 };
 
-const ConfirmPopupContent = React.memo(_ConfirmPopupContent);
+const ConfirmPopupContent = _ConfirmPopupContent;
 export default ConfirmPopupContent;
 
 export interface IConfirmPopupContentProps extends IDialogProps {

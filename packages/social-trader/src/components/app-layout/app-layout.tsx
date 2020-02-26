@@ -44,5 +44,5 @@ const _AppLayout: ComponentType<Props> = ({ children }) => {
 
 interface Props {}
 
-const AppLayout = React.memo(_AppLayout);
+const AppLayout = _AppLayout;
 export default AppLayout;

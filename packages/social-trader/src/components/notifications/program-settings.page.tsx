@@ -15,7 +15,5 @@ interface OwnProps {
   id: string;
 }
 
-const ProgramNotificationPage = translate()(
-  React.memo(_ProgramNotificationPage)
-);
+const ProgramNotificationPage = translate()(_ProgramNotificationPage);
 export default ProgramNotificationPage;

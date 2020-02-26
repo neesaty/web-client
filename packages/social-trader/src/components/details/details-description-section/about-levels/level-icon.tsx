@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { LevelInfo } from "gv-api-web";
 import * as React from "react";
 
-const LevelIcon: React.FC<Props> = React.memo(({ levelInfo, current }) => (
+const LevelIcon: React.FC<Props> = ({ levelInfo, current }) => (
   <div
     className={classNames(
       "about-levels-icon",
@@ -16,7 +16,7 @@ const LevelIcon: React.FC<Props> = React.memo(({ levelInfo, current }) => (
   >
     {levelInfo.level}
   </div>
-));
+);
 
 export default LevelIcon;
 

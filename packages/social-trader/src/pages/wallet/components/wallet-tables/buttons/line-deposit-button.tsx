@@ -27,5 +27,5 @@ interface Props {
   disabled?: boolean;
 }
 
-const LineDepositButton = React.memo(_LineDepositButton);
+const LineDepositButton = _LineDepositButton;
 export default LineDepositButton;

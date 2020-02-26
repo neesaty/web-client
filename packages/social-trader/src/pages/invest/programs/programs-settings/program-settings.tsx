@@ -153,7 +153,6 @@ interface Props {
 }
 
 const ProgramSettings = compose<React.ComponentType<Props & WithLoaderProps>>(
-  withLoader,
-  React.memo
+  withLoader
 )(_ProgramSettings);
 export default ProgramSettings;

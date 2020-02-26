@@ -70,9 +70,7 @@ const _DownloadReferralHistoryButton: React.FC<{
   }, [dateRange]);
   return <DownloadButton authHandle={loadFile} />;
 };
-const DownloadReferralHistoryButton = React.memo(
-  _DownloadReferralHistoryButton
-);
+const DownloadReferralHistoryButton = _DownloadReferralHistoryButton;
 
 const COLUMNS = [
   {
@@ -93,4 +91,4 @@ export const ReferralFriendsLoaderData = tableLoaderCreator(
   getReferralFriendLoaderData
 );
 
-export const ReferralHistoryTable = React.memo(_ReferralHistoryTable);
+export const ReferralHistoryTable = _ReferralHistoryTable;

@@ -7,7 +7,7 @@ const _TooltipBody: React.FC<ITooltipBodyProps> = ({ value }) => (
     <div className="details-tooltip__value">{value}</div>
   </div>
 );
-const TooltipBody = React.memo(_TooltipBody);
+const TooltipBody = _TooltipBody;
 
 const FollowBalanceTooltip: React.FC<IProgramBalanceTooltipProps> = ({
   active,

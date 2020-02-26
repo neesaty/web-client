@@ -83,5 +83,5 @@ interface Props {
   data: TDashboardEvent[];
 }
 
-const DashboardStatisticTable = React.memo(Crashable(_DashboardStatisticTable));
+const DashboardStatisticTable = Crashable(_DashboardStatisticTable);
 export default DashboardStatisticTable;

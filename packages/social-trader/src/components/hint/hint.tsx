@@ -24,7 +24,7 @@ const _Hint: React.FC<Props> = ({
   );
 };
 
-const Hint = React.memo(_Hint);
+const Hint = _Hint;
 export default Hint;
 
 interface Props {

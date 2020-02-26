@@ -27,5 +27,5 @@ interface Props {
   currencies: CurrencyEnum[];
 }
 
-const AddCurrencyButton = React.memo(_AddCurrencyButton);
+const AddCurrencyButton = _AddCurrencyButton;
 export default AddCurrencyButton;

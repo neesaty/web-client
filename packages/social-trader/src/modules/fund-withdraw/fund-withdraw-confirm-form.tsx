@@ -63,7 +63,7 @@ interface IFundWithdrawConfirmProps {
   errorMessage?: string;
   onBackClick: () => void;
 }
-export const FundWithdrawConfirm = React.memo(_FundWithdrawConfirm);
+export const FundWithdrawConfirm = _FundWithdrawConfirm;
 
 const _FundWithdrawConfirmForm: React.FC<Props> = ({
   onSubmit,
@@ -122,4 +122,4 @@ interface Props {
   onBackClick: () => void;
 }
 
-const FundWithdrawConfirmForm = React.memo(_FundWithdrawConfirmForm);
+const FundWithdrawConfirmForm = _FundWithdrawConfirmForm;

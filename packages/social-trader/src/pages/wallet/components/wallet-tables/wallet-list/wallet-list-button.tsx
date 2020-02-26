@@ -44,5 +44,5 @@ interface IWalletListButton {
   wallet: WalletData;
 }
 
-const WalletListButton = React.memo(_WalletListButton);
+const WalletListButton = _WalletListButton;
 export default WalletListButton;

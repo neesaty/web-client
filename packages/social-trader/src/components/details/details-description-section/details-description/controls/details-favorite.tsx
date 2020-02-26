@@ -45,5 +45,5 @@ interface Props {
   isFavorite: boolean;
 }
 
-const DetailsFavorite = React.memo(_DetailsFavorite);
+const DetailsFavorite = _DetailsFavorite;
 export default DetailsFavorite;

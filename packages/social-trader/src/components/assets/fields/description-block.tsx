@@ -36,5 +36,5 @@ interface Props {
   description: string;
 }
 
-const DescriptionBlock = React.memo(_DescriptionBlock);
+const DescriptionBlock = _DescriptionBlock;
 export default DescriptionBlock;

@@ -30,6 +30,6 @@ export const GoogleStep1: React.FC<WithTranslation> = ({ t }) => (
   </div>
 );
 
-const GoogleDownloadStep = translate()(React.memo(GoogleStep1));
+const GoogleDownloadStep = translate()(GoogleStep1);
 
 export default GoogleDownloadStep;

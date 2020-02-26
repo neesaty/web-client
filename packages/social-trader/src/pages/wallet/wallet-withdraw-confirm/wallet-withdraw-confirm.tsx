@@ -26,5 +26,5 @@ interface Props {
   code: string;
 }
 
-const WalletWithdrawConfirm = React.memo(_WalletWithdrawConfirm);
+const WalletWithdrawConfirm = _WalletWithdrawConfirm;
 export default WalletWithdrawConfirm;

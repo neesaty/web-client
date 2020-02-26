@@ -29,4 +29,4 @@ const _FollowsTable: React.FC<SearchTableProps<
   );
 };
 
-export const FollowsTable = React.memo(_FollowsTable);
+export const FollowsTable = _FollowsTable;

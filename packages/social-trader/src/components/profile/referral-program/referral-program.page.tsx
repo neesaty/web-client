@@ -61,5 +61,5 @@ const _ReferralProgramPage: React.FC = () => {
   );
 };
 
-const ReferralProgramPage = React.memo(_ReferralProgramPage);
+const ReferralProgramPage = _ReferralProgramPage;
 export default ReferralProgramPage;

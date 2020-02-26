@@ -41,5 +41,5 @@ const _FundsList: React.FC<Props> = ({ className, funds, onScroll }) => {
   );
 };
 
-const FundsList = React.memo(_FundsList);
+const FundsList = _FundsList;
 export default FundsList;

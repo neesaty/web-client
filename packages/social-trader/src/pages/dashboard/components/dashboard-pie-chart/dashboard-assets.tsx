@@ -21,5 +21,5 @@ interface Props {
   landscapeTablet?: boolean;
   tablet?: boolean;
 }
-const DashboardAssets = React.memo(_DashboardAssets);
+const DashboardAssets = _DashboardAssets;
 export default DashboardAssets;

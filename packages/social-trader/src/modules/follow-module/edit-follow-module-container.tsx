@@ -41,5 +41,5 @@ interface Props {
   id: string;
 }
 
-const EditFollowModuleContainer = React.memo(_EditFollowModuleContainer);
+const EditFollowModuleContainer = _EditFollowModuleContainer;
 export default EditFollowModuleContainer;

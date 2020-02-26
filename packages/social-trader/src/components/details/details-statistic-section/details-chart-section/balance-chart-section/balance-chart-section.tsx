@@ -50,5 +50,5 @@ export interface IBalanceChartSectionProps {
   renderBalanceChart: TRenderBalanceChart;
 }
 
-const BalanceChartSection = React.memo(Crashable(_BalanceChartSection));
+const BalanceChartSection = Crashable(_BalanceChartSection);
 export default BalanceChartSection;

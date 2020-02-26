@@ -9,7 +9,7 @@ import TagItemTooltip from "../tag-item/tag-item-tooltip";
 
 const MAX_VISIBLE_TAGS = 2;
 
-const TagProgramContainer: React.FC<Props> = React.memo(({ tags }) => {
+const TagProgramContainer: React.FC<Props> = ({ tags }) => {
   const length = tags.length;
   const remainder = length > MAX_VISIBLE_TAGS ? `${length - 1}` : null;
   return (
@@ -31,7 +31,7 @@ const TagProgramContainer: React.FC<Props> = React.memo(({ tags }) => {
       )}
     </div>
   );
-});
+};
 
 interface Props {
   tags: Tag[];

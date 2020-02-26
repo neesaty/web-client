@@ -15,5 +15,5 @@ const _AdvantageItem: React.FC<TAdvantages> = ({ text, title, image }) => (
     <p className="advantages-list__item-text">{text}</p>
   </li>
 );
-const AdvantageItem = React.memo(_AdvantageItem);
+const AdvantageItem = _AdvantageItem;
 export default AdvantageItem;

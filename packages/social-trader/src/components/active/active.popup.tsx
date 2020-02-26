@@ -14,5 +14,5 @@ interface Props extends IDialogProps {
   active: string;
 }
 
-const ActivePopup = React.memo(_ActivePopup);
+const ActivePopup = _ActivePopup;
 export default ActivePopup;

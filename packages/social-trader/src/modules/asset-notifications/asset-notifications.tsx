@@ -51,7 +51,5 @@ interface Props extends WithTranslation {
   toggleNotification?: TToggleNotification;
 }
 
-const AssetNotifications = React.memo(
-  withLoader(translate()(_AssetNotifications))
-);
+const AssetNotifications = withLoader(translate()(_AssetNotifications));
 export default AssetNotifications;

@@ -47,5 +47,5 @@ interface Props {
   id: string;
 }
 
-const FollowModuleContainer = React.memo(_FollowModuleContainer);
+const FollowModuleContainer = _FollowModuleContainer;
 export default FollowModuleContainer;

@@ -47,5 +47,5 @@ export interface IGoogleAuthProps {
   errorMessage?: string;
 }
 
-const GoogleAuthDesktop = React.memo(GoogleAuth);
+const GoogleAuthDesktop = GoogleAuth;
 export default GoogleAuthDesktop;

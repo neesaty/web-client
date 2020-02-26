@@ -102,5 +102,5 @@ interface Props {
   onApplyCancelRequest: () => void;
 }
 
-const RequestLine = React.memo(_RequestLine);
+const RequestLine = _RequestLine;
 export default RequestLine;

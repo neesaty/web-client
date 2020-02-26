@@ -70,5 +70,5 @@ interface Props {
   className?: string;
 }
 
-const CalculatorLevelLine = translate()(React.memo(_CalculatorLevelLine));
+const CalculatorLevelLine = translate()(_CalculatorLevelLine);
 export default CalculatorLevelLine;

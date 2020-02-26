@@ -136,5 +136,5 @@ interface Props {
   availableToWithdraw: number;
 }
 
-const FundWithdrawAmountForm = React.memo(_FundWithdrawAmountForm);
+const FundWithdrawAmountForm = _FundWithdrawAmountForm;
 export default FundWithdrawAmountForm;

@@ -48,5 +48,5 @@ export interface IChangeBrokerFormContainerProps {
   currentLeverage: number;
 }
 
-const ChangeBrokerFormContainer = React.memo(_ChangeBrokerForm);
+const ChangeBrokerFormContainer = _ChangeBrokerForm;
 export default ChangeBrokerFormContainer;

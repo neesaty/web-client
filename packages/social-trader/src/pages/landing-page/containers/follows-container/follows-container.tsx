@@ -30,5 +30,5 @@ const _FollowsContainer: React.FC<Props> = ({ follows }) => {
     </div>
   );
 };
-const FollowsContainer = React.memo(_FollowsContainer);
+const FollowsContainer = _FollowsContainer;
 export default FollowsContainer;

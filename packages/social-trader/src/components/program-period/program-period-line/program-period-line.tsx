@@ -44,5 +44,5 @@ interface Props {
   status: PeriodStatus | string;
 }
 
-const ProgramPeriodLine = React.memo(_ProgramPeriodLine);
+const ProgramPeriodLine = _ProgramPeriodLine;
 export default ProgramPeriodLine;

@@ -132,7 +132,7 @@ export interface ICreateFundSettingsFormValues {
   [CREATE_FUND_FIELDS.exitFee]?: number;
 }
 
-const CreateFundSettings = withBlurLoader(React.memo(_CreateFundSettings));
+const CreateFundSettings = withBlurLoader(_CreateFundSettings);
 export default CreateFundSettings;
 
 interface Props {

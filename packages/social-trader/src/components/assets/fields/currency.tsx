@@ -42,5 +42,5 @@ interface Props {
   accountCurrencies: CurrencyEnum[];
 }
 
-const Currency = React.memo(_Currency);
+const Currency = _Currency;
 export default Currency;

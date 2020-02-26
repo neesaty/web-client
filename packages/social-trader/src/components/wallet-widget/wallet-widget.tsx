@@ -58,5 +58,5 @@ interface Props {
   className?: string;
 }
 
-const WalletWidget = withBlurLoader(React.memo(_WalletWidget));
+const WalletWidget = withBlurLoader(_WalletWidget);
 export default WalletWidget;

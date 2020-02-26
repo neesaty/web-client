@@ -47,7 +47,7 @@ const _InvestmentUnauthPopup: React.FC<Props> = ({
   );
 };
 
-const InvestmentUnauthPopup = React.memo(_InvestmentUnauthPopup);
+const InvestmentUnauthPopup = _InvestmentUnauthPopup;
 export default InvestmentUnauthPopup;
 
 interface Props extends DepositTopOwnProps, IDialogProps {

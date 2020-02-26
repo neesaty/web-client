@@ -62,7 +62,7 @@ const _NotificationAssetAvatar: React.FC<INotificationProps> = ({
     </Tag>
   );
 };
-const NotificationAssetAvatar = React.memo(_NotificationAssetAvatar);
+const NotificationAssetAvatar = _NotificationAssetAvatar;
 
 interface INotificationOwnProps {
   closeNotifications(): void;
@@ -105,5 +105,5 @@ const _Notification: React.FC<INotificationProps> = props => {
   );
 };
 
-const Notification = React.memo(_Notification);
+const Notification = _Notification;
 export default Notification;

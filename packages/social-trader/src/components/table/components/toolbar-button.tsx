@@ -6,7 +6,7 @@ import React from "react";
 export const ToolbarButton: React.FC<{
   text: string;
   route: string;
-}> = React.memo(({ text, route }) => {
+}> = ({ text, route }) => {
   const { linkCreator } = useToLink();
   return (
     <TableToolbarItemBlock>
@@ -15,4 +15,4 @@ export const ToolbarButton: React.FC<{
       </Link>
     </TableToolbarItemBlock>
   );
-});
+};

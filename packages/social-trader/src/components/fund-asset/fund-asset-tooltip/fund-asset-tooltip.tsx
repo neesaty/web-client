@@ -21,5 +21,5 @@ const _FundAssetTooltip: React.FC<IFundAssetTooltipProps> = ({
   </TooltipContent>
 );
 
-const FundAssetTooltip = React.memo(_FundAssetTooltip);
+const FundAssetTooltip = _FundAssetTooltip;
 export default FundAssetTooltip;

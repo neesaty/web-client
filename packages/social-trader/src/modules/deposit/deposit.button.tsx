@@ -104,5 +104,5 @@ interface Props {
   currency?: CurrencyEnum;
 }
 
-const DepositButton = React.memo(_DepositButton);
+const DepositButton = _DepositButton;
 export default DepositButton;

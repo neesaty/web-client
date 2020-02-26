@@ -79,4 +79,4 @@ interface Props {
   providers: Array<OrderSignalProgramInfo>;
 }
 
-export const ProvidersButton = React.memo(_ProvidersButton);
+export const ProvidersButton = _ProvidersButton;

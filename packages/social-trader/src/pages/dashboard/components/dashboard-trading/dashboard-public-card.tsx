@@ -193,5 +193,5 @@ interface Props {
   asset: DashboardTradingAsset;
 }
 
-const DashboardPublicCard = React.memo(_DashboardPublicCard);
+const DashboardPublicCard = _DashboardPublicCard;
 export default DashboardPublicCard;

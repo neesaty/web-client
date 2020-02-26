@@ -81,5 +81,5 @@ export interface GVTextFieldProps extends IPropsGvInput {
   autoFocus?: boolean;
 }
 
-const GVTextField = React.memo(_GVTextField);
+const GVTextField = _GVTextField;
 export default GVTextField;

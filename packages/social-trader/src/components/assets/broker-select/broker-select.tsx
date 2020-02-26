@@ -100,5 +100,5 @@ interface Props {
   navigateToSettings: () => void;
 }
 
-const BrokerSelect = withBlurLoader(React.memo(_BrokerSelectBroker));
+const BrokerSelect = withBlurLoader(_BrokerSelectBroker);
 export default BrokerSelect;

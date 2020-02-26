@@ -24,5 +24,5 @@ interface Props {
   requestBrokerName?: string;
   brokers: Broker[];
 }
-const CreateAccountPage = React.memo(_CreateAccountPage);
+const CreateAccountPage = _CreateAccountPage;
 export default CreateAccountPage;

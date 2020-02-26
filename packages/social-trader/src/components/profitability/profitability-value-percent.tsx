@@ -41,4 +41,4 @@ interface Props {
   percent: number;
 }
 
-export const ProfitabilityValuePercent = React.memo(_ProfitabilityValuePercent);
+export const ProfitabilityValuePercent = _ProfitabilityValuePercent;

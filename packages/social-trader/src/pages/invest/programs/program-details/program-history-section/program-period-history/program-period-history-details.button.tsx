@@ -144,6 +144,4 @@ interface IProgramPeriodHistoryDetailsButtonProps {
   period: ProgramPeriodViewModel;
 }
 
-export const ProgramPeriodHistoryDetailsButton = React.memo(
-  _ProgramPeriodHistoryDetailsButton
-);
+export const ProgramPeriodHistoryDetailsButton = _ProgramPeriodHistoryDetailsButton;

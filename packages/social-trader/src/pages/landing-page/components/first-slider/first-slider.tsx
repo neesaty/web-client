@@ -57,5 +57,5 @@ const _FirstSlider: React.FC<Props> = ({ className, slidesItems }) => {
   );
 };
 
-const FirstSlider = React.memo(_FirstSlider);
+const FirstSlider = _FirstSlider;
 export default FirstSlider;

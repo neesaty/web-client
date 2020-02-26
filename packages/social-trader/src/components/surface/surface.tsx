@@ -15,5 +15,5 @@ export const _Surface: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   );
 };
 
-const Surface = React.memo(_Surface);
+const Surface = _Surface;
 export default Surface;

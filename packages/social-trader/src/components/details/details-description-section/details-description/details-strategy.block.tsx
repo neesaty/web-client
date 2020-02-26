@@ -18,4 +18,4 @@ const _DetailsStrategy: React.FC<{
   );
 };
 
-export const DetailsStrategy = React.memo(_DetailsStrategy);
+export const DetailsStrategy = _DetailsStrategy;

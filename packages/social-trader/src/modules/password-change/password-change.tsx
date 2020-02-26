@@ -39,5 +39,5 @@ const _PasswordChange: React.FC = () => {
   );
 };
 
-const PasswordChange = React.memo(_PasswordChange);
+const PasswordChange = _PasswordChange;
 export default PasswordChange;

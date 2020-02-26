@@ -39,5 +39,5 @@ interface Props {
   getExportFileUrl?: () => string;
 }
 
-const DownloadButton = React.memo(_DownloadButton);
+const DownloadButton = _DownloadButton;
 export default DownloadButton;

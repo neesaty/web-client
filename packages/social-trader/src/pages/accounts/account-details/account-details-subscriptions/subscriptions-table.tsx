@@ -48,5 +48,5 @@ interface Props {
   id: string;
 }
 
-const SubscriptionsTable = withBlurLoader(React.memo(_SubscriptionsTable));
+const SubscriptionsTable = withBlurLoader(_SubscriptionsTable);
 export default SubscriptionsTable;

@@ -18,5 +18,5 @@ interface Props {
   data?: SimpleChartPoint[];
 }
 
-const ProgramSimpleChart = React.memo(_ProgramSimpleChart);
+const ProgramSimpleChart = _ProgramSimpleChart;
 export default ProgramSimpleChart;

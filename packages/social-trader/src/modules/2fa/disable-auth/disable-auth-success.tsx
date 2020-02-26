@@ -12,5 +12,5 @@ const DisableSuccess: React.FC = () => {
   );
 };
 
-const DisableAuthSuccess = React.memo(DisableSuccess);
+const DisableAuthSuccess = DisableSuccess;
 export default DisableAuthSuccess;

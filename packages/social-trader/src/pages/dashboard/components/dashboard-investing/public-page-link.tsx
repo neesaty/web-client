@@ -9,7 +9,7 @@ import {
   MANAGERS_ROUTE
 } from "routes/manager.routes";
 
-export const PublicPageLink: React.FC = React.memo(() => {
+export const PublicPageLink: React.FC = () => {
   const { linkCreator } = useToLink();
   const [t] = useTranslation();
   const managerUrl = useSelector(managerUrlSelector);
@@ -20,4 +20,4 @@ export const PublicPageLink: React.FC = React.memo(() => {
       {t("dashboard-page.investing.public-page")}
     </Link>
   );
-});
+};

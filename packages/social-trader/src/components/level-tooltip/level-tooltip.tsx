@@ -23,7 +23,7 @@ const _LevelTooltip: React.FC<ILevelTooltip> = ({ t, level, canLevelUp }) => (
   </PopoverContent>
 );
 
-const LevelTooltip = translate()(React.memo(_LevelTooltip));
+const LevelTooltip = translate()(_LevelTooltip);
 export default LevelTooltip;
 
 export interface ILevelTooltip extends WithTranslation {

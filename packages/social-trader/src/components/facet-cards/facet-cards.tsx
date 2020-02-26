@@ -56,5 +56,5 @@ interface Props {
   fileRoute: string;
 }
 
-const FacetCards = withBlurLoader(React.memo(_FacetCards));
+const FacetCards = withBlurLoader(_FacetCards);
 export default FacetCards;

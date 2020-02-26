@@ -130,5 +130,5 @@ const _ProgramCard: React.FC<Props> = ({ program }) => {
   );
 };
 
-const ProgramCard = React.memo(_ProgramCard);
+const ProgramCard = _ProgramCard;
 export default ProgramCard;

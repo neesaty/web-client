@@ -39,8 +39,5 @@ interface Props {
 
 const AboutLevelsComponent = compose<
   React.ComponentType<Props & WithLoaderProps>
->(
-  withLoader,
-  React.memo
-)(_AboutLevelsComponent);
+>(withLoader)(_AboutLevelsComponent);
 export default AboutLevelsComponent;

@@ -103,5 +103,5 @@ interface Props {
   wallets: WalletData[];
 }
 
-const WalletList = React.memo(_WalletList);
+const WalletList = _WalletList;
 export default WalletList;

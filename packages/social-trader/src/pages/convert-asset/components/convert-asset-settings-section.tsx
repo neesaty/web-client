@@ -55,8 +55,6 @@ const _ConvertAssetSettingsSection: React.FC<Props> = ({
   );
 };
 
-export const ConvertAssetSettingsSection = React.memo(
-  _ConvertAssetSettingsSection
-);
+export const ConvertAssetSettingsSection = _ConvertAssetSettingsSection;
 
 interface Props extends IConvertAssetSettingsFormOwnProps {}

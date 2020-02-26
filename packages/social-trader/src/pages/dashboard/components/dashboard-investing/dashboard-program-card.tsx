@@ -143,5 +143,5 @@ interface Props {
   program: ProgramInvestingDetailsList;
 }
 
-const DashboardProgramCard = React.memo(_DashboardProgramCard);
+const DashboardProgramCard = _DashboardProgramCard;
 export default DashboardProgramCard;

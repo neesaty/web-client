@@ -78,5 +78,5 @@ export interface IPortfolioEventsTableOwnProps {
   title?: string;
 }
 
-const PortfolioEventsTableModule = React.memo(_PortfolioEventsTableModule);
+const PortfolioEventsTableModule = _PortfolioEventsTableModule;
 export default PortfolioEventsTableModule;

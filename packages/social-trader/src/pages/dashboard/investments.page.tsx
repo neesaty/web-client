@@ -39,5 +39,5 @@ const _InvestmentsPage: React.FC = () => {
   );
 };
 
-const InvestmentsPage = React.memo(_InvestmentsPage);
+const InvestmentsPage = _InvestmentsPage;
 export default InvestmentsPage;

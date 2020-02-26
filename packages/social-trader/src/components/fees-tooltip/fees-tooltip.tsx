@@ -23,7 +23,7 @@ const _FeesTooltip: React.FC<Props> = ({ children, header, footer }) => (
   </Tooltip>
 );
 
-const FeesTooltip = compose<React.FC<OwnProps>>(React.memo)(_FeesTooltip);
+const FeesTooltip = compose<React.FC<OwnProps>>()(_FeesTooltip);
 
 export default FeesTooltip;
 

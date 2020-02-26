@@ -94,7 +94,7 @@ const _FundWithdrawPopup: React.FC<Props> = ({
   );
 };
 
-export const FundWithdrawPopup = withBlurLoader(React.memo(_FundWithdrawPopup));
+export const FundWithdrawPopup = withBlurLoader(_FundWithdrawPopup);
 
 interface Props extends IFundWithdrawPopupProps, IFundWithdrawPopupOwnProps {}
 

@@ -29,5 +29,5 @@ const _IconList: React.FC<Props> = ({ items, className, lightTheme }) => (
   </ul>
 );
 
-const IconList = React.memo(_IconList);
+const IconList = _IconList;
 export default IconList;

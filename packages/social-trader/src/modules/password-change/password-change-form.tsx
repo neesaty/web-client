@@ -85,5 +85,5 @@ const _PasswordChangeForm: React.FC<IPasswordChangeFormOwnProps> = ({
   );
 };
 
-const PasswordChangeForm = React.memo(_PasswordChangeForm);
+const PasswordChangeForm = _PasswordChangeForm;
 export default PasswordChangeForm;

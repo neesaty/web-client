@@ -107,7 +107,7 @@ const _ProgramWithdrawAmountForm: React.FC<Props> = ({
   );
 };
 
-const ProgramWithdrawAmountForm = React.memo(_ProgramWithdrawAmountForm);
+const ProgramWithdrawAmountForm = _ProgramWithdrawAmountForm;
 export default ProgramWithdrawAmountForm;
 
 interface Props {

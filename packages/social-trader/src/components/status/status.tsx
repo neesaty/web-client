@@ -33,5 +33,5 @@ const _Status: React.FC<IStatus> = ({ withText, className, status }) => {
   );
 };
 
-const Status = React.memo(_Status);
+const Status = _Status;
 export default Status;

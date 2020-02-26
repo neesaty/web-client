@@ -2,16 +2,20 @@ import GVTextField from "components/gv-text-field";
 import * as React from "react";
 import { WithTranslation, withTranslation as translate } from "react-i18next";
 
-export const ProfileField: React.FC<IProfileFieldProps> = React.memo(
-  ({ name, value, label, disabled = true, type }) => (
-    <GVTextField
-      type={type}
-      name={name}
-      value={value}
-      label={label}
-      disabled={disabled}
-    />
-  )
+export const ProfileField: React.FC<IProfileFieldProps> = ({
+  name,
+  value,
+  label,
+  disabled = true,
+  type
+}) => (
+  <GVTextField
+    type={type}
+    name={name}
+    value={value}
+    label={label}
+    disabled={disabled}
+  />
 );
 
 const _ProfilePersonal: React.FC<IProfilePersonalProps> = ({
@@ -62,5 +66,5 @@ interface IProfilePersonalProps extends WithTranslation {
   about: string;
 }
 
-const ProfilePersonal = translate()(React.memo(_ProfilePersonal));
+const ProfilePersonal = translate()(_ProfilePersonal);
 export default ProfilePersonal;

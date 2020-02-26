@@ -53,5 +53,5 @@ interface Props {
   onApply: () => void;
 }
 
-const Reallocation = withLoader(React.memo(Crashable(_Reallocation)));
+const Reallocation = withLoader(Crashable(_Reallocation));
 export default Reallocation;

@@ -70,5 +70,5 @@ interface Props {
   id: string;
 }
 
-const FundReallocateHistory = React.memo(_FundReallocateHistory);
+const FundReallocateHistory = _FundReallocateHistory;
 export default FundReallocateHistory;

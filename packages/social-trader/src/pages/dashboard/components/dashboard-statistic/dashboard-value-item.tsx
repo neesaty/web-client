@@ -33,5 +33,5 @@ interface Props {
   currency?: CurrencyEnum;
 }
 
-const DashboardValueItem = React.memo(_DashboardValueItem);
+const DashboardValueItem = _DashboardValueItem;
 export default DashboardValueItem;

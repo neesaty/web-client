@@ -21,5 +21,5 @@ interface Props {
   bottom: JSX.Element;
 }
 
-const TransactionDetails = React.memo(_TransactionDetails);
+const TransactionDetails = _TransactionDetails;
 export default TransactionDetails;

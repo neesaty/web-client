@@ -28,4 +28,4 @@ interface Props {
   currency?: CurrencyEnum;
 }
 
-export const DetailsLimitsAvatar = React.memo(_DetailsLimitsAvatar);
+export const DetailsLimitsAvatar = _DetailsLimitsAvatar;

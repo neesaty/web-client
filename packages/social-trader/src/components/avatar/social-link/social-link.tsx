@@ -14,5 +14,5 @@ const _SocialLinkImage: React.FC<IImageProps> = ({ url, alt }) => (
   />
 );
 
-const SocialLinkImage = React.memo(_SocialLinkImage);
+const SocialLinkImage = _SocialLinkImage;
 export default SocialLinkImage;

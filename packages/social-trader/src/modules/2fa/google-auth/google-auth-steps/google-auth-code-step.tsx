@@ -26,6 +26,6 @@ interface Props extends WithTranslation {
   className?: string;
 }
 
-const GoogleCodeStep = translate()(React.memo(GoogleStep2));
+const GoogleCodeStep = translate()(GoogleStep2);
 
 export default GoogleCodeStep;

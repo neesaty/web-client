@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import Link from "components/link/link";
-import { normalizeUrlString } from "components/link/link.helper";
 import { useRouter } from "next/router";
 import NavSubList from "pages/landing-page/components/nav/nav-sublist";
 import { TNavHeader } from "pages/landing-page/static-data/nav-links";
@@ -70,5 +69,5 @@ const _NavItem: React.FC<INavItemProps> = ({
     </li>
   );
 };
-const NavItem = React.memo(_NavItem);
+const NavItem = _NavItem;
 export default NavItem;

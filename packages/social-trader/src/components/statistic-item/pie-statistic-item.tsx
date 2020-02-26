@@ -56,4 +56,4 @@ interface Props {
   suffix: string;
 }
 
-export const PieStatisticItem = withLoader(React.memo(_PieStatisticItem));
+export const PieStatisticItem = withLoader(_PieStatisticItem);

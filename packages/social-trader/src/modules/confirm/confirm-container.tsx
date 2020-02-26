@@ -64,5 +64,5 @@ interface OwnProps {
 
 interface Props extends IConfirmProgramProps, OwnProps {}
 
-const ConfirmContainer = React.memo(_ConfirmContainer);
+const ConfirmContainer = _ConfirmContainer;
 export default ConfirmContainer;

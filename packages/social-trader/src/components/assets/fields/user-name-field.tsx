@@ -25,5 +25,5 @@ interface Props {
   name: string;
 }
 
-const UserNameField = React.memo(_UserNameField);
+const UserNameField = _UserNameField;
 export default UserNameField;

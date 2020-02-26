@@ -80,5 +80,5 @@ const _ProgramsTable: React.FC<IProgramsTableProps> = ({
   );
 };
 
-const ProgramsTable = React.memo(_ProgramsTable);
+const ProgramsTable = _ProgramsTable;
 export default ProgramsTable;

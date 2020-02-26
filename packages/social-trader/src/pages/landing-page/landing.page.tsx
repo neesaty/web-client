@@ -86,4 +86,4 @@ const _LandingPage: React.FC = () => {
   );
 };
 
-export const LandingPage = React.memo(_LandingPage);
+export const LandingPage = _LandingPage;

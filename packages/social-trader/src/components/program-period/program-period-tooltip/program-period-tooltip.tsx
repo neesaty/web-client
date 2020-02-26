@@ -24,5 +24,5 @@ interface Props {
   end: Date;
 }
 
-const ProgramPeriodTooltip = React.memo(_ProgramPeriodTooltip);
+const ProgramPeriodTooltip = _ProgramPeriodTooltip;
 export default ProgramPeriodTooltip;

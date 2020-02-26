@@ -91,5 +91,5 @@ export interface IProgramsFacetTableProps {
   columns?: SortingColumn[];
 }
 
-const FollowsFacetTable = React.memo(_FollowsFacetTable);
+const FollowsFacetTable = _FollowsFacetTable;
 export default FollowsFacetTable;

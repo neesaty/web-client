@@ -119,5 +119,5 @@ interface Props {
   ownAsset?: boolean;
 }
 
-const DepositPopup = withBlurLoader(React.memo(_DepositPopup));
+const DepositPopup = withBlurLoader(_DepositPopup);
 export default DepositPopup;

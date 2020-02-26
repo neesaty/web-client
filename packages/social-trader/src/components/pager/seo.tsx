@@ -25,5 +25,5 @@ export const _SeoPagination: React.FC<{ current: number; total: number }> = ({
   );
 };
 
-const SeoPagination = React.memo(_SeoPagination);
+const SeoPagination = _SeoPagination;
 export default SeoPagination;

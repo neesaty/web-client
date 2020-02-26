@@ -96,5 +96,5 @@ export interface IDetailsChartProps
     IProfitChartSectionProps,
     IAbsoluteProfitChartSectionProps {}
 
-const DetailsChart = React.memo(_DetailsChart);
+const DetailsChart = _DetailsChart;
 export default DetailsChart;

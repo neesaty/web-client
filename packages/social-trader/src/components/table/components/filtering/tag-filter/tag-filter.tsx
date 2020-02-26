@@ -39,10 +39,7 @@ const _TagFilter: React.FC<Props & WithTranslation> = ({
   );
 };
 
-const TagFilter = compose<React.ComponentType<Props>>(
-  React.memo,
-  translate()
-)(_TagFilter);
+const TagFilter = compose<React.ComponentType<Props>>(translate())(_TagFilter);
 export default TagFilter;
 
 export interface Props {

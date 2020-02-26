@@ -140,5 +140,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const WalletContainer = React.memo(_WalletTables);
+const WalletContainer = _WalletTables;
 export default WalletContainer;

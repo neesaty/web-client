@@ -63,5 +63,5 @@ export interface IProfileOwnProps {
   info: ProfileFullViewModel;
 }
 
-const Profile = withLoader(React.memo(_Profile));
+const Profile = withLoader(_Profile);
 export default Profile;

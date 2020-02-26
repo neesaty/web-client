@@ -38,5 +38,5 @@ interface Props {
   id: string;
 }
 
-const TwoFactorConfirm = withLoader(React.memo(_TwoFactorConfirm));
+const TwoFactorConfirm = withLoader(_TwoFactorConfirm);
 export default TwoFactorConfirm;

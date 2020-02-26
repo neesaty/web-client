@@ -7,20 +7,18 @@ import CopyButton from "modules/copy-button/copy-button";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 
-const CodeItem: React.FC<{ code: string }> = React.memo(({ code }) => (
+const CodeItem: React.FC<{ code: string }> = ({ code }) => (
   <div className="codes__item" key={code}>
     {code}
   </div>
-));
+);
 
-const CodeList: React.FC<{ codes: RecoveryCode[] }> = React.memo(
-  ({ codes }) => (
-    <div className="codes__list">
-      {codes.map(code => (
-        <CodeItem code={code.code} />
-      ))}
-    </div>
-  )
+const CodeList: React.FC<{ codes: RecoveryCode[] }> = ({ codes }) => (
+  <div className="codes__list">
+    {codes.map(code => (
+      <CodeItem code={code.code} />
+    ))}
+  </div>
 );
 
 const getCodesString = (codes: RecoveryCode[]): string =>
@@ -49,5 +47,5 @@ const _GoogleAuthCodes: React.FC<Props> = ({ codes }) => {
 interface Props {
   codes: RecoveryCode[];
 }
-const GoogleAuthCodes = React.memo(_GoogleAuthCodes);
+const GoogleAuthCodes = _GoogleAuthCodes;
 export default GoogleAuthCodes;

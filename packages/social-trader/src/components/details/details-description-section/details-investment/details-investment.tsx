@@ -171,5 +171,5 @@ interface Props {
   followPersonalDetails?: PersonalFollowDetailsFull;
 }
 
-const DetailsInvestment = React.memo(_DetailsInvestment);
+const DetailsInvestment = _DetailsInvestment;
 export default DetailsInvestment;

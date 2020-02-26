@@ -41,7 +41,5 @@ const _DashboardInvestingMostProfitableContainer: React.FC = () => {
   );
 };
 
-const DashboardInvestingMostProfitableContainer = React.memo(
-  _DashboardInvestingMostProfitableContainer
-);
+const DashboardInvestingMostProfitableContainer = _DashboardInvestingMostProfitableContainer;
 export default DashboardInvestingMostProfitableContainer;

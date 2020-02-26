@@ -25,5 +25,5 @@ interface Props {
   name: string;
 }
 
-const TitleField = React.memo(_TitleField);
+const TitleField = _TitleField;
 export default TitleField;

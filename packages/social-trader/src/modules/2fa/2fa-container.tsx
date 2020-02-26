@@ -29,5 +29,5 @@ const _TwoFactorAuthContainer: React.FC = () => {
     />
   );
 };
-const TwoFactorAuthContainer = React.memo(_TwoFactorAuthContainer);
+const TwoFactorAuthContainer = _TwoFactorAuthContainer;
 export default TwoFactorAuthContainer;

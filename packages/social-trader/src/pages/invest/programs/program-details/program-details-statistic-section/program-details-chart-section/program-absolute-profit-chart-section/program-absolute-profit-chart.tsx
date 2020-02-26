@@ -69,7 +69,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const ProgramAbsoluteProfitChart = React.memo(
-  Crashable(_ProgramAbsoluteProfitChart)
-);
+const ProgramAbsoluteProfitChart = Crashable(_ProgramAbsoluteProfitChart);
 export default ProgramAbsoluteProfitChart;

@@ -1,7 +1,7 @@
 import { Icon, IIconProps } from "components/icon/icon";
 import * as React from "react";
 
-export const TableIcon: React.FC<IIconProps> = React.memo(props => (
+export const TableIcon: React.FC<IIconProps> = props => (
   <Icon type={"table"} {...props}>
     <svg width="14" height="15" viewBox="0 0 14 15">
       <g fill="none" fillRule="evenodd" strokeLinejoin="round">
@@ -35,4 +35,4 @@ export const TableIcon: React.FC<IIconProps> = React.memo(props => (
       </g>
     </svg>
   </Icon>
-));
+);

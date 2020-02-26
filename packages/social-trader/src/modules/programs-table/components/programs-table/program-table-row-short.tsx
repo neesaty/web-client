@@ -160,5 +160,5 @@ interface IProgramTableRowShortProps {
   program: ProgramDetailsListItem;
 }
 
-const ProgramTableRowShort = React.memo(_ProgramTableRowShort);
+const ProgramTableRowShort = _ProgramTableRowShort;
 export default ProgramTableRowShort;

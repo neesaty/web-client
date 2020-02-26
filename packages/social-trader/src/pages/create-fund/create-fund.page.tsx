@@ -13,6 +13,6 @@ const _CreateFundPage: React.FC = () => {
   );
 };
 
-const CreateFundPage = React.memo(_CreateFundPage);
+const CreateFundPage = _CreateFundPage;
 
 export default CreateFundPage;

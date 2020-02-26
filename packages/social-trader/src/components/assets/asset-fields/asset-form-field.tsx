@@ -90,5 +90,5 @@ interface Props {
   disabled?: boolean;
 }
 
-const AssetFormField = React.memo(_AssetFormField);
+const AssetFormField = _AssetFormField;
 export default AssetFormField;

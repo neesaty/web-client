@@ -86,5 +86,5 @@ export type EquityChartElementType = SimpleChartPoint & {
 };
 export type EquityChartType = Array<EquityChartElementType>;
 
-const ProfitChart = React.memo(_ProfitChart);
+const ProfitChart = _ProfitChart;
 export default ProfitChart;

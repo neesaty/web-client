@@ -39,5 +39,5 @@ interface Props {
   broker: Broker;
 }
 
-const CreateAccountSettingsSection = React.memo(_CreateAccountSettingsSection);
+const CreateAccountSettingsSection = _CreateAccountSettingsSection;
 export default CreateAccountSettingsSection;

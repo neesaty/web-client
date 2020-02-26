@@ -100,5 +100,5 @@ interface Props {
   data: AccountDetailsDataType;
 }
 
-const AccountDetailsContainer = React.memo(Crashable(_AccountDetailsContainer));
+const AccountDetailsContainer = Crashable(_AccountDetailsContainer);
 export default AccountDetailsContainer;

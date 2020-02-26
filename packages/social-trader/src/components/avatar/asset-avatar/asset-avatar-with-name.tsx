@@ -13,5 +13,5 @@ interface Props extends IAssetAvatarProps {
   name: string | JSX.Element;
 }
 
-const AssetAvatarWithName = React.memo(_AssetAvatarWithName);
+const AssetAvatarWithName = _AssetAvatarWithName;
 export default AssetAvatarWithName;

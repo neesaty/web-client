@@ -105,5 +105,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const ProgramFinancialStatisticRow = React.memo(_ProgramFinancialStatisticRow);
+const ProgramFinancialStatisticRow = _ProgramFinancialStatisticRow;
 export default ProgramFinancialStatisticRow;

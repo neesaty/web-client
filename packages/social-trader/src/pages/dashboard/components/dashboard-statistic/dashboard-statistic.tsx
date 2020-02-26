@@ -60,5 +60,5 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   ) => JSX.Element;
 }
 
-const DashboardStatistic = withBlurLoader(React.memo(_DashboardStatistic));
+const DashboardStatistic = withBlurLoader(_DashboardStatistic);
 export default DashboardStatistic;

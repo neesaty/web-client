@@ -59,5 +59,5 @@ const _DashboardPublic: React.FC<Props> = () => {
 
 interface Props {}
 
-const DashboardPublic = React.memo(_DashboardPublic);
+const DashboardPublic = _DashboardPublic;
 export default DashboardPublic;

@@ -53,5 +53,5 @@ const _InvestmentFundInfo: React.FC<IInvestmentFundInfoProps> = ({
   );
 };
 
-const InvestmentFundInfo = React.memo(_InvestmentFundInfo);
+const InvestmentFundInfo = _InvestmentFundInfo;
 export default InvestmentFundInfo;

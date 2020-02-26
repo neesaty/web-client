@@ -132,5 +132,5 @@ interface Props {
   wallets: WalletData[];
 }
 
-const WalletContainerTotal = React.memo(_WalletTablesTotal);
+const WalletContainerTotal = _WalletTablesTotal;
 export default WalletContainerTotal;

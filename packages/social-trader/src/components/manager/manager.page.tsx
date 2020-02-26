@@ -64,5 +64,5 @@ interface Props {
   profile: PublicProfile;
 }
 
-const ManagerPage = React.memo(Crashable(_ManagerPage));
+const ManagerPage = Crashable(_ManagerPage);
 export default ManagerPage;

@@ -136,5 +136,5 @@ export interface ITableModuleProps extends ITableProps {
   timestamp?: number;
 }
 
-const TableModule = React.memo(_TableModule);
+const TableModule = _TableModule;
 export default TableModule;

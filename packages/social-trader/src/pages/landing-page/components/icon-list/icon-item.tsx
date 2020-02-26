@@ -14,5 +14,5 @@ const _IconItem: React.FC<TIconLinks> = ({ href, name, icon }) => (
     </a>
   </li>
 );
-const IconItem = React.memo(_IconItem);
+const IconItem = _IconItem;
 export default IconItem;

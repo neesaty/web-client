@@ -384,5 +384,5 @@ const _FeesTrading: React.FC<Props> = ({ className }) => (
   </div>
 );
 
-const FeesTrading = React.memo(_FeesTrading);
+const FeesTrading = _FeesTrading;
 export default FeesTrading;

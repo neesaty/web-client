@@ -35,5 +35,5 @@ const _InfoItem: React.FC<TInfoItem> = ({ texts, image, button }) => (
     )}
   </li>
 );
-const InfoItem = React.memo(_InfoItem);
+const InfoItem = _InfoItem;
 export default InfoItem;

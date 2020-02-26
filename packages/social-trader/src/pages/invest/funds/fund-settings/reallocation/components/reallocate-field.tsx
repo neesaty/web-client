@@ -132,7 +132,7 @@ const _ReallocateField: React.FC<IReallocateFieldProps> = ({
   );
 };
 
-const ReallocateField = React.memo(_ReallocateField);
+const ReallocateField = _ReallocateField;
 export default ReallocateField;
 
 const MAX_PERCENT = 100;

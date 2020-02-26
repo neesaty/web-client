@@ -70,5 +70,5 @@ export interface CreateAccountFormValues {
   [CREATE_EXTERNAL_ACCOUNT_FORM_FIELDS.key]: string;
 }
 
-const FollowCreateExternalAccount = React.memo(_FollowCreateExternalAccount);
+const FollowCreateExternalAccount = _FollowCreateExternalAccount;
 export default FollowCreateExternalAccount;

@@ -96,5 +96,5 @@ interface Props {
   onSubmit: (values: AssetEditFormValues) => void;
 }
 
-const AssetEdit = React.memo(_AssetEdit);
+const AssetEdit = _AssetEdit;
 export default AssetEdit;

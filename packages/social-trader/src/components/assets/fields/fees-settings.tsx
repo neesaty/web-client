@@ -62,5 +62,5 @@ interface Props {
   title?: string;
 }
 
-const FeesSettings = React.memo(_FeesSettings);
+const FeesSettings = _FeesSettings;
 export default FeesSettings;

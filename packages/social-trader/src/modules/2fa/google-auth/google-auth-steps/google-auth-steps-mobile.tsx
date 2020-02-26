@@ -52,5 +52,5 @@ const GoogleAuth: React.FC<Props> = props => {
 
 interface Props extends IGoogleAuthProps {}
 
-const GoogleAuthMobile = React.memo(GoogleAuth);
+const GoogleAuthMobile = GoogleAuth;
 export default GoogleAuthMobile;

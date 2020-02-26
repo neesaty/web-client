@@ -40,5 +40,5 @@ interface Props {
   name: string;
 }
 
-const TradesDelay = React.memo(_TradesDelay);
+const TradesDelay = _TradesDelay;
 export default TradesDelay;

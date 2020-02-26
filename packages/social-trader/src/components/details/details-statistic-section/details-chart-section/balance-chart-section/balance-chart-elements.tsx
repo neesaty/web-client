@@ -97,5 +97,5 @@ interface Props {
   selectCurrencies: TChartCurrency[];
 }
 
-const BalanceChartElements = withLoader(React.memo(_BalanceChartElements));
+const BalanceChartElements = withLoader(_BalanceChartElements);
 export default BalanceChartElements;

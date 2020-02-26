@@ -62,5 +62,5 @@ interface Props {
   all?: string;
 }
 
-const DashboardStatisticContainer = React.memo(_DashboardStatisticContainer);
+const DashboardStatisticContainer = _DashboardStatisticContainer;
 export default DashboardStatisticContainer;

@@ -84,5 +84,5 @@ interface ISortingFilterProps {
   updateSorting?(value: string): void;
 }
 
-const SortingFilter = React.memo(_SortingFilter);
+const SortingFilter = _SortingFilter;
 export default SortingFilter;

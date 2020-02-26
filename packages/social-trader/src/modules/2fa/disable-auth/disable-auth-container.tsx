@@ -31,5 +31,5 @@ interface Props {
   onSubmit: () => void;
 }
 
-const DisableAuthContainer = React.memo(_DisableAuthContainer);
+const DisableAuthContainer = _DisableAuthContainer;
 export default DisableAuthContainer;

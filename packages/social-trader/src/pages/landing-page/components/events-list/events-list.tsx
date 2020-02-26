@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { PlatformEvent } from "gv-api-web";
 import EventItem from "pages/landing-page/components/events-list/event-item";
 import EventLastItem from "pages/landing-page/components/events-list/event-last-item";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 const TIME_DELAY = 5000;
 const COUNT_SHOWING_ITEMS = 5;
@@ -64,5 +64,5 @@ const _EventsList: React.FC<Props> = ({ className, events }) => {
   );
 };
 
-const EventsList = React.memo(_EventsList);
+const EventsList = _EventsList;
 export default EventsList;

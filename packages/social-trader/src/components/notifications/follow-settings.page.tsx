@@ -15,5 +15,5 @@ interface OwnProps {
   id: string;
 }
 
-const FollowNotificationPage = translate()(React.memo(_FollowNotificationPage));
+const FollowNotificationPage = translate()(_FollowNotificationPage);
 export default FollowNotificationPage;

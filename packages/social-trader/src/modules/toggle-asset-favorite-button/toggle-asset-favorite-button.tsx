@@ -67,4 +67,4 @@ export interface IToggleAssetFavoriteButtonProps {
   assetType?: ASSET;
 }
 
-export const ToggleAssetFavoriteButton = React.memo(_ToggleAssetFavoriteButton);
+export const ToggleAssetFavoriteButton = _ToggleAssetFavoriteButton;

@@ -31,5 +31,5 @@ interface Props {
   code: string;
 }
 
-const EmailConfirmContainer = React.memo(_EmailConfirmContainer);
+const EmailConfirmContainer = _EmailConfirmContainer;
 export default EmailConfirmContainer;

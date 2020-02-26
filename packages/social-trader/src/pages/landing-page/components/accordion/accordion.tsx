@@ -5,7 +5,7 @@ import AccordionContent, {
   TAccordionContent
 } from "pages/landing-page/components/accordion/accordion-content";
 import { Arrow } from "pages/landing-page/components/common-icons/arrow";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 
 export type TAccordion = {
   id: string | number;
@@ -41,5 +41,5 @@ const _Accordion: React.FC<Props> = ({ accordion, className }) => {
   );
 };
 
-const Accordion = React.memo(_Accordion);
+const Accordion = _Accordion;
 export default Accordion;

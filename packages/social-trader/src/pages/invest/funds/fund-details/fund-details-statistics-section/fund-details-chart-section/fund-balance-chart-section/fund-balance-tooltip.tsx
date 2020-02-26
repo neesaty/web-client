@@ -37,7 +37,7 @@ const _TooltipBody: React.FC<ITooltipBodyProps & WithTranslation> = ({
     </>
   );
 };
-const TooltipBody = translate()(React.memo(_TooltipBody));
+const TooltipBody = translate()(_TooltipBody);
 
 const FundBalanceTooltip: React.FC<IFundBalanceTooltipProps> = ({
   active,

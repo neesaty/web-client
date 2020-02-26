@@ -20,5 +20,5 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
 }
 
-const LineWalletButton = React.memo(_LineWalletButton);
+const LineWalletButton = _LineWalletButton;
 export default LineWalletButton;

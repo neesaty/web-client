@@ -29,5 +29,5 @@ const _ClosePeriodButton: React.FC<{ id: string; onApply?: () => void }> = ({
   );
 };
 
-const ClosePeriodButton = React.memo(_ClosePeriodButton);
+const ClosePeriodButton = _ClosePeriodButton;
 export default ClosePeriodButton;

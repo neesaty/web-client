@@ -20,5 +20,5 @@ const _EmailPending: React.FC = () => {
   );
 };
 
-const EmailPending = React.memo(_EmailPending);
+const EmailPending = _EmailPending;
 export default EmailPending;

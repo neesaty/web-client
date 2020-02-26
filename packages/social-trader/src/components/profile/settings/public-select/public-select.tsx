@@ -39,5 +39,5 @@ const _PublicSelect: React.FC = () => {
   );
 };
 
-const PublicSelect = React.memo(_PublicSelect);
+const PublicSelect = _PublicSelect;
 export default PublicSelect;

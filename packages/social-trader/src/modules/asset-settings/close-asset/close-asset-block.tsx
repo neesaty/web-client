@@ -30,5 +30,5 @@ interface Props extends WithTranslation {
   closeAsset: () => void;
 }
 
-const CloseAssetBlock = translate()(React.memo(_CloseAssetBlock));
+const CloseAssetBlock = translate()(_CloseAssetBlock);
 export default CloseAssetBlock;

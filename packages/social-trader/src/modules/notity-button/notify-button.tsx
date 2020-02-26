@@ -61,5 +61,5 @@ interface Props {
   canInvest: boolean;
 }
 
-const NotifyButton = React.memo(_NotifyButton);
+const NotifyButton = _NotifyButton;
 export default NotifyButton;

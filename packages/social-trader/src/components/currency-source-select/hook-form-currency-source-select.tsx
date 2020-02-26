@@ -38,4 +38,4 @@ interface Props {
   disabled?: boolean;
 }
 
-export const CurrencySourceSelect = React.memo(_CurrencySourceSelect);
+export const CurrencySourceSelect = _CurrencySourceSelect;

@@ -32,5 +32,5 @@ interface Props {
   label: string;
 }
 
-const DashboardTotalContainer = React.memo(_DashboardTotalContainer);
+const DashboardTotalContainer = _DashboardTotalContainer;
 export default DashboardTotalContainer;

@@ -27,5 +27,5 @@ const _TradingPage: React.FC = () => {
   );
 };
 
-const TradingPage = React.memo(_TradingPage);
+const TradingPage = _TradingPage;
 export default TradingPage;

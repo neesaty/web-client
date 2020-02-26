@@ -60,5 +60,5 @@ interface Props {
   accountTypes: BrokerAccountType[];
 }
 
-const BrokerAccount = React.memo(Crashable(_BrokerAccount));
+const BrokerAccount = Crashable(_BrokerAccount);
 export default BrokerAccount;

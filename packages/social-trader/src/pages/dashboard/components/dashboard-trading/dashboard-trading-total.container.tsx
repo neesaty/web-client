@@ -30,7 +30,5 @@ const _DashboardTradingTotalContainer: React.FC = () => {
   );
 };
 
-const DashboardTradingTotalContainer = React.memo(
-  _DashboardTradingTotalContainer
-);
+const DashboardTradingTotalContainer = _DashboardTradingTotalContainer;
 export default DashboardTradingTotalContainer;

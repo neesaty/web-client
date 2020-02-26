@@ -103,5 +103,5 @@ interface Props {
   programId: string;
 }
 
-const ProgramTrades = React.memo(_ProgramTrades);
+const ProgramTrades = _ProgramTrades;
 export default ProgramTrades;

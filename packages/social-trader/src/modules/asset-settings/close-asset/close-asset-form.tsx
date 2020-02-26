@@ -96,5 +96,5 @@ export interface ICloseAssetFormValues {
   [FIELDS.twoFactorCode]: string;
 }
 
-const CloseAssetForm = React.memo(_CloseAssetForm);
+const CloseAssetForm = _CloseAssetForm;
 export default CloseAssetForm;

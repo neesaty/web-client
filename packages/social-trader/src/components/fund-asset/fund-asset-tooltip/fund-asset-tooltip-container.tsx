@@ -46,7 +46,7 @@ const _FundAssetTooltipContainer: React.FC<Props> = ({
   );
 };
 
-const FundAssetTooltipContainer = React.memo(_FundAssetTooltipContainer);
+const FundAssetTooltipContainer = _FundAssetTooltipContainer;
 export default FundAssetTooltipContainer;
 
 interface OwnProps {

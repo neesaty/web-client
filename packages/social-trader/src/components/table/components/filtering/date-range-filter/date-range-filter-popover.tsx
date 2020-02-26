@@ -24,7 +24,7 @@ const DateRangeItem: React.FC<{
   onClick: VoidFunction;
   disabled: boolean;
   label: string;
-}> = React.memo(({ onClick, disabled, label }) => {
+}> = ({ onClick, disabled, label }) => {
   return (
     <PopoverContentCardBlockItem>
       <GVButton
@@ -39,7 +39,7 @@ const DateRangeItem: React.FC<{
       </GVButton>
     </PopoverContentCardBlockItem>
   );
-});
+};
 
 class _DateRangeFilterPopover extends React.PureComponent<Props, State> {
   state = {

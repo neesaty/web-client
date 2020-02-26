@@ -63,5 +63,5 @@ interface Props {
   hasInvestmentLimit: boolean;
 }
 
-const InvestmentLimitField = React.memo(_InvestmentLimitField);
+const InvestmentLimitField = _InvestmentLimitField;
 export default InvestmentLimitField;

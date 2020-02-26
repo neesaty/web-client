@@ -15,6 +15,6 @@ const _ChangeBroker: React.FC<IChangeBrokerFormContainerProps> = props => {
   );
 };
 
-const ChangeBroker = withLoader(React.memo(_ChangeBroker));
+const ChangeBroker = withLoader(_ChangeBroker);
 
 export default ChangeBroker;

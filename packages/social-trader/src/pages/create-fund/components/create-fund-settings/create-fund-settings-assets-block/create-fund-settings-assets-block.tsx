@@ -80,7 +80,5 @@ interface Props {
   touched?: boolean;
 }
 
-const CreateFundSettingsAssetsComponent = React.memo(
-  _CreateFundSettingsAssetsComponent
-);
+const CreateFundSettingsAssetsComponent = _CreateFundSettingsAssetsComponent;
 export default CreateFundSettingsAssetsComponent;

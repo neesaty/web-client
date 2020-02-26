@@ -12,36 +12,34 @@ import { FUNDS_TABLE_COLUMNS } from "./funds-table.constants";
 
 interface Props extends ITableModuleProps {}
 
-const FundsTableModule: React.FC<Props> = React.memo(
-  ({
-    getItems,
-    renderMappings,
-    sorting,
-    filtering,
-    defaultFilters,
-    paging,
-    title,
-    disableTitle
-  }) => {
-    return (
-      <TableModule
-        loaderData={fundListLoaderData}
-        disableTitle={disableTitle}
-        getItems={getItems}
-        defaultFilters={defaultFilters}
-        filtering={filtering}
-        sorting={sorting}
-        renderMappings={renderMappings}
-        paging={paging}
-        title={title}
-        columns={FUNDS_TABLE_COLUMNS}
-        renderHeader={column => <FundsTableHeaderCell column={column} />}
-        renderBodyRow={(fund, updateRow = () => {}) => (
-          <FundsTableRow updateRow={updateRow} fund={fund} />
-        )}
-      />
-    );
-  }
-);
+const FundsTableModule: React.FC<Props> = ({
+  getItems,
+  renderMappings,
+  sorting,
+  filtering,
+  defaultFilters,
+  paging,
+  title,
+  disableTitle
+}) => {
+  return (
+    <TableModule
+      loaderData={fundListLoaderData}
+      disableTitle={disableTitle}
+      getItems={getItems}
+      defaultFilters={defaultFilters}
+      filtering={filtering}
+      sorting={sorting}
+      renderMappings={renderMappings}
+      paging={paging}
+      title={title}
+      columns={FUNDS_TABLE_COLUMNS}
+      renderHeader={column => <FundsTableHeaderCell column={column} />}
+      renderBodyRow={(fund, updateRow = () => {}) => (
+        <FundsTableRow updateRow={updateRow} fund={fund} />
+      )}
+    />
+  );
+};
 
 export default FundsTableModule;

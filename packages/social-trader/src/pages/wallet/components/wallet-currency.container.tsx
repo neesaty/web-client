@@ -39,5 +39,5 @@ interface Props {
   currency: string;
 }
 
-const WalletCurrencyContainer = React.memo(_WalletCurrencyContainer);
+const WalletCurrencyContainer = _WalletCurrencyContainer;
 export default WalletCurrencyContainer;

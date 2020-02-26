@@ -72,5 +72,5 @@ const _FundsTable: React.FC<Props> = ({
   />
 );
 
-const FundsTable = React.memo(_FundsTable);
+const FundsTable = _FundsTable;
 export default FundsTable;

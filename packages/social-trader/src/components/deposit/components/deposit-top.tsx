@@ -44,5 +44,5 @@ export interface DepositTopOwnProps {
   header?: string;
 }
 
-const DepositTop = React.memo(_DepositTop);
+const DepositTop = _DepositTop;
 export default DepositTop;

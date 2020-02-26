@@ -80,5 +80,5 @@ export interface IFundsFacetTableProps {
   currency?: CurrencyEnum;
 }
 
-const FundsFacetTable = React.memo(_FundsFacetTable);
+const FundsFacetTable = _FundsFacetTable;
 export default FundsFacetTable;

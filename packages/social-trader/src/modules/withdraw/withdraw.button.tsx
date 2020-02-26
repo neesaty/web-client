@@ -66,5 +66,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const WithdrawButton = React.memo(_WithdrawButton);
+const WithdrawButton = _WithdrawButton;
 export default WithdrawButton;

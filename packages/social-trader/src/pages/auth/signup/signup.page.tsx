@@ -54,5 +54,5 @@ interface Props {
   utmSource?: string;
 }
 
-const SignUpPage = React.memo(_SignUpPage);
+const SignUpPage = _SignUpPage;
 export default SignUpPage;

@@ -183,5 +183,5 @@ const _EventItem: React.FC<Props> = ({
     </animated.li>
   );
 };
-const EventItem = React.memo(_EventItem);
+const EventItem = _EventItem;
 export default EventItem;

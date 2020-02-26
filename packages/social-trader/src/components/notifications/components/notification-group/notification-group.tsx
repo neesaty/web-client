@@ -30,5 +30,5 @@ interface Props {
   closeNotifications(): void;
 }
 
-const NotificationsGroup = React.memo(_NotificationsGroup);
+const NotificationsGroup = _NotificationsGroup;
 export default NotificationsGroup;

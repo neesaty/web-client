@@ -65,5 +65,5 @@ interface Props {
   selectedAssets: string[];
 }
 
-const MultiChart = withBlurLoader(React.memo(_MultiChart));
+const MultiChart = withBlurLoader(_MultiChart);
 export default MultiChart;

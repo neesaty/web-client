@@ -13,4 +13,4 @@ const _DetailsInvestmentHeading: React.FC<React.HTMLAttributes<
   );
 };
 
-export const DetailsInvestmentHeading = React.memo(_DetailsInvestmentHeading);
+export const DetailsInvestmentHeading = _DetailsInvestmentHeading;

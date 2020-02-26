@@ -25,7 +25,7 @@ const _NavigationButton: React.FC<INavigationButtonProps> = ({
     </>
   </GVButton>
 );
-export const NavigationButton = React.memo(_NavigationButton);
+export const NavigationButton = _NavigationButton;
 
 interface INavigationItemProps extends React.HTMLAttributes<HTMLAnchorElement> {
   href: string | ToType;
@@ -64,5 +64,5 @@ const _NavigationItem: React.FC<INavigationItemProps> = ({
     )
   );
 };
-const NavigationItem = React.memo(_NavigationItem);
+const NavigationItem = _NavigationItem;
 export default NavigationItem;

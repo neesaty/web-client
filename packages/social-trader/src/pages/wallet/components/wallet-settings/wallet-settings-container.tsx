@@ -56,8 +56,5 @@ interface OwnProps {
 
 const WalletSettingsContainer = compose<
   React.ComponentType<OwnProps & WithLoaderProps>
->(
-  withLoader,
-  React.memo
-)(_WalletSettingsContainer);
+>(withLoader)(_WalletSettingsContainer);
 export default WalletSettingsContainer;

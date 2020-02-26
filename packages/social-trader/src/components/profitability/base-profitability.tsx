@@ -21,7 +21,7 @@ const _BaseProfitability: React.FC<Props> = ({
   </div>
 );
 
-const BaseProfitability = React.memo(_BaseProfitability);
+const BaseProfitability = _BaseProfitability;
 
 export default BaseProfitability;
 

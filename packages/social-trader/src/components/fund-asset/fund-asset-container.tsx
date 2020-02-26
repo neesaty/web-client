@@ -73,57 +73,55 @@ const _FundAssetContainer: React.FC<IFundAssetContainerProps> = ({
   );
 };
 
-const HidedFundAssets: React.FC<IHidedFundAssetsProps> = React.memo(
-  ({
-    bottomOffset,
-    length,
-    assets,
-    size,
-    type,
-    hasPopoverList,
-    setSize,
-    removable,
-    removeHandle,
-    hoveringAsset
-  }) => {
-    const { anchor, setAnchor, clearAnchor } = useAnchor();
-    const handleOpen = useCallback(
-      (event: React.MouseEvent<HTMLElement>) => {
-        hasPopoverList ? setAnchor(event) : setSize(assets.length);
-      },
-      [assets.length, hasPopoverList, setAnchor]
-    );
-    return (
-      <>
-        <HidedAssetsLabel
-          count={(length || assets.length) - size}
-          type={type}
-          handleOpen={handleOpen}
-        />
-        <Popover
-          horizontal={HORIZONTAL_POPOVER_POS.RIGHT}
-          vertical={VERTICAL_POPOVER_POS.TOP}
-          anchorEl={anchor}
-          noPadding
-          onClose={clearAnchor}
-        >
-          <div className="fund-assets__container">
-            {assets.filter(getHidedAssets(size)).map(
-              renderFundAsset({
-                bottomOffset,
-                type,
-                removable,
-                removeHandle,
-                hoveringAsset,
-                assetsLength: assets.length
-              })
-            )}
-          </div>
-        </Popover>
-      </>
-    );
-  }
-);
+const HidedFundAssets: React.FC<IHidedFundAssetsProps> = ({
+  bottomOffset,
+  length,
+  assets,
+  size,
+  type,
+  hasPopoverList,
+  setSize,
+  removable,
+  removeHandle,
+  hoveringAsset
+}) => {
+  const { anchor, setAnchor, clearAnchor } = useAnchor();
+  const handleOpen = useCallback(
+    (event: React.MouseEvent<HTMLElement>) => {
+      hasPopoverList ? setAnchor(event) : setSize(assets.length);
+    },
+    [assets.length, hasPopoverList, setAnchor]
+  );
+  return (
+    <>
+      <HidedAssetsLabel
+        count={(length || assets.length) - size}
+        type={type}
+        handleOpen={handleOpen}
+      />
+      <Popover
+        horizontal={HORIZONTAL_POPOVER_POS.RIGHT}
+        vertical={VERTICAL_POPOVER_POS.TOP}
+        anchorEl={anchor}
+        noPadding
+        onClose={clearAnchor}
+      >
+        <div className="fund-assets__container">
+          {assets.filter(getHidedAssets(size)).map(
+            renderFundAsset({
+              bottomOffset,
+              type,
+              removable,
+              removeHandle,
+              hoveringAsset,
+              assetsLength: assets.length
+            })
+          )}
+        </div>
+      </Popover>
+    </>
+  );
+};
 
 interface IHidedFundAssetsProps {
   bottomOffset?: boolean;
@@ -195,5 +193,5 @@ export type FundAssetType =
   | FundAssetPartWithIcon
   | FundAssetPercent;
 
-const FundAssetContainer = React.memo(_FundAssetContainer);
+const FundAssetContainer = _FundAssetContainer;
 export default FundAssetContainer;

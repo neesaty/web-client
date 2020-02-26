@@ -25,5 +25,5 @@ const _PieContainerSmall: React.FC<IPieContainer> = ({
   </div>
 );
 
-const PieContainerSmall = React.memo(_PieContainerSmall);
+const PieContainerSmall = _PieContainerSmall;
 export default PieContainerSmall;

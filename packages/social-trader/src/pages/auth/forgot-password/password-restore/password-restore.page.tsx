@@ -21,5 +21,5 @@ interface Props {
   code: string;
 }
 
-const PasswordRestorePage = React.memo(_PasswordRestorePage);
+const PasswordRestorePage = _PasswordRestorePage;
 export default PasswordRestorePage;

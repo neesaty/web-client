@@ -9,5 +9,5 @@ const _NotificationsPage: React.FC<WithTranslation> = ({ t }) => (
   </Page>
 );
 
-const NotificationsPage = translate()(React.memo(_NotificationsPage));
+const NotificationsPage = translate()(_NotificationsPage);
 export default NotificationsPage;

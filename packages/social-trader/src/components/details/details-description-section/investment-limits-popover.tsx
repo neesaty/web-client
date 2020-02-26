@@ -89,5 +89,5 @@ interface Props {
   closePopover(): void;
 }
 
-const InvestmentLimitsPopover = React.memo(_InvestmentLimitsPopover);
+const InvestmentLimitsPopover = _InvestmentLimitsPopover;
 export default InvestmentLimitsPopover;

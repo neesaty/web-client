@@ -123,5 +123,5 @@ interface Props {
   data: FundDetailsFull;
 }
 
-const FundDetailsContainer = React.memo(Crashable(_FundDetailsContainer));
+const FundDetailsContainer = Crashable(_FundDetailsContainer);
 export default FundDetailsContainer;

@@ -79,5 +79,5 @@ const _FollowsTable: React.FC<IFollowsTableProps> = ({
   );
 };
 
-const FollowsTable = React.memo(_FollowsTable);
+const FollowsTable = _FollowsTable;
 export default FollowsTable;

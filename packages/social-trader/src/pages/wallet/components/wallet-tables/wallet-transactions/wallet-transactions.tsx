@@ -106,5 +106,5 @@ interface Props {
   currency?: CurrencyEnum;
 }
 
-const WalletTransactions = React.memo(_WalletTransactions);
+const WalletTransactions = _WalletTransactions;
 export default WalletTransactions;

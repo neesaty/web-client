@@ -120,6 +120,5 @@ interface OwnProps {
 
 export default compose<React.ComponentType<OwnProps>>(
   translate(),
-  connect(undefined, mapDispatchToProps),
-  React.memo
+  connect(undefined, mapDispatchToProps)
 )(CustomNotification);

@@ -71,7 +71,7 @@ interface IChartAssetSubListProps {
   handleToggle: (asset: string) => void;
 }
 
-const ChartAssetSubList = React.memo(_ChartAssetSubList);
+const ChartAssetSubList = _ChartAssetSubList;
 
 const ChartAssetEmptyMessage: React.FC = () => {
   return (
@@ -90,5 +90,5 @@ interface Props {
   onChange: (assets: string[]) => void;
 }
 
-const ChartAssetList = React.memo(_ChartAssetList);
+const ChartAssetList = _ChartAssetList;
 export default ChartAssetList;

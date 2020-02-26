@@ -56,5 +56,5 @@ export type TUpdateFundFunc = (values: {
   exitFee?: number;
 }) => void;
 
-const FundSettingsPage = React.memo(_FundSettingsPage);
+const FundSettingsPage = _FundSettingsPage;
 export default FundSettingsPage;

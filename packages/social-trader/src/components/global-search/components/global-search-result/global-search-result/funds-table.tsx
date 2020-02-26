@@ -23,4 +23,4 @@ const FundsTable: React.FC<SearchTableProps<ItemsViewModelFundDetailsListItem> &
   );
 };
 
-export default translate()(React.memo(FundsTable));
+export default translate()(FundsTable);

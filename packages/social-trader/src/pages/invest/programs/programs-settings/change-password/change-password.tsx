@@ -42,7 +42,6 @@ interface OwnProps {
 
 const ChangePassword = compose<React.ComponentType<OwnProps & WithLoaderProps>>(
   withLoader,
-  translate(),
-  React.memo
+  translate()
 )(_ChangePassword);
 export default ChangePassword;

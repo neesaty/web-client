@@ -23,5 +23,5 @@ export interface Props {
   className?: string;
 }
 
-const SeoList = React.memo(_SeoList);
+const SeoList = _SeoList;
 export default SeoList;

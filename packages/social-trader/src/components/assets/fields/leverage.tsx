@@ -33,5 +33,5 @@ interface Props {
   accountLeverages: number[];
 }
 
-const Leverage = React.memo(_Leverage);
+const Leverage = _Leverage;
 export default Leverage;

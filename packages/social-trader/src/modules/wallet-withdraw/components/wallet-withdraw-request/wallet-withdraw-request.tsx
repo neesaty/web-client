@@ -22,4 +22,4 @@ const WalletWithdrawRequest: React.FC = () => {
   );
 };
 
-export default React.memo(WalletWithdrawRequest);
+export default WalletWithdrawRequest;

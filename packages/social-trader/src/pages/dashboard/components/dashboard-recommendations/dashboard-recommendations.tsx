@@ -18,7 +18,5 @@ interface Props {
   data: TDashboardRecommendations;
 }
 
-const DashboardRecommendations = withBlurLoader(
-  React.memo(_DashboardRecommendations)
-);
+const DashboardRecommendations = withBlurLoader(_DashboardRecommendations);
 export default DashboardRecommendations;

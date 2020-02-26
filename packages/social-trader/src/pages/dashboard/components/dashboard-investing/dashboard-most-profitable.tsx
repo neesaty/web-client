@@ -28,6 +28,6 @@ interface Props {
 }
 
 const DashboardInvestingMostProfitable = withBlurLoader(
-  React.memo(_DashboardInvestingMostProfitable)
+  _DashboardInvestingMostProfitable
 );
 export default DashboardInvestingMostProfitable;

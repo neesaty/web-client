@@ -39,5 +39,5 @@ interface Props extends WithTranslation {
   id: string;
 }
 
-const FundsFacetPage = translate()(React.memo(_FundsFacetPage));
+const FundsFacetPage = translate()(_FundsFacetPage);
 export default FundsFacetPage;

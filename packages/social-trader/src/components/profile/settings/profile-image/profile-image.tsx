@@ -40,7 +40,7 @@ const _ProfileImage: React.FC<Props> = ({ onSubmit, avatar, errorMessage }) => {
     </HookForm>
   );
 };
-const ProfileImage = React.memo(_ProfileImage);
+const ProfileImage = _ProfileImage;
 export default ProfileImage;
 
 interface Props {

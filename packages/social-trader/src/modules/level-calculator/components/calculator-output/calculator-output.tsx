@@ -36,5 +36,5 @@ interface Props {
   className?: string;
 }
 
-const CalculatorOutput = React.memo(withLoader(_CalculatorOutput));
+const CalculatorOutput = withLoader(_CalculatorOutput);
 export default CalculatorOutput;

@@ -2,7 +2,7 @@ import "./nav-list.scss";
 
 import classNames from "classnames";
 import NavSubItem from "pages/landing-page/components/nav/nav-subitem";
-import { TNavHeader, TSubNav } from "pages/landing-page/static-data/nav-links";
+import { TSubNav } from "pages/landing-page/static-data/nav-links";
 import React from "react";
 
 const _NavSubList: React.FC<Props> = ({ subNav, subNavOpen, onClick }) => (
@@ -31,5 +31,5 @@ export interface Props {
   onClick?(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>): void;
 }
 
-const NavSubList = React.memo(_NavSubList);
+const NavSubList = _NavSubList;
 export default NavSubList;

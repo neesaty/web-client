@@ -1,11 +1,11 @@
 import Chip from "components/chip/chip";
 import * as React from "react";
 
-const Count: React.FC<Props> = React.memo(({ onClick, count }) => (
+const Count: React.FC<Props> = ({ onClick, count }) => (
   <Chip className={"traders-count"} onClick={onClick}>
     +{count}
   </Chip>
-));
+);
 
 interface Props {
   onClick: (event: any) => void;

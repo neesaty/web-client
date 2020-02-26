@@ -57,5 +57,5 @@ interface Props {
   code: string;
 }
 
-const PasswordRestoreContainer = React.memo(_PasswordRestoreContainer);
+const PasswordRestoreContainer = _PasswordRestoreContainer;
 export default PasswordRestoreContainer;

@@ -42,8 +42,7 @@ const BrokerCardAdornment = compose<
   React.ComponentType<OwnProps & WithLoaderProps>
 >(
   translate(),
-  withLoader,
-  React.memo
+  withLoader
 )(_BrokerCardAdornment);
 
 export default BrokerCardAdornment;

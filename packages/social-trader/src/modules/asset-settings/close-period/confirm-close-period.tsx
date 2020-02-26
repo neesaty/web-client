@@ -40,7 +40,7 @@ const _ConfirmClosePeriod: React.FC<IClosePeriodProps> = ({
   );
 };
 
-const ConfirmClosePeriod = React.memo(_ConfirmClosePeriod);
+const ConfirmClosePeriod = _ConfirmClosePeriod;
 export default ConfirmClosePeriod;
 
 export interface IClosePeriodProps {

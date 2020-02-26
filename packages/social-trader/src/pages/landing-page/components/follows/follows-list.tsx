@@ -26,5 +26,5 @@ const _FollowsList: React.FC<Props> = ({ className, follows }) => (
   </ul>
 );
 
-const FollowsList = React.memo(_FollowsList);
+const FollowsList = _FollowsList;
 export default FollowsList;

@@ -63,5 +63,5 @@ interface Props {
   programId: string;
 }
 
-const ProgramOpenPositions = React.memo(_ProgramOpenPositions);
+const ProgramOpenPositions = _ProgramOpenPositions;
 export default ProgramOpenPositions;

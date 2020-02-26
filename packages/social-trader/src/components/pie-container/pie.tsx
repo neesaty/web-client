@@ -66,4 +66,4 @@ export interface Props {
   pieDirection?: PIE_DIRECTION;
 }
 
-export default React.memo(Pie);
+export default Pie;

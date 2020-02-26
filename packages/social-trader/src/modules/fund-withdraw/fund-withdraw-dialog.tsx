@@ -27,4 +27,4 @@ export interface IFundWithdrawDialogProps
   id: string;
 }
 
-export const FundWithdrawDialog = React.memo(_FundWithdrawDialog);
+export const FundWithdrawDialog = _FundWithdrawDialog;

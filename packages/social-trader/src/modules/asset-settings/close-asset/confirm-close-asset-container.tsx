@@ -82,5 +82,5 @@ interface Props {
   id: string;
 }
 
-const ConfirmCloseAssetContainer = React.memo(_ConfirmCloseAssetContainer);
+const ConfirmCloseAssetContainer = _ConfirmCloseAssetContainer;
 export default ConfirmCloseAssetContainer;

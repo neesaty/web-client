@@ -81,5 +81,5 @@ const _FundDetailsStatisticSection: React.FC = () => (
   />
 );
 
-const FundDetailsStatisticSection = React.memo(_FundDetailsStatisticSection);
+const FundDetailsStatisticSection = _FundDetailsStatisticSection;
 export default FundDetailsStatisticSection;

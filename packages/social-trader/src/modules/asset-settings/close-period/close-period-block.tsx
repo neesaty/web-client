@@ -22,5 +22,5 @@ interface Props extends WithTranslation {
   closePeriod?: () => void;
 }
 
-const ClosePeriodBlock = withLoader(translate()(React.memo(_ClosePeriodBlock)));
+const ClosePeriodBlock = withLoader(translate()(_ClosePeriodBlock));
 export default ClosePeriodBlock;

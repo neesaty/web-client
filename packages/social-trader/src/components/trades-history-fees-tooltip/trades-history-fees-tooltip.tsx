@@ -55,5 +55,5 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   trade: OrderSignalModel;
 }
 
-const TradesHistoryFeesTooltip = React.memo(_TradesHistoryFeesTooltip);
+const TradesHistoryFeesTooltip = _TradesHistoryFeesTooltip;
 export default TradesHistoryFeesTooltip;

@@ -26,4 +26,4 @@ interface Props {
   id: string;
 }
 
-export const TFAConfirmBlock = React.memo(_TFAConfirmBlock);
+export const TFAConfirmBlock = _TFAConfirmBlock;

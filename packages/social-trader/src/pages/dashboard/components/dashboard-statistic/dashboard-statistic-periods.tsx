@@ -65,11 +65,7 @@ const _DashboardStatisticPeriodsItem: React.FC<{
     </StatisticItem>
   );
 };
-export const DashboardStatisticPeriodsItem = React.memo(
-  _DashboardStatisticPeriodsItem
-);
+export const DashboardStatisticPeriodsItem = _DashboardStatisticPeriodsItem;
 
-const DashboardStatisticPeriods = React.memo(
-  Crashable(_DashboardStatisticPeriods)
-);
+const DashboardStatisticPeriods = Crashable(_DashboardStatisticPeriods);
 export default DashboardStatisticPeriods;

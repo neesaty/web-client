@@ -74,7 +74,6 @@ interface OwnProps {
 }
 
 const FundSettings = compose<React.ComponentType<OwnProps & WithLoaderProps>>(
-  withLoader,
-  React.memo
+  withLoader
 )(_FundSettings);
 export default FundSettings;

@@ -22,5 +22,5 @@ interface Props {
   data: AssetInfo;
 }
 
-const ActivePage = React.memo(_ActivePage);
+const ActivePage = _ActivePage;
 export default ActivePage;

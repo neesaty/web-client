@@ -29,5 +29,5 @@ interface ITransactionDetailsProps {
   onAction: () => void;
 }
 
-const TransactionDetailsPopup = React.memo(_TransactionDetailsPopup);
+const TransactionDetailsPopup = _TransactionDetailsPopup;
 export default TransactionDetailsPopup;

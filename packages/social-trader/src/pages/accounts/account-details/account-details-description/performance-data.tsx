@@ -40,5 +40,5 @@ interface Props {
   description: AccountDetailsDataType;
 }
 
-const PerformanceData = React.memo(_PerformanceData);
+const PerformanceData = _PerformanceData;
 export default PerformanceData;

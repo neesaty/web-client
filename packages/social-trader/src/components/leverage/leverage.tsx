@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Leverage: React.FC<Props> = React.memo(({ min, max }) => {
+const Leverage: React.FC<Props> = ({ min, max }) => {
   switch (min === max) {
     case true:
       return <>1:{min}</>;
@@ -11,7 +11,7 @@ const Leverage: React.FC<Props> = React.memo(({ min, max }) => {
         </>
       );
   }
-});
+};
 
 interface Props {
   min: number;

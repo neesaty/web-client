@@ -62,5 +62,5 @@ const _ProgramShort: React.FC<Props> = ({ program }) => {
     </div>
   );
 };
-const ProgramShort = React.memo(_ProgramShort);
+const ProgramShort = _ProgramShort;
 export default ProgramShort;

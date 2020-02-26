@@ -78,5 +78,5 @@ interface IGVCheckboxProps {
   label: string;
 }
 
-const GVCheckbox = React.memo(_GVCheckbox);
+const GVCheckbox = _GVCheckbox;
 export default GVCheckbox;

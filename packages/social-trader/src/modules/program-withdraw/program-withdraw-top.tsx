@@ -24,7 +24,7 @@ const _ProgramWithdrawTop: React.FC<OwnProps> = ({
   );
 };
 
-const ProgramWithdrawTop = React.memo(_ProgramWithdrawTop);
+const ProgramWithdrawTop = _ProgramWithdrawTop;
 export default ProgramWithdrawTop;
 
 interface OwnProps {

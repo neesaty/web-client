@@ -16,4 +16,4 @@ interface Props {
   name: string | JSX.Element;
 }
 
-export const AvatarWithName = React.memo(_AvatarWithName);
+export const AvatarWithName = _AvatarWithName;

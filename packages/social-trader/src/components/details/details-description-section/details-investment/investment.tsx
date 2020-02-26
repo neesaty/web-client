@@ -193,5 +193,5 @@ interface Props {
   personalDetails: InvestmentType;
 }
 
-const Investment = React.memo(Crashable(_Investment));
+const Investment = Crashable(_Investment);
 export default Investment;

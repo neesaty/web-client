@@ -54,7 +54,7 @@ const _BrokerCard: React.FC<Props> = ({
   );
 };
 
-const BrokerCard = React.memo(_BrokerCard);
+const BrokerCard = _BrokerCard;
 export default BrokerCard;
 
 interface Props {

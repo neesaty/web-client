@@ -46,4 +46,4 @@ const _CancelRequestButton: React.FC<{
     </>
   );
 };
-export const CancelRequestButton = React.memo(_CancelRequestButton);
+export const CancelRequestButton = _CancelRequestButton;

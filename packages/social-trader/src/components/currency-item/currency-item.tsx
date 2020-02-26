@@ -90,4 +90,4 @@ interface Props {
   name?: string | CurrencyEnum;
 }
 
-export const CurrencyItem = React.memo(_CurrencyItem);
+export const CurrencyItem = _CurrencyItem;

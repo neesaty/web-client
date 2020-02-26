@@ -8,5 +8,5 @@ const _ProfileEditPage: React.FC = () => (
   </ProfileLayout>
 );
 
-const ProfileEditPage = React.memo(_ProfileEditPage);
+const ProfileEditPage = _ProfileEditPage;
 export default ProfileEditPage;

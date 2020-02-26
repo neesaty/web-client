@@ -43,4 +43,4 @@ export const _ActionsCircleIcon: React.FC<IIconProps> = props => (
   </Icon>
 );
 
-export const ActionsCircleIcon = withLoader(React.memo(_ActionsCircleIcon));
+export const ActionsCircleIcon = withLoader(_ActionsCircleIcon);

@@ -90,5 +90,5 @@ interface Props {
   position: OrderSignalModel;
 }
 
-const ProgramOpenPositionsRow = React.memo(_ProgramOpenPositionsRow);
+const ProgramOpenPositionsRow = _ProgramOpenPositionsRow;
 export default ProgramOpenPositionsRow;

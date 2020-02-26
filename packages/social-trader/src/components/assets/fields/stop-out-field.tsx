@@ -29,5 +29,5 @@ interface Props {
   name: string;
 }
 
-const StopOutField = React.memo(_StopOutField);
+const StopOutField = _StopOutField;
 export default StopOutField;

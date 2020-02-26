@@ -20,6 +20,6 @@ interface Props {
   getExportFileUrl: (id: string, dateRange: DateRangeFilterType) => string;
 }
 
-const DownloadButtonToolbar = React.memo(_DownloadButtonToolbar);
+const DownloadButtonToolbar = _DownloadButtonToolbar;
 
 export default DownloadButtonToolbar;

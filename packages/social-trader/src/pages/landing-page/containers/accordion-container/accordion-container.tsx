@@ -17,5 +17,5 @@ const _AccordionContainer: React.FC<Props> = ({ accordions }) => {
   );
 };
 
-const AccordionContainer = React.memo(_AccordionContainer);
+const AccordionContainer = _AccordionContainer;
 export default AccordionContainer;

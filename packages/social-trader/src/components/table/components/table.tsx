@@ -158,5 +158,5 @@ export interface ITableProps
   exportButtonToolbarRender?: (filtering?: FilteringType) => JSX.Element;
 }
 
-const Table = React.memo(_Table);
+const Table = _Table;
 export default Table;

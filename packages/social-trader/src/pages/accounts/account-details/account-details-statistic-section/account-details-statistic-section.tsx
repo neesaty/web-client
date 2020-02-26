@@ -88,7 +88,5 @@ const _AccountDetailsStatisticSection: React.FC = () => {
   );
 };
 
-const AccountDetailsStatisticSection = React.memo(
-  _AccountDetailsStatisticSection
-);
+const AccountDetailsStatisticSection = _AccountDetailsStatisticSection;
 export default AccountDetailsStatisticSection;

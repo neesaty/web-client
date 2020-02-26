@@ -13,5 +13,5 @@ const _WalletTotalContainer: React.FC = () => {
   );
 };
 
-const WalletTotalContainer = React.memo(_WalletTotalContainer);
+const WalletTotalContainer = _WalletTotalContainer;
 export default WalletTotalContainer;

@@ -98,5 +98,5 @@ interface Props extends FundAssetInfo {
   className?: string;
 }
 
-const FundAsset = React.memo(_FundAsset);
+const FundAsset = _FundAsset;
 export default FundAsset;

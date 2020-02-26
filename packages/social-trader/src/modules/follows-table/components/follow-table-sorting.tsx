@@ -13,5 +13,5 @@ const _FollowTableSortingValue: React.FC<{ column: SortingColumn }> = ({
   return t(`follows-page.header.${column.name}`);
 };
 
-const FollowTableSortingValue = React.memo(_FollowTableSortingValue);
+const FollowTableSortingValue = _FollowTableSortingValue;
 export default FollowTableSortingValue;

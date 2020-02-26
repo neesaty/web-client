@@ -30,7 +30,7 @@ const _Links: React.FC<ILinksProps> = ({
     ))}
   </div>
 );
-const Links = React.memo(withLoader(_Links));
+const Links = withLoader(_Links);
 
 export type TOnEditLinkSubmitFunc = (
   values: UpdateSocialLinkViewModel
@@ -73,5 +73,5 @@ const _SocialLinksContainer: React.FC = () => {
   );
 };
 
-const SocialLinksContainer = React.memo(_SocialLinksContainer);
+const SocialLinksContainer = _SocialLinksContainer;
 export default SocialLinksContainer;

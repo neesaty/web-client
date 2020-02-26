@@ -33,5 +33,5 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   hasMore?: boolean;
 }
 
-const InfinityScroll = React.memo<React.FC<Props>>(_InfinityScroll);
+const InfinityScroll = _InfinityScroll;
 export default InfinityScroll;

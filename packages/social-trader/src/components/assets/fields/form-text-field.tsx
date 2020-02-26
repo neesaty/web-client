@@ -23,5 +23,5 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   accent?: boolean;
 }
 
-const FormTextField = React.memo(_FormTextField);
+const FormTextField = _FormTextField;
 export default FormTextField;

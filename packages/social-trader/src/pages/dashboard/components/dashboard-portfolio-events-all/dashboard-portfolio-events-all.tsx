@@ -67,5 +67,5 @@ enum TABS {
   TRADING_HISTORY = "Trading history"
 }
 
-const PortfolioEventsAllComponent = React.memo(_PortfolioEventsAllComponent);
+const PortfolioEventsAllComponent = _PortfolioEventsAllComponent;
 export default PortfolioEventsAllComponent;

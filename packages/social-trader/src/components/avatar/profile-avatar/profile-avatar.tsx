@@ -28,5 +28,5 @@ interface Props extends IImageProps {
   big?: boolean;
 }
 
-const ProfileAvatar = React.memo(_ProfileAvatar);
+const ProfileAvatar = _ProfileAvatar;
 export default ProfileAvatar;

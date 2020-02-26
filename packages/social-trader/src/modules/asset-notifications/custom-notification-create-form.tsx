@@ -117,7 +117,7 @@ const _CustomNotificationCreateForm: React.FC<Props> = ({
   );
 };
 
-const CustomNotificationCreateForm = React.memo(_CustomNotificationCreateForm);
+const CustomNotificationCreateForm = _CustomNotificationCreateForm;
 export default CustomNotificationCreateForm;
 
 interface Props {

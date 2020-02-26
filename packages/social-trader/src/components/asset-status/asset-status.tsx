@@ -52,5 +52,5 @@ interface Props {
   onCancel: () => void;
 }
 
-const AssetStatus = React.memo(_AssetStatus);
+const AssetStatus = _AssetStatus;
 export default AssetStatus;

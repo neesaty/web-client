@@ -22,5 +22,5 @@ const _GlobalSearchContainer: React.FC = () => {
   );
 };
 
-const GlobalSearchContainer = React.memo(_GlobalSearchContainer);
+const GlobalSearchContainer = _GlobalSearchContainer;
 export default GlobalSearchContainer;

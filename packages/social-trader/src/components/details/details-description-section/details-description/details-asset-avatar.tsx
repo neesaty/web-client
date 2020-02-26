@@ -66,5 +66,5 @@ interface Props {
   currency?: CurrencyEnum;
 }
 
-const DetailsAssetAvatar = React.memo(_DetailsAssetAvatar);
+const DetailsAssetAvatar = _DetailsAssetAvatar;
 export default DetailsAssetAvatar;

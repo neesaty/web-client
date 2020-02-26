@@ -8,7 +8,7 @@ export interface IFormErrorProps {
   error?: string;
 }
 
-const FormError: React.FC<IFormErrorProps> = React.memo(({ error, small }) => {
+const FormError: React.FC<IFormErrorProps> = ({ error, small }) => {
   if (error) {
     return (
       <div className={classNames("form-error", { "form-error--small": small })}>
@@ -17,6 +17,6 @@ const FormError: React.FC<IFormErrorProps> = React.memo(({ error, small }) => {
     );
   }
   return null;
-});
+};
 
 export default FormError;

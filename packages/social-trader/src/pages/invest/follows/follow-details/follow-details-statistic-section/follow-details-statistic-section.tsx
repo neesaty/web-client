@@ -88,7 +88,5 @@ const _ProgramDetailsStatisticSection: React.FC = () => {
   );
 };
 
-const FollowDetailsStatisticSection = React.memo(
-  _ProgramDetailsStatisticSection
-);
+const FollowDetailsStatisticSection = _ProgramDetailsStatisticSection;
 export default FollowDetailsStatisticSection;

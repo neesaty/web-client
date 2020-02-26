@@ -17,4 +17,4 @@ interface Props {
   code: string;
 }
 
-export const WalletWithdrawConfirmPage = React.memo(_WalletWithdrawConfirmPage);
+export const WalletWithdrawConfirmPage = _WalletWithdrawConfirmPage;

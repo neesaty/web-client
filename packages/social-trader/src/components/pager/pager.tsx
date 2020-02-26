@@ -86,5 +86,5 @@ interface Props {
   countVisiblePages?: number;
 }
 
-const Pager = React.memo(_Pager);
+const Pager = _Pager;
 export default Pager;

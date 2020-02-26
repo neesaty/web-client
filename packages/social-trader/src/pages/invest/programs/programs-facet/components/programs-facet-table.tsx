@@ -90,5 +90,5 @@ export interface IProgramsFacetTableProps {
   columns?: SortingColumn[];
 }
 
-const ProgramsFacetTable = translate()(React.memo(_ProgramsFacetTable));
+const ProgramsFacetTable = translate()(_ProgramsFacetTable);
 export default ProgramsFacetTable;

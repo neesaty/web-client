@@ -45,7 +45,5 @@ const _LevelCalculatorPopupContainer: React.FC<ILevelCalculatorProps & {
   );
 };
 
-const LevelCalculatorPopupContainer = React.memo(
-  _LevelCalculatorPopupContainer
-);
+const LevelCalculatorPopupContainer = _LevelCalculatorPopupContainer;
 export default LevelCalculatorPopupContainer;

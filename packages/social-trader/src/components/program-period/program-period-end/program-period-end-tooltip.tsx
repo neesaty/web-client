@@ -24,5 +24,5 @@ interface Props {
   periodEnds: Date;
 }
 
-const PropgramPeriodEndTooltip = React.memo(_PropgramPeriodEndTooltip);
+const PropgramPeriodEndTooltip = _PropgramPeriodEndTooltip;
 export default PropgramPeriodEndTooltip;

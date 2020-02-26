@@ -42,5 +42,5 @@ const _DashboardInvestingFunds: React.FC = () => {
   );
 };
 
-const DashboardInvestingFunds = React.memo(_DashboardInvestingFunds);
+const DashboardInvestingFunds = _DashboardInvestingFunds;
 export default DashboardInvestingFunds;

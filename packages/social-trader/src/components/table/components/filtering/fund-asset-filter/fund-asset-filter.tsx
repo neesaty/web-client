@@ -43,7 +43,7 @@ const _FundAssetFilter: React.FC<Props> = ({
   );
 };
 
-const FundAssetFilter = React.memo(_FundAssetFilter);
+const FundAssetFilter = _FundAssetFilter;
 export default FundAssetFilter;
 
 interface Props {

@@ -20,7 +20,7 @@ export const _FeeCommission: React.FC<Props> = ({
   </div>
 );
 
-const FeeCommission = React.memo(_FeeCommission);
+const FeeCommission = _FeeCommission;
 export default FeeCommission;
 
 interface Props {

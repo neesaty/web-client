@@ -16,5 +16,5 @@ interface Props {
   content: JSX.Element | string;
 }
 
-const TagBubble = React.memo(_TagBubble);
+const TagBubble = _TagBubble;
 export default TagBubble;

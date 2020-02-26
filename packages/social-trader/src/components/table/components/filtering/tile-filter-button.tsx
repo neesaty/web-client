@@ -23,7 +23,7 @@ const _TileFilterButton: React.FC<ITagFilterButton> = ({
   );
 };
 
-const TileFilterButton = React.memo(_TileFilterButton);
+const TileFilterButton = _TileFilterButton;
 export default TileFilterButton;
 
 export interface ITagFilterButton {

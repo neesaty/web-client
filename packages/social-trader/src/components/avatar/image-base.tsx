@@ -29,7 +29,7 @@ const _ImageBase: React.FC<IImageBaseProps> = ({
   );
 };
 
-const ImageBase = React.memo(_ImageBase);
+const ImageBase = _ImageBase;
 export default ImageBase;
 
 export interface IImageProps {

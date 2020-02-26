@@ -66,5 +66,5 @@ interface Props {
   type?: TYPE_2FA;
 }
 
-const TwoFactor = withLoader(React.memo(_TwoFactor));
+const TwoFactor = withLoader(_TwoFactor);
 export default TwoFactor;

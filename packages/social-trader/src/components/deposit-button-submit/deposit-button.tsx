@@ -21,6 +21,6 @@ const DepositButton: React.FC<IDepositButtonProps &
   </GVButton>
 );
 
-const DepositButtonContainer = React.memo(DepositButton);
+const DepositButtonContainer = DepositButton;
 
 export default DepositButtonContainer;

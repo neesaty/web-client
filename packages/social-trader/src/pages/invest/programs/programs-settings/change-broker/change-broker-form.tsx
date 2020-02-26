@@ -201,5 +201,5 @@ export interface Props {
   currentLeverage: number;
 }
 
-const ChangeBrokerForm = withBlurLoader(React.memo(_ChangeBrokerForm));
+const ChangeBrokerForm = withBlurLoader(_ChangeBrokerForm);
 export default ChangeBrokerForm;

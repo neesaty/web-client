@@ -122,5 +122,5 @@ interface ITableContainerProps extends ITableProps {
   isFetchOnMount: boolean;
 }
 
-const TableContainer = React.memo(_TableContainer);
+const TableContainer = _TableContainer;
 export default TableContainer;

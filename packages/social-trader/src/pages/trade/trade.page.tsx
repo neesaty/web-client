@@ -26,4 +26,4 @@ const _TradePage: React.FC = () => {
   );
 };
 
-export const TradePage = React.memo(_TradePage);
+export const TradePage = _TradePage;

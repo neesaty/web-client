@@ -26,5 +26,5 @@ interface Props {
   code: string;
 }
 
-const EmailConfirmPage = React.memo(_EmailConfirmPage);
+const EmailConfirmPage = _EmailConfirmPage;
 export default EmailConfirmPage;

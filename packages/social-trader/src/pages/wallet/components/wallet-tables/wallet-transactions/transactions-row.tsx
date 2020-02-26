@@ -63,5 +63,5 @@ export interface Props {
   update?: () => void;
 }
 
-const TransactionsRow = React.memo(_TransactionsRow);
+const TransactionsRow = _TransactionsRow;
 export default TransactionsRow;

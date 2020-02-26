@@ -35,5 +35,5 @@ interface Props {
   className?: string;
 }
 
-const CurrencySelectContainer = React.memo(_CurrencySelectContainer);
+const CurrencySelectContainer = _CurrencySelectContainer;
 export default CurrencySelectContainer;

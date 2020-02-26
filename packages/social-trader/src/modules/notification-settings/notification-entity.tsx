@@ -44,5 +44,5 @@ interface Props {
   pathname: string;
 }
 
-const NotificationEntity = React.memo(_NotificationEntity);
+const NotificationEntity = _NotificationEntity;
 export default NotificationEntity;

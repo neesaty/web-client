@@ -26,5 +26,5 @@ interface Props {
   redirectFrom: string;
 }
 
-const LoginPage = React.memo(_LoginPage);
+const LoginPage = _LoginPage;
 export default LoginPage;

@@ -18,4 +18,4 @@ interface Props extends IReallocateFieldProps {
   [key: string]: any;
 }
 
-export const ReallocateFieldWrapper = React.memo(_ReallocateFieldWrapper);
+export const ReallocateFieldWrapper = _ReallocateFieldWrapper;

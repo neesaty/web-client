@@ -40,5 +40,5 @@ interface Props {
   defaultImage?: string;
 }
 
-const LogoField = React.memo(_LogoField);
+const LogoField = _LogoField;
 export default LogoField;

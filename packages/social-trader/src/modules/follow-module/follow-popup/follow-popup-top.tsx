@@ -10,5 +10,5 @@ const _FollowTop: React.FC<IFollowTop & WithTranslation> = ({ t, step }) => (
   <DialogTop title={t(`follow-program.${step}.title`)} />
 );
 
-const FollowTop = translate()(React.memo(_FollowTop));
+const FollowTop = translate()(_FollowTop);
 export default FollowTop;

@@ -14,4 +14,4 @@ const _DetailsTags: React.FC<{
   );
 };
 
-export const DetailsTags = React.memo(_DetailsTags);
+export const DetailsTags = _DetailsTags;

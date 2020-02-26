@@ -20,4 +20,4 @@ const SocialLinksLoader: React.FC = () => (
   </div>
 );
 
-export default React.memo(SocialLinksLoader);
+export default SocialLinksLoader;

@@ -50,5 +50,5 @@ interface Props {
   type: CLOSEABLE_ASSET;
 }
 
-const CloseAssetButton = React.memo(_CloseAssetButton);
+const CloseAssetButton = _CloseAssetButton;
 export default CloseAssetButton;

@@ -96,7 +96,5 @@ export interface IChangePasswordTradingAccountFormValues {
   [FORM_FIELDS.twoFactorCode]: string;
 }
 
-const ChangePasswordTradingAccountForm = React.memo(
-  _ChangePasswordTradingAccountForm
-);
+const ChangePasswordTradingAccountForm = _ChangePasswordTradingAccountForm;
 export default ChangePasswordTradingAccountForm;

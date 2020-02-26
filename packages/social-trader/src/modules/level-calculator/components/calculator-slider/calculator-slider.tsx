@@ -132,5 +132,5 @@ interface Props {
   onChangeValue?(name: string, value: number): void;
 }
 
-const CalculatorSlider = React.memo(_CalculatorSlider);
+const CalculatorSlider = _CalculatorSlider;
 export default CalculatorSlider;

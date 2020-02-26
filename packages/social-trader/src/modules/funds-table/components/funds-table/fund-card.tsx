@@ -125,7 +125,7 @@ const _FundCard: React.FC<Props> = ({ fund }) => {
   );
 };
 
-const FundCard = React.memo(_FundCard);
+const FundCard = _FundCard;
 export default FundCard;
 
 interface IFundCardTableProps {

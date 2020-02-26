@@ -55,5 +55,5 @@ const _FollowsItem: React.FC<ITraderItemProps> = ({
     </li>
   );
 };
-const FollowsItem = React.memo(_FollowsItem);
+const FollowsItem = _FollowsItem;
 export default FollowsItem;

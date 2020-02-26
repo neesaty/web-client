@@ -29,4 +29,4 @@ const ProgramsTable: React.FC<SearchTableProps<
   );
 };
 
-export default React.memo(ProgramsTable);
+export default ProgramsTable;

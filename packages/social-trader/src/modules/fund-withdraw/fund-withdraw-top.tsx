@@ -34,4 +34,4 @@ const _FundWithdrawTop: React.FC<IFundWithdrawTopProps> = ({
   );
 };
 
-export const FundWithdrawTop = React.memo(_FundWithdrawTop);
+export const FundWithdrawTop = _FundWithdrawTop;

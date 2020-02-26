@@ -53,4 +53,4 @@ const ReferralFriendsLoaderData = tableLoaderCreator(
   getReferralFriendLoaderData
 );
 
-export const ReferralFriendsTable = React.memo(_ReferralFriendsTable);
+export const ReferralFriendsTable = _ReferralFriendsTable;

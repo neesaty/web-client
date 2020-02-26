@@ -49,7 +49,7 @@ const _ProgramWithdrawConfirm: React.FC<ProgramWithdrawConfirmProps> = ({
     />
   );
 };
-export const ProgramWithdrawConfirm = React.memo(_ProgramWithdrawConfirm);
+export const ProgramWithdrawConfirm = _ProgramWithdrawConfirm;
 
 interface ProgramWithdrawConfirmProps {
   onApply?: VoidFunction;
@@ -120,5 +120,5 @@ interface Props {
   programCurrency: string;
 }
 
-const ProgramWithdrawConfirmForm = React.memo(_ProgramWithdrawConfirmForm);
+const ProgramWithdrawConfirmForm = _ProgramWithdrawConfirmForm;
 export default ProgramWithdrawConfirmForm;

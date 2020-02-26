@@ -56,5 +56,5 @@ const _TabControls: React.FC<Props> = ({
   );
 };
 
-const TabControls = React.memo(_TabControls);
+const TabControls = _TabControls;
 export default TabControls;

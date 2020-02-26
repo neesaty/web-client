@@ -35,5 +35,5 @@ export interface Props {
   onClick?(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>): void;
 }
 
-const NavList = React.memo(_NavList);
+const NavList = _NavList;
 export default NavList;

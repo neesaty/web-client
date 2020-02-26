@@ -18,25 +18,23 @@ export const TransferSelectField: React.FC<{
   sourceType: InternalTransferRequestType;
   value: string;
   currency: CurrencyEnum;
-}> = React.memo(
-  ({ name, label, items, onChange, sourceType, value, currency }) => {
-    const [t] = useTranslation();
-    return (
-      <>
-        <DialogField hide={sourceType !== "Wallet"}>
-          <WalletSelect
-            name={name}
-            label={label}
-            wallets={items}
-            onChange={onChange}
-          />
-        </DialogField>
-        <DialogField>
-          <StatisticItem label={t(`transfer.available${sourceType}From`)} big>
-            {`${value} ${currency}`}
-          </StatisticItem>
-        </DialogField>
-      </>
-    );
-  }
-);
+}> = ({ name, label, items, onChange, sourceType, value, currency }) => {
+  const [t] = useTranslation();
+  return (
+    <>
+      <DialogField hide={sourceType !== "Wallet"}>
+        <WalletSelect
+          name={name}
+          label={label}
+          wallets={items}
+          onChange={onChange}
+        />
+      </DialogField>
+      <DialogField>
+        <StatisticItem label={t(`transfer.available${sourceType}From`)} big>
+          {`${value} ${currency}`}
+        </StatisticItem>
+      </DialogField>
+    </>
+  );
+};

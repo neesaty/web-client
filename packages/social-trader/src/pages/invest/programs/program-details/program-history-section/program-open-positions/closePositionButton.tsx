@@ -57,4 +57,4 @@ interface Props {
   id: string;
 }
 
-export const ClosePositionButton = React.memo(_ClosePositionButton);
+export const ClosePositionButton = _ClosePositionButton;

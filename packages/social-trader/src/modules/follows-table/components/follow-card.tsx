@@ -124,5 +124,5 @@ interface Props {
   follow: FollowDetailsListItem;
 }
 
-const FollowCard = React.memo(_FollowCard);
+const FollowCard = _FollowCard;
 export default FollowCard;

@@ -87,5 +87,5 @@ interface Props {
   showTickets: boolean;
 }
 
-const ProgramTradesRow = React.memo(_ProgramTradesRow);
+const ProgramTradesRow = _ProgramTradesRow;
 export default ProgramTradesRow;

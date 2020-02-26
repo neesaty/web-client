@@ -13,4 +13,4 @@ const _DetailsInvestmentBlock: React.FC<React.HTMLAttributes<
     </div>
   );
 };
-export const DetailsInvestmentBlock = React.memo(_DetailsInvestmentBlock);
+export const DetailsInvestmentBlock = _DetailsInvestmentBlock;

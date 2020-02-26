@@ -46,5 +46,5 @@ interface Props extends WithTranslation {
   id: string;
 }
 
-const ProgramsFacetPage = translate()(React.memo(_ProgramsFacetPage));
+const ProgramsFacetPage = translate()(_ProgramsFacetPage);
 export default ProgramsFacetPage;

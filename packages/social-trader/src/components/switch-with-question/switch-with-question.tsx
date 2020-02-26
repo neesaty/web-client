@@ -76,5 +76,5 @@ interface Props {
   tooltipContent?: string | JSX.Element;
 }
 
-const SwitchWithQuestion = React.memo(_SwitchWithQuestion);
+const SwitchWithQuestion = _SwitchWithQuestion;
 export default SwitchWithQuestion;

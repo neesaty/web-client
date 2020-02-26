@@ -114,5 +114,5 @@ interface ISignalLinkFormValues {
   [FORM_FIELD.value]: string;
 }
 
-const SocialLinkForm = React.memo(_SocialLinkForm);
+const SocialLinkForm = _SocialLinkForm;
 export default SocialLinkForm;

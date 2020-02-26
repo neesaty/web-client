@@ -31,5 +31,5 @@ interface Props {
   assetCurrency: CurrencyEnum;
 }
 
-const SubscriptionsContainer = React.memo(_SubscriptionsContainer);
+const SubscriptionsContainer = _SubscriptionsContainer;
 export default SubscriptionsContainer;

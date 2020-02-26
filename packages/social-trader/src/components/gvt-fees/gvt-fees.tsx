@@ -27,5 +27,5 @@ interface Props {
   open: boolean;
   onClose(): void;
 }
-const GVTFees = React.memo(_GVTFees);
+const GVTFees = _GVTFees;
 export default GVTFees;

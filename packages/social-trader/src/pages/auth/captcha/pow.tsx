@@ -32,5 +32,5 @@ interface Props extends PowDetails {
   login: string;
 }
 
-const Pow = React.memo(_Pow);
+const Pow = _Pow;
 export default Pow;

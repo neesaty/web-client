@@ -24,5 +24,5 @@ const _TagItemTooltip: React.FC<Props> = ({ tags, className }) => {
   );
 };
 
-const TagItemTooltip = React.memo(_TagItemTooltip);
+const TagItemTooltip = _TagItemTooltip;
 export default TagItemTooltip;

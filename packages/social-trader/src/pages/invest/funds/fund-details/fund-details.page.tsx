@@ -9,5 +9,5 @@ const _FundDetailsPage: React.FC = () => {
   return <FundDetailsContainer data={description!} />;
 };
 
-const FundDetailsPage = React.memo(_FundDetailsPage);
+const FundDetailsPage = _FundDetailsPage;
 export default FundDetailsPage;

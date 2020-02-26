@@ -80,5 +80,5 @@ const _ProgramsRating: React.FC<WithTranslation> = ({ t }) => {
   );
 };
 
-const ProgramsRatingContainer = translate()(React.memo(_ProgramsRating));
+const ProgramsRatingContainer = translate()(_ProgramsRating);
 export default ProgramsRatingContainer;

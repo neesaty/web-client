@@ -74,5 +74,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const FollowBalanceChart = React.memo(Crashable(_FollowBalanceChart));
+const FollowBalanceChart = Crashable(_FollowBalanceChart);
 export default FollowBalanceChart;

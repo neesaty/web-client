@@ -1,11 +1,11 @@
 import ChartTooltip from "components/chart/chart-tooltip/chart-tooltip";
 import * as React from "react";
 
-const TooltipBody: React.FC<{ equity: string }> = React.memo(({ equity }) => (
+const TooltipBody: React.FC<{ equity: string }> = ({ equity }) => (
   <div className="details-tooltip__statistic">
     <div className="details-tooltip__value">{equity}</div>
   </div>
-));
+);
 
 const ProgramAbsoluteProfitTooltip: React.FC<Props> = ({
   active,

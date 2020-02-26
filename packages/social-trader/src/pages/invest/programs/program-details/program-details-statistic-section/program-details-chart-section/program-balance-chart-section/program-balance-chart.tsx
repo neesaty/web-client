@@ -85,5 +85,5 @@ interface Props {
   currency: CurrencyEnum;
 }
 
-const ProgramBalanceChart = React.memo(Crashable(_ProgramBalanceChart));
+const ProgramBalanceChart = Crashable(_ProgramBalanceChart);
 export default ProgramBalanceChart;

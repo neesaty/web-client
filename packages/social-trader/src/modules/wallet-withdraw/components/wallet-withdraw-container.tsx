@@ -52,5 +52,5 @@ interface Props {
   currentWallet: WalletData;
 }
 
-const WalletWithdrawContainer = React.memo(_WalletWithdrawContainer);
+const WalletWithdrawContainer = _WalletWithdrawContainer;
 export default WalletWithdrawContainer;

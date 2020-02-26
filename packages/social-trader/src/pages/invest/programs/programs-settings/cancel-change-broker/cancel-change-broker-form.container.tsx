@@ -43,7 +43,5 @@ export interface ICancelChangeBrokerFormContainerProps {
   migration: MigrationRequest;
 }
 
-const CancelChangeBrokerFormContainer = React.memo(
-  _CancelChangeBrokerFormContainer
-);
+const CancelChangeBrokerFormContainer = _CancelChangeBrokerFormContainer;
 export default CancelChangeBrokerFormContainer;

@@ -127,5 +127,5 @@ interface Props {
   title?: string;
 }
 
-const ProgramsTableSSR = React.memo(_ProgramsTableSSR);
+const ProgramsTableSSR = _ProgramsTableSSR;
 export default ProgramsTableSSR;

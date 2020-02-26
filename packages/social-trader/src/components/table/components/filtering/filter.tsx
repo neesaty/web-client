@@ -64,5 +64,5 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   name: string;
 }
 
-const Filter = React.memo(_Filter);
+const Filter = _Filter;
 export default Filter;

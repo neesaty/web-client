@@ -49,5 +49,5 @@ interface Props {
   onAction: () => void;
 }
 
-const TransactionDetailsDialog = React.memo(_TransactionDetailsDialog);
+const TransactionDetailsDialog = _TransactionDetailsDialog;
 export default TransactionDetailsDialog;

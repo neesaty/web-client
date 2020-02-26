@@ -12,4 +12,4 @@ interface Props {
   label: string;
 }
 
-export const DialogListItem = React.memo(_DialogListItem);
+export const DialogListItem = _DialogListItem;

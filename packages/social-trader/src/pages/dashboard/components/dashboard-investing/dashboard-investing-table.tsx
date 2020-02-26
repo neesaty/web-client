@@ -71,5 +71,5 @@ interface Props {
   renderBodyCard?: RenderBodyItemFuncType;
 }
 
-const DashboardInvestingTable = React.memo(_DashboardInvestingTable);
+const DashboardInvestingTable = _DashboardInvestingTable;
 export default DashboardInvestingTable;

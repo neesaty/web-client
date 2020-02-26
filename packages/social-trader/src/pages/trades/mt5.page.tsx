@@ -22,5 +22,5 @@ const _Mt5: React.FC = () => {
   );
 };
 
-const Mt5Page = React.memo(_Mt5);
+const Mt5Page = _Mt5;
 export default Mt5Page;

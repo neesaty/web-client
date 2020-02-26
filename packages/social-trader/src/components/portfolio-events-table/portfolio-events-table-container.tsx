@@ -88,7 +88,5 @@ export interface IPortfolioEventsTableOwnProps {
   asset?: ASSET;
 }
 
-const PortfolioEventsTableContainer = React.memo(
-  _PortfolioEventsTableContainer
-);
+const PortfolioEventsTableContainer = _PortfolioEventsTableContainer;
 export default PortfolioEventsTableContainer;

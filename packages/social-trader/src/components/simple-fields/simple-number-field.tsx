@@ -23,4 +23,4 @@ export interface ISimpleNumberFieldProps extends ISimpleFieldProps {
   [key: string]: any;
 }
 
-export const SimpleNumberField = React.memo(_SimpleNumberField);
+export const SimpleNumberField = _SimpleNumberField;

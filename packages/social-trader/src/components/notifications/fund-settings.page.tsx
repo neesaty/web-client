@@ -15,5 +15,5 @@ interface OwnProps {
   id: string;
 }
 
-const FundNotificationPage = translate()(React.memo(_FundNotificationPage));
+const FundNotificationPage = translate()(_FundNotificationPage);
 export default FundNotificationPage;

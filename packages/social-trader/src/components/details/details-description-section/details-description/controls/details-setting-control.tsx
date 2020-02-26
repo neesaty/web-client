@@ -22,5 +22,5 @@ export interface Props {
   text: string;
 }
 
-const DetailsSettingControl = React.memo(_DetailsSettingControl);
+const DetailsSettingControl = _DetailsSettingControl;
 export default DetailsSettingControl;

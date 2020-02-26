@@ -34,5 +34,5 @@ const _HeaderContainer: React.FC<Props & WithRouterProps> = ({ router }) => {
 
 interface Props {}
 
-const HeaderContainer = withRouter(React.memo(_HeaderContainer));
+const HeaderContainer = withRouter(_HeaderContainer);
 export default HeaderContainer;

@@ -15,5 +15,5 @@ const _FundTableSortingValue: React.FC<Props> = ({ column }) => {
   return t(`funds-page.funds-header.${column.name}`);
 };
 
-const FundTableSortingValue = React.memo(_FundTableSortingValue);
+const FundTableSortingValue = _FundTableSortingValue;
 export default FundTableSortingValue;

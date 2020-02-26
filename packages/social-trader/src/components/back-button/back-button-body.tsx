@@ -16,7 +16,7 @@ export const _BackButtonBody: React.FC<Props> = ({ onClick, backPath }) => {
   );
 };
 
-const BackButtonBody = React.memo(_BackButtonBody);
+const BackButtonBody = _BackButtonBody;
 export default BackButtonBody;
 
 interface Props {

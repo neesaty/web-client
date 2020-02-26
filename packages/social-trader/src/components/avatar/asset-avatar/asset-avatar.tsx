@@ -54,5 +54,5 @@ export interface IAssetAvatarProps extends GVProgramAvatarProps {
   alt: string;
 }
 
-const AssetAvatar = React.memo(_AssetAvatar);
+const AssetAvatar = _AssetAvatar;
 export default AssetAvatar;

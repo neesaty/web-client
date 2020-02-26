@@ -15,5 +15,5 @@ interface Props extends WithTranslation {
   email: string;
 }
 
-const EmailPending = translate()(React.memo(_EmailPending));
+const EmailPending = translate()(_EmailPending);
 export default EmailPending;
