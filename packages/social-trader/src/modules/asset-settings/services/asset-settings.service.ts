@@ -1,4 +1,4 @@
-import { IImageValue } from "components/form/input-image/input-image";
+import { INewImage } from "components/form/input-image/input-image";
 import { ProgramUpdate } from "gv-api-web";
 import assetsApi from "services/api-client/assets-api";
 import authService from "services/auth-service";
@@ -13,9 +13,9 @@ export const editAsset = ({
 }): Promise<Response> => {
   const authorization = authService.getAuthArg();
   let promise = Promise.resolve("");
-  if (editAssetData.logo.image && editAssetData.logo.image.cropped)
+  if (editAssetData.logo && editAssetData.logo.cropped)
     promise = filesService.uploadFile(
-      editAssetData.logo.image.cropped,
+      editAssetData.logo.cropped,
       authorization
     );
   return promise.then(response => {
@@ -62,7 +62,7 @@ export enum ASSET_EDIT_FIELDS {
 export interface IAssetEditFormValues {
   [ASSET_EDIT_FIELDS.title]: string;
   [ASSET_EDIT_FIELDS.description]: string;
-  [ASSET_EDIT_FIELDS.logo]: IImageValue;
+  [ASSET_EDIT_FIELDS.logo]: INewImage;
   [ASSET_EDIT_FIELDS.stopOutLevel]: number;
   [ASSET_EDIT_FIELDS.investmentLimit]: number | null;
 }

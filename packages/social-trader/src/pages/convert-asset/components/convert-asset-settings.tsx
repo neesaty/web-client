@@ -8,7 +8,7 @@ import PeriodLength from "components/assets/fields/period-length";
 import SignalsFeeFormPartial from "components/assets/fields/signals-fee-form.partial";
 import StopOutField from "components/assets/fields/stop-out-field";
 import TradesDelay from "components/assets/fields/trades-delay";
-import { IImageValue } from "components/form/input-image/input-image";
+import { INewImage } from "components/form/input-image/input-image";
 import SettingsBlock from "components/settings-block/settings-block";
 import { ASSET } from "constants/constants";
 import withLoader from "decorators/with-loader";
@@ -177,7 +177,7 @@ export interface IConvertAssetSettingsFormValues {
   [CONVERT_ASSET_FIELDS.volumeFee]?: number;
   [CONVERT_ASSET_FIELDS.title]: string;
   [CONVERT_ASSET_FIELDS.description]: string;
-  [CONVERT_ASSET_FIELDS.logo]: IImageValue;
+  [CONVERT_ASSET_FIELDS.logo]: INewImage;
   [CONVERT_ASSET_FIELDS.entryFee]?: number;
   [CONVERT_ASSET_FIELDS.investmentLimit]?: number;
 }

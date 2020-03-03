@@ -1,6 +1,9 @@
 import DescriptionField from "components/assets/fields/description-field";
 import TitleField from "components/assets/fields/title-field";
-import { IImageValue } from "components/form/input-image/input-image";
+import {
+  IImageValue,
+  INewImage
+} from "components/form/input-image/input-image";
 import inputImageShape from "components/form/input-image/input-image.validation";
 import LogoField from "components/logo-field/logo-field";
 import SettingsBlock from "components/settings-block/settings-block";
@@ -85,7 +88,7 @@ const _AssetEdit: React.FC<Props> = ({
 export interface AssetEditFormValues {
   [FIELDS.title]: string;
   [FIELDS.description]: string;
-  [FIELDS.logo]: IImageValue;
+  [FIELDS.logo]: INewImage;
 }
 
 interface Props {

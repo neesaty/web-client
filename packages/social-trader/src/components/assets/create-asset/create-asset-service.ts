@@ -22,9 +22,9 @@ export const createAsset = ({
 }): Promise<any> => {
   const authorization = authService.getAuthArg();
   let promise = (Promise.resolve("") as unknown) as Promise<any>;
-  if ("logo" in data && data.logo.image && data.logo.image.cropped) {
+  if ("logo" in data && data.logo && data.logo.cropped) {
     promise = filesService.uploadFile(
-      data.logo.image.cropped,
+      data.logo.cropped,
       authorization
     ) as Promise<any>;
   }

@@ -1,4 +1,4 @@
-import { IImageValue } from "components/form/input-image/input-image";
+import { INewImage } from "components/form/input-image/input-image";
 import {
   FollowDetailsFull,
   FundDetailsFull,
@@ -16,7 +16,7 @@ export type AssetDescriptionType = ProgramDetailsFull &
 export type TUpdateAssetFunc = (
   values: {
     description?: string;
-    logo?: IImageValue;
+    logo?: INewImage;
     investmentLimit?: number;
     hasInvestmentLimit?: number;
     stopOutLevel?: number;

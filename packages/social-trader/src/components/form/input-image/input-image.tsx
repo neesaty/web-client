@@ -43,7 +43,7 @@ class _InputImage extends React.PureComponent<
         };
 
         onChange({
-          target: { value: { image: cropped }, name }
+          target: { value: cropped, name }
         });
       };
     };
@@ -58,7 +58,7 @@ class _InputImage extends React.PureComponent<
 
   onCrop = () => {
     const { onChange, name, value } = this.props;
-    const { image } = value;
+    const image = value;
 
     if (!image || !this.cropper.current) return;
 
@@ -82,7 +82,7 @@ class _InputImage extends React.PureComponent<
         } else {
           croppedImg = {
             ...image,
-            cropped: new File([blob], image.name, {
+            cropped: new File([blob], image.name!, {
               type: blob.type
             }),
             width: croppedCanvas.width,
@@ -91,7 +91,7 @@ class _InputImage extends React.PureComponent<
           };
         }
         onChange({
-          target: { value: { image: croppedImg }, name }
+          target: { value: croppedImg, name }
         });
       },
       image.type,
@@ -113,14 +113,15 @@ class _InputImage extends React.PureComponent<
     const { onChange, name } = this.props;
     this.setState({ newImage: undefined, isDefault: true });
     const e: IImageChangeEvent = {
-      target: { value: {}, name }
+      //@ts-ignore
+      target: { value: undefined, name }
     };
     onChange(e);
   };
 
   renderErrors = () => {
     if (!this.props.error) return null;
-    const errors = Object.values(this.props.error.image);
+    const errors = Object.values(this.props.error);
     return (
       <div>
         {errors.map(error => (
@@ -131,9 +132,10 @@ class _InputImage extends React.PureComponent<
   };
 
   render() {
-    const { t, value = {}, className, defaultImage, error } = this.props;
-    const { src, image } = value;
-    const hasSizeError = error && error.image.size;
+    const { t, value, className, defaultImage, error } = this.props;
+    const image = value;
+    const src = value ? value.src : "";
+    const hasSizeError = error && error.size;
     return (
       <div
         className={classNames("input-image", className, {
@@ -167,7 +169,7 @@ class _InputImage extends React.PureComponent<
               )}
 
               {image && hasSizeError && (
-                <InputImageDefault defaultImage={image.src} />
+                <InputImageDefault defaultImage={image.src!} />
               )}
 
               {!image && (
@@ -207,17 +209,17 @@ const InputImage = translate()(_InputImage);
 export default InputImage;
 
 export interface INewImage {
-  cropped: File;
-  src: string;
-  name: string;
-  type: string;
+  cropped?: File;
+  src?: string;
+  name?: string;
+  type?: string;
   width: number;
   height: number;
   size: number;
 }
 
 export interface IImageChangeEvent {
-  target: { value: IImageValue; name: string };
+  target: { value: INewImage; name: string };
 }
 
 export type IImageValue = {
@@ -229,8 +231,8 @@ export type IImageValue = {
 export interface IInputImageProps {
   name: string;
   className?: string;
-  value: IImageValue;
+  value: INewImage;
   defaultImage: string;
-  error?: { image: { [field: string]: { message: string } } };
+  error?: { [field: string]: { message: string } };
   onChange: (event: IImageChangeEvent) => void;
 }

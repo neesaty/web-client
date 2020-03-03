@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import { FieldError, useFormContext } from "react-hook-form";
 
 const getErrorMessage = (obj: FieldError) =>
@@ -19,11 +19,19 @@ export const GVHookFormField: React.FC<GVHookFormFieldProps> = ({
     errors,
     register
   } = useFormContext();
-  const error = errors[name]
-    ? Array.isArray(errors[name])
-      ? getErrorMessage((errors[name] as FieldError[])[0])
-      : getErrorMessage(errors[name] as FieldError)
-    : undefined;
+  // @ts-ignore
+  // if (errors[name] && name === "logo")
+  // console.log(JSON.stringify(errors), JSON.stringify(errors[name]));
+  // console.log(errors, errors[name]);
+  const error = useMemo(() => {
+    console.log("errors", errors);
+    return errors[name]
+      ? Array.isArray(errors[name])
+        ? getErrorMessage((errors[name] as FieldError[])[0])
+        : getErrorMessage(errors[name] as FieldError)
+      : undefined;
+  }, [errors, errors[name]]);
+  if (errors[name] && name === "logo") console.log(error);
   useEffect(() => {
     register({ name });
     return () => unregister(name);

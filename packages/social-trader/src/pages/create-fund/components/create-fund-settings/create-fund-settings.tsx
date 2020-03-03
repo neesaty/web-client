@@ -2,7 +2,7 @@ import CreateAssetNavigation from "components/assets/fields/create-asset-navigat
 import DepositDetailsBlock from "components/assets/fields/deposit-details-block";
 import DescriptionBlock from "components/assets/fields/description-block";
 import FeesSettings from "components/assets/fields/fees-settings";
-import { IImageValue } from "components/form/input-image/input-image";
+import { INewImage } from "components/form/input-image/input-image";
 import SettingsBlock from "components/settings-block/settings-block";
 import { ASSET } from "constants/constants";
 import { withBlurLoader } from "decorators/with-blur-loader";
@@ -125,7 +125,7 @@ export interface ICreateFundSettingsFormValues {
   [CREATE_FUND_FIELDS.depositWalletId]: string;
   [CREATE_FUND_FIELDS.depositAmount]?: number;
   [CREATE_FUND_FIELDS.entryFee]?: number;
-  [CREATE_FUND_FIELDS.logo]: IImageValue;
+  [CREATE_FUND_FIELDS.logo]: INewImage;
   [CREATE_FUND_FIELDS.description]: string;
   [CREATE_FUND_FIELDS.title]: string;
   [CREATE_FUND_FIELDS.assets]: Array<any>;

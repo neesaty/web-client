@@ -1,4 +1,4 @@
-import { IImageValue } from "components/form/input-image/input-image";
+import { INewImage } from "components/form/input-image/input-image";
 import { TradesDelay } from "gv-api-web";
 import AssetSettingsPage from "modules/asset-settings/asset-settings.page";
 import { AssetDescriptionType } from "modules/asset-settings/asset-settings.types";
@@ -53,7 +53,7 @@ export type TUpdateProgramFunc = (
   values: {
     tradesDelay?: TradesDelay;
     description?: string;
-    logo?: IImageValue;
+    logo?: INewImage;
     investmentLimit?: number;
     stopOutLevel?: number;
     entryFee?: number;
