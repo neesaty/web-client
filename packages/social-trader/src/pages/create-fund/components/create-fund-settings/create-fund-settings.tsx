@@ -8,7 +8,7 @@ import { ASSET } from "constants/constants";
 import { withBlurLoader } from "decorators/with-blur-loader";
 import { FundCreateAssetPlatformInfo, WalletData } from "gv-api-web";
 import * as React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { safeGetElemFromArray } from "utils/helpers";
@@ -59,8 +59,14 @@ const _CreateFundSettings: React.FC<Props> = ({
     }),
     mode: "onChange"
   });
-  const { watch, setValue } = form;
+  const { watch, setValue, errors } = form;
   const { depositAmount, description } = watch();
+
+  console.log("errors", errors);
+  console.log("errors.logo", errors.logo);
+  useEffect(() => {
+    console.log("errors.logo with effect", errors["logo"]);
+  }, [errors.logo, errors]);
 
   return (
     <HookForm form={form} onSubmit={onSubmit}>
