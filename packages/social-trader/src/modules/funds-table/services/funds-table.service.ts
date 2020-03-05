@@ -21,12 +21,13 @@ import {
   SORTING_FILTER_VALUE
 } from "../components/funds-table/funds-table.constants";
 
-export const fetchFundsChallengeWinner = (): Promise<Array<
-  FundDetailsListItem
->> => {
+export const fetchFundsChallengeWinner = (): Promise<{
+  items: Array<FundDetailsListItem>;
+  total: number;
+}> => {
   return fundsApi
     .getLastChallengeWinner({ authorization: authService.getAuthArg() })
-    .then(item => [item]);
+    .then(item => ({ items: [item], total: 1 }));
 };
 
 export type FetchFundsType = (

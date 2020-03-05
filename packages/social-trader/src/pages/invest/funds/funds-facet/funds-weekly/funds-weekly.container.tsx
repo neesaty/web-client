@@ -7,8 +7,7 @@ import FacetContainer, {
 import Page from "components/page/page";
 import { ComposeFiltersAllType } from "components/table/components/filtering/filter.type";
 import { IDataModel } from "constants/constants";
-import useApiRequest from "hooks/api-request.hook";
-import FundsTable from "modules/funds-table/components/funds-table/funds-table";
+import FundsTableModule from "modules/funds-table/components/funds-table/funds-table-module";
 import {
   fetchFunds,
   fetchFundsChallengeWinner
@@ -22,11 +21,6 @@ export const FUNDS_WEEKLY_FACET_NAME = "challenge";
 
 const _FundsWeeklyContainer: React.FC = () => {
   const [t] = useTranslation();
-
-  const { data, sendRequest: getFundsChallengeWinner } = useApiRequest({
-    request: fetchFundsChallengeWinner,
-    fetchOnMount: true
-  });
 
   const getFunds = useCallback(
     (filters: ComposeFiltersAllType): Promise<IDataModel> =>
@@ -44,12 +38,11 @@ const _FundsWeeklyContainer: React.FC = () => {
     >
       <FundsWeeklyHeader />
       <DetailsBlock wide table>
-        <FundsTable
-          updateRow={getFundsChallengeWinner}
+        <FundsTableModule
+          getItems={fetchFundsChallengeWinner}
           loaderCount={1}
           showSwitchView={false}
           title={t("facets.texts.last-week-challenge-winner")}
-          data={data}
         />
       </DetailsBlock>
       <DetailsBlock table>
