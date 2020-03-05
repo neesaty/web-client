@@ -6,14 +6,17 @@ import TableModule, {
 import * as React from "react";
 
 import FundsTableRow from "./fund-table-row";
-import { fundListLoaderData } from "./fund-table.loader-data";
+import { fundListLoaderDataWithCount } from "./fund-table.loader-data";
 import FundsTableHeaderCell from "./funds-table-header-cell";
 import { FUNDS_TABLE_COLUMNS } from "./funds-table.constants";
 
-interface Props extends ITableModuleProps {}
+interface Props extends ITableModuleProps {
+  loaderCount?: number;
+}
 
 const FundsTableModule: React.FC<Props> = React.memo(
   ({
+    loaderCount,
     getItems,
     renderMappings,
     sorting,
@@ -25,7 +28,7 @@ const FundsTableModule: React.FC<Props> = React.memo(
   }) => {
     return (
       <TableModule
-        loaderData={fundListLoaderData}
+        loaderData={fundListLoaderDataWithCount(loaderCount)}
         disableTitle={disableTitle}
         getItems={getItems}
         defaultFilters={defaultFilters}
